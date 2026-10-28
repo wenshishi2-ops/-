@@ -1,34 +1,22 @@
 {
   "mode": "PAPER_ONLY",
   "live_trading_enabled": false,
-  "strategy": "DATA_COLLECTION_ONLY",
-  "cash": 1000,
-  "equity": 1000,
-  "last_scan": "2026-10-28T14:26:43.807026+00:00",
+  "strategy": "TWO_SNAPSHOT_MOMENTUM_BASELINE",
+  "cash": 3000.0,
+  "equity": 3000.0,
+  "last_scan": "2026-10-28T14:34:05.211412+00:00",
   "markets": [
     {
-      "slug": "tec-mls-winner-2026-11-07-por",
-      "title": "Major League Soccer Champion",
-      "bid": 0.002,
+      "slug": "tec-mlb-nl-2026-11-27-roy-nolmcl",
+      "title": "National League Rookie of the Year",
+      "bid": 0.008,
       "ask": 0.009
     },
     {
-      "slug": "paccc-usho-midterms-2026-11-03-dem",
-      "title": "U.S House Midterm Winner",
-      "bid": 0.91,
-      "ask": 0.911
-    },
-    {
-      "slug": "paccc-usho-midterms-2026-11-03-rep",
-      "title": "U.S House Midterm Winner",
-      "bid": 0.095,
-      "ask": 0.096
-    },
-    {
-      "slug": "paccc-usse-midterms-2026-11-03-rep",
-      "title": "U.S Senate Midterm Winner",
-      "bid": 0.376,
-      "ask": 0.377
+      "slug": "tec-mlb-nl-2026-11-27-roy-salste",
+      "title": "National League Rookie of the Year",
+      "bid": 0.786,
+      "ask": 0.787
     }
   ],
   "trades": [],
@@ -38,7 +26,7 @@
     "eligible_markets": 30,
     "market_samples": [
       {
-        "slug": "tec-mls-winner-2026-11-07-por",
+        "slug": "tec-mlb-nl-2026-11-27-cy-micsor",
         "keys": [
           "id",
           "question",
@@ -64,10 +52,10 @@
         "closed": false,
         "settled": null,
         "resolved": null,
-        "endDate": "2026-12-01T22:15:42Z"
+        "endDate": "2026-12-12T04:00:00Z"
       },
       {
-        "slug": "paccc-usho-midterms-2026-11-03-dem",
+        "slug": "tec-mlb-nl-2026-11-27-roy-nolmcl",
         "keys": [
           "id",
           "question",
@@ -93,10 +81,10 @@
         "closed": false,
         "settled": null,
         "resolved": null,
-        "endDate": "2027-02-02T04:59:00Z"
+        "endDate": "2026-12-12T04:00:00Z"
       },
       {
-        "slug": "paccc-usho-midterms-2026-11-03-rep",
+        "slug": "tec-mlb-nl-2026-11-27-roy-salste",
         "keys": [
           "id",
           "question",
@@ -122,7 +110,7 @@
         "closed": false,
         "settled": null,
         "resolved": null,
-        "endDate": "2027-02-02T04:59:00Z"
+        "endDate": "2026-12-12T04:00:00Z"
       }
     ],
     "rejected_reasons": {
@@ -133,9 +121,42 @@
       "other": 0
     },
     "slugs_checked": 4,
-    "valid_quotes": 4,
-    "sample_errors": [],
+    "valid_quotes": 2,
+    "sample_errors": [
+      "tec-mlb-nl-2026-11-27-cy-micsor: no valid two-sided BBO; keys=['marketSlug', 'currentPx', 'lastTradePx', 'settlementPx', 'sharesTraded', 'openInterest', 'bestAsk', 'bestBid']",
+      "tec-mlb-nl-2026-11-27-roy-moibal: no valid two-sided BBO; keys=['marketSlug', 'currentPx', 'lastTradePx', 'settlementPx', 'sharesTraded', 'openInterest', 'bestAsk', 'bestBid']"
+    ],
     "rate_limited": false
   },
-  "quotes_as_of": "2026-10-28T14:26:43.807026+00:00"
+  "quotes_as_of": "2026-10-28T14:34:05.211412+00:00",
+  "peak_equity": 3000.0,
+  "initial_capital": 3000.0,
+  "virtual_deposits": 2000.0,
+  "capital_events": [
+    {
+      "time": "2026-10-28T14:34:11.917128+00:00",
+      "type": "VIRTUAL_DEPOSIT",
+      "amount": 2000.0
+    }
+  ],
+  "paper_engine": "v2",
+  "fixed_paper_buy_usd": 300,
+  "market_value": 0.0,
+  "unrealized_pnl": 0.0,
+  "realized_pnl": 0.0,
+  "positions": [],
+  "quote_history": {
+    "tec-mlb-nl-2026-11-27-roy-nolmcl": {
+      "mid": 0.0085,
+      "time": "2026-10-28T14:34:11.917128+00:00"
+    },
+    "tec-mlb-nl-2026-11-27-roy-salste": {
+      "mid": 0.7865,
+      "time": "2026-10-28T14:34:11.917128+00:00"
+    }
+  },
+  "max_drawdown_pct": 0.0,
+  "paper_status": "ACTIVE",
+  "paper_updated_at": "2026-10-28T14:34:11.917128+00:00",
+  "pricing_note": "Paper fills at quoted ask/bid without depth, fees, latency or settlement. Stale marks are not executable."
 }
