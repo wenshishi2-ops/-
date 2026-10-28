@@ -54,7 +54,7 @@ try:
     page = int(now.timestamp() // 900) % 10
     offset = page * 30
     try:
-        response = client.markets.list({"limit": 30, "offset": offset, "active": True})
+        response = client.markets.list({"limit": 30, "offset": offset, "active": True, "closed": False})
         items = response.get("markets", []) if isinstance(response, dict) else []
         listed = len(items)
         candidates = [m for m in items if current(m)]
@@ -89,7 +89,7 @@ try:
                     "endDate": str(item.get("endDate", ""))[:35],
                 })
         print("Market diagnostics: " + json.dumps({"sample": sample, "rejected": rejected}, ensure_ascii=False), flush=True)
-        print(f"Market page offset={offset}: listed={listed}, eligible={eligible}", flush=True)
+        print(f"Market page offset={offset}: listed={listed}, eligible={eligible}, closed={sum(bool(m.get('closed')) for m in items if isinstance(m, dict))}", flush=True)
         for market in candidates[:4]:
             slug = market["slug"]
             attempted += 1
