@@ -1,0 +1,10 @@
+{
+  "mode": "PAPER_ONLY",
+  "live_trading_enabled": false,
+  "strategy": "DATA_COLLECTION_ONLY",
+  "cash": 1000,
+  "equity": 1000,
+  "last_scan": null,
+  "markets": [],
+  "trades": []
+}
