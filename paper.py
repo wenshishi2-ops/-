@@ -57,7 +57,7 @@ for p in positions:
     bid = float(q["bid"])
     entry = float(p["entry"])
     age_hours = (now - dt.datetime.fromisoformat(p["opened_at"])).total_seconds() / 3600
-    if bid >= entry * (1.06 + 2*(fee_theta+slip_rate)) or bid <= entry * 0.92 or age_hours >= 48:
+    if bid >= entry * (1.06 + 2*(fee_theta*(1-entry)+slip_rate)) or bid <= entry * 0.92 or age_hours >= 48:
         proceeds_gross = p["shares"] * bid * (1-slip_rate)
         sell_fee = taker_fee(p["shares"], bid)
         proceeds = proceeds_gross - sell_fee
@@ -65,7 +65,7 @@ for p in positions:
         cash += proceeds
         pnl = proceeds - cost
         realized += pnl
-        trades.append({"time": stamp, "slug": p["slug"], "side": "SELL", "price": bid, "shares": p["shares"], "cash_change": money(proceeds), "realized_pnl": money(pnl), "fee": money(sell_fee), "reason": "target" if bid >= entry*(1.06+2*(fee_theta+slip_rate)) else "stop" if bid <= entry*0.92 else "time"})
+        trades.append({"time": stamp, "slug": p["slug"], "side": "SELL", "price": bid, "shares": p["shares"], "cash_change": money(proceeds), "realized_pnl": money(pnl), "fee": money(sell_fee), "reason": "target" if bid >= entry*(1.06+2*(fee_theta*(1-entry)+slip_rate)) else "stop" if bid <= entry*0.92 else "time"})
     else:
         remaining.append(p)
 positions = remaining
@@ -94,7 +94,7 @@ if fresh and not halted:
         mid = (bid + ask) / 2
         spread = ask - bid
         momentum = mid / prev_mid - 1 if prev_mid > 0 else 0
-        estimated_edge = momentum - spread/mid - 2*(fee_theta+slip_rate) if mid else -1
+        estimated_edge = momentum - spread/mid - 2*(fee_theta*(1-mid)+slip_rate) if mid else -1
         allowed = 300 <= age <= 24*3600 and 0.10 <= ask <= 0.85 and spread <= 0.01 and 0.02 <= momentum <= 0.08 and estimated_edge >= 0.01
         decisions.append({"time": stamp, "slug": slug, "decision": "BUY" if allowed else "WAIT", "momentum_pct": round(momentum*100, 3), "estimated_edge_pct": round(estimated_edge*100, 3), "explanation": "Two public quotes only; cause of price movement unknown"})
         if not allowed:
@@ -113,7 +113,7 @@ if fresh:
     for slug, q in quotes.items():
         history[slug] = {"mid": (float(q["bid"]) + float(q["ask"])) / 2, "time": stamp}
 history = dict(list(history.items())[-300:])
-market_value = sum(p["shares"] * float(p.get("last_bid", 0))*(1-slip_rate) for p in positions)
+market_value = sum((p["shares"] * float(p.get("last_bid", 0))*(1-slip_rate) - taker_fee(p["shares"], float(p.get("last_bid", 0)))) for p in positions)
 equity = cash + market_value
 peak = max(peak, equity)
 d.update({
