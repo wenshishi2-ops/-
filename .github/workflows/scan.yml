@@ -2,7 +2,7 @@ name: Scan Polymarket US public markets
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '7,22,37,52 * * * *'
 permissions:
   contents: write
 concurrency:
@@ -10,8 +10,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   scan:
-    runs-on: ubuntu-latest
-    timeout-minutes: 8
+    runs-on: ubuntu-24.04
+    timeout-minutes: 4
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,5 +26,6 @@ jobs:
           git add data.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh read-only market snapshot [skip ci]"
+            git pull --rebase origin main
             git push
           fi
