@@ -50,14 +50,15 @@ for p in positions:
 positions = remaining
 
 # A deliberately simple momentum baseline: needs two distinct, recent observations.
-# No forecasting claim. Limits: $20 per position, $50 per market, $300 total cost,
+# No forecasting claim. New buys use exactly $300 virtual notional each.
+# At most 3 simultaneous positions, $900 maximum opening cost,
 # $30 daily realized loss and $100 cumulative realized loss.
 daily_pnl = sum(float(t.get("realized_pnl", 0)) for t in trades if t.get("side") == "SELL" and str(t.get("time", "")).startswith(now.date().isoformat()))
 exposure = sum(p["shares"] * p["entry"] for p in positions)
 halted = realized <= -100 or daily_pnl <= -30
 if fresh and not halted:
     for slug, q in quotes.items():
-        if len(positions) >= 10 or exposure >= 300 or cash < 20:
+        if len(positions) >= 3 or exposure > 600.000001 or cash < 300:
             break
         bid, ask = float(q["bid"]), float(q["ask"])
         prev = history.get(slug)
@@ -73,11 +74,9 @@ if fresh and not halted:
         spread = ask - bid
         if not (300 <= age <= 24*3600 and 0.10 <= ask <= 0.85 and spread <= 0.01 and prev_mid > 0 and 0.02 <= (mid/prev_mid - 1) <= 0.08):
             continue
-        spend = min(20, cash, 300 - exposure)
-        if spend < 5:
-            continue
-        shares = round(spend / ask, 6)
-        cost = shares * ask
+        spend = 300.0
+        shares = spend / ask  # fractional paper units: exactly $300 notional
+        cost = spend
         cash -= cost
         exposure += cost
         positions.append({"slug": slug, "title": q.get("title", slug), "shares": shares, "entry": ask, "opened_at": stamp, "last_bid": bid, "marked_at": stamp, "mark_stale": False})
@@ -93,6 +92,7 @@ peak = max(peak, equity)
 d.update({
     "strategy": "TWO_SNAPSHOT_MOMENTUM_BASELINE",
     "paper_engine": "v2",
+    "fixed_paper_buy_usd": 300,
     "live_trading_enabled": False,
     "cash": money(cash),
     "equity": money(equity),
