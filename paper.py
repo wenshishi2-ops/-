@@ -7,7 +7,7 @@ FILE = Path("data.json")
 d = json.loads(FILE.read_text())
 now = dt.datetime.now(dt.timezone.utc)
 stamp = now.isoformat()
-initial = 1000.0
+initial = 3000.0
 cash = float(d.get("cash", initial))
 positions = d.get("positions", [])
 trades = d.get("trades", [])
@@ -51,14 +51,14 @@ positions = remaining
 
 # A deliberately simple momentum baseline: needs two distinct, recent observations.
 # No forecasting claim. New buys use exactly $300 virtual notional each.
-# At most 3 simultaneous positions, $900 maximum opening cost,
+# At most 10 simultaneous positions, $3000 maximum opening cost,
 # $30 daily realized loss and $100 cumulative realized loss.
 daily_pnl = sum(float(t.get("realized_pnl", 0)) for t in trades if t.get("side") == "SELL" and str(t.get("time", "")).startswith(now.date().isoformat()))
 exposure = sum(p["shares"] * p["entry"] for p in positions)
 halted = realized <= -100 or daily_pnl <= -30
 if fresh and not halted:
     for slug, q in quotes.items():
-        if len(positions) >= 3 or exposure > 600.000001 or cash < 300:
+        if len(positions) >= 10 or exposure > 2700.000001 or cash < 300:
             break
         bid, ask = float(q["bid"]), float(q["ask"])
         prev = history.get(slug)
@@ -93,6 +93,7 @@ d.update({
     "strategy": "TWO_SNAPSHOT_MOMENTUM_BASELINE",
     "paper_engine": "v2",
     "fixed_paper_buy_usd": 300,
+    "initial_capital": initial,
     "live_trading_enabled": False,
     "cash": money(cash),
     "equity": money(equity),
