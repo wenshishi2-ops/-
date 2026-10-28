@@ -20,6 +20,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scan.py
       - run: python paper.py
+      - run: python news.py
       - name: Save public snapshot
         run: |
           git config user.name "github-actions[bot]"
