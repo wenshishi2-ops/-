@@ -59,6 +59,36 @@ try:
         listed = len(items)
         candidates = [m for m in items if current(m)]
         eligible = len(candidates)
+        # Log only public, non-sensitive market metadata to diagnose filtering.
+        sample = []
+        rejected = {"missing_slug": 0, "historical_slug": 0, "closed_flag": 0, "past_end": 0, "other": 0}
+        for item in items:
+            if not isinstance(item, dict) or not item.get("slug"):
+                reason = "missing_slug"
+            elif any(
+                (lambda d: d < now.date())(dt.date.fromisoformat(m.group()))
+                for m in re.finditer(r"20\\d{2}-\\d{2}-\\d{2}", str(item.get("slug", "")))
+                if re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}", m.group())
+            ):
+                reason = "historical_slug"
+            elif any(item.get(k) is True for k in ("closed", "settled", "resolved")):
+                reason = "closed_flag"
+            elif current(item):
+                reason = None
+            else:
+                reason = "past_end"
+            if reason:
+                rejected[reason] += 1
+            if len(sample) < 3 and isinstance(item, dict):
+                sample.append({
+                    "slug": str(item.get("slug", ""))[:100],
+                    "keys": list(item.keys())[:20],
+                    "closed": item.get("closed"),
+                    "settled": item.get("settled"),
+                    "resolved": item.get("resolved"),
+                    "endDate": str(item.get("endDate", ""))[:35],
+                })
+        print("Market diagnostics: " + json.dumps({"sample": sample, "rejected": rejected}, ensure_ascii=False), flush=True)
         print(f"Market page offset={offset}: listed={listed}, eligible={eligible}", flush=True)
         for market in candidates[:4]:
             slug = market["slug"]
@@ -113,6 +143,8 @@ old.update({
     "diagnostics": {
         "returned_markets": listed,
         "eligible_markets": eligible,
+        "market_samples": sample if "sample" in locals() else [],
+        "rejected_reasons": rejected if "rejected" in locals() else {},
         "slugs_checked": attempted,
         "valid_quotes": len(quotes),
         "sample_errors": errors[:4],
