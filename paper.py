@@ -1,4 +1,5 @@
-"""Conservative research-only paper engine; never sends an order."""
+"""V3 cost-aware paper-only engine; never sends an order."""
+import os
 import datetime as dt
 import json
 from pathlib import Path
@@ -8,6 +9,9 @@ d = json.loads(FILE.read_text())
 now = dt.datetime.now(dt.timezone.utc)
 stamp = now.isoformat()
 initial = 3000.0
+fee_rate = max(0, float(os.getenv("PAPER_FEE_RATE", "0.01")))
+slip_rate = max(0, float(os.getenv("PAPER_SLIPPAGE_RATE", "0.005")))
+decisions = []
 # One-time migration of the original $1000 paper account to $3000.
 # Treat the difference as a virtual deposit, never as trading P&L.
 if float(d.get("initial_capital", 1000.0)) < initial:
@@ -50,13 +54,15 @@ for p in positions:
     bid = float(q["bid"])
     entry = float(p["entry"])
     age_hours = (now - dt.datetime.fromisoformat(p["opened_at"])).total_seconds() / 3600
-    if bid >= entry * 1.06 or bid <= entry * 0.92 or age_hours >= 48:
-        proceeds = p["shares"] * bid
-        cost = p["shares"] * entry
+    if bid >= entry * (1.06 + 2*(fee_rate+slip_rate)) or bid <= entry * 0.92 or age_hours >= 48:
+        proceeds_gross = p["shares"] * bid * (1-slip_rate)
+        sell_fee = proceeds_gross * fee_rate
+        proceeds = proceeds_gross - sell_fee
+        cost = float(p.get("total_entry_cost", p["shares"] * entry))
         cash += proceeds
         pnl = proceeds - cost
         realized += pnl
-        trades.append({"time": stamp, "slug": p["slug"], "side": "SELL", "price": bid, "shares": p["shares"], "cash_change": money(proceeds), "realized_pnl": money(pnl), "reason": "target" if bid >= entry*1.06 else "stop" if bid <= entry*0.92 else "time"})
+        trades.append({"time": stamp, "slug": p["slug"], "side": "SELL", "price": bid, "shares": p["shares"], "cash_change": money(proceeds), "realized_pnl": money(pnl), "fee": money(sell_fee), "reason": "target" if bid >= entry*(1.06+2*(fee_rate+slip_rate)) else "stop" if bid <= entry*0.92 else "time"})
     else:
         remaining.append(p)
 positions = remaining
@@ -84,33 +90,43 @@ if fresh and not halted:
         age = (now - prev_time).total_seconds()
         mid = (bid + ask) / 2
         spread = ask - bid
-        if not (300 <= age <= 24*3600 and 0.10 <= ask <= 0.85 and spread <= 0.01 and prev_mid > 0 and 0.02 <= (mid/prev_mid - 1) <= 0.08):
+        momentum = mid / prev_mid - 1 if prev_mid > 0 else 0
+        estimated_edge = momentum - spread/mid - 2*(fee_rate+slip_rate) if mid else -1
+        allowed = 300 <= age <= 24*3600 and 0.10 <= ask <= 0.85 and spread <= 0.01 and 0.02 <= momentum <= 0.08 and estimated_edge >= 0.01
+        decisions.append({"time": stamp, "slug": slug, "decision": "BUY" if allowed else "WAIT", "momentum_pct": round(momentum*100, 3), "estimated_edge_pct": round(estimated_edge*100, 3), "explanation": "Two public quotes only; cause of price movement unknown"})
+        if not allowed:
             continue
         spend = 300.0
-        shares = spend / ask  # fractional paper units: exactly $300 notional
+        effective_ask = ask*(1+slip_rate)
+        shares = spend/(effective_ask*(1+fee_rate))
+        entry_fee = shares*effective_ask*fee_rate
         cost = spend
         cash -= cost
         exposure += cost
-        positions.append({"slug": slug, "title": q.get("title", slug), "shares": shares, "entry": ask, "opened_at": stamp, "last_bid": bid, "marked_at": stamp, "mark_stale": False})
-        trades.append({"time": stamp, "slug": slug, "side": "BUY", "price": ask, "shares": shares, "cash_change": money(-cost), "reason": "two_snapshot_momentum_baseline"})
+        positions.append({"slug": slug, "title": q.get("title", slug), "shares": shares, "entry": effective_ask, "quoted_ask": ask, "entry_fee": money(entry_fee), "total_entry_cost": cost, "opened_at": stamp, "last_bid": bid, "marked_at": stamp, "mark_stale": False})
+        trades.append({"time": stamp, "slug": slug, "side": "BUY", "price": effective_ask, "shares": shares, "fee": money(entry_fee), "cash_change": money(-cost), "reason": "cost_adjusted_momentum"})
 
 if fresh:
     for slug, q in quotes.items():
         history[slug] = {"mid": (float(q["bid"]) + float(q["ask"])) / 2, "time": stamp}
 history = dict(list(history.items())[-300:])
-market_value = sum(p["shares"] * float(p.get("last_bid", 0)) for p in positions)
+market_value = sum(p["shares"] * float(p.get("last_bid", 0))*(1-slip_rate)*(1-fee_rate) for p in positions)
 equity = cash + market_value
 peak = max(peak, equity)
 d.update({
-    "strategy": "TWO_SNAPSHOT_MOMENTUM_BASELINE",
-    "paper_engine": "v2",
+    "strategy": "COST_ADJUSTED_MOMENTUM",
+    "paper_engine": "v3",
+    "assumed_fee_rate": fee_rate,
+    "assumed_slippage_rate": slip_rate,
+    "decision_log": (d.get("decision_log", []) + decisions)[-250:],
+    "model_note": "No AI probability model or news attribution. Costs are assumptions, not verified fees.",
     "fixed_paper_buy_usd": 300,
     "initial_capital": initial,
     "live_trading_enabled": False,
     "cash": money(cash),
     "equity": money(equity),
     "market_value": money(market_value),
-    "unrealized_pnl": money(sum(p["shares"] * (float(p.get("last_bid", 0)) - p["entry"]) for p in positions)),
+    "unrealized_pnl": money(sum(p["shares"]*float(p.get("last_bid", 0))*(1-slip_rate)*(1-fee_rate)-float(p.get("total_entry_cost", p["shares"]*p["entry"])) for p in positions)),
     "realized_pnl": money(realized),
     "positions": positions,
     "trades": trades[-500:],
@@ -119,7 +135,7 @@ d.update({
     "max_drawdown_pct": round(max(float(d.get("max_drawdown_pct", 0)), (peak-equity)/peak*100 if peak else 0), 3),
     "paper_status": "HALTED_LOSS_LIMIT" if halted else "ACTIVE" if fresh else "WAITING_FOR_FRESH_QUOTES",
     "paper_updated_at": stamp,
-    "pricing_note": "Paper fills at quoted ask/bid without depth, fees, latency or settlement. Stale marks are not executable.",
+    "pricing_note": "V3 assumes 1% fee and 0.5% adverse slippage per side by default; NOT verified actual rates. No depth, latency, news attribution or settlement. Stale marks are not executable.",
 })
 FILE.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
-print(f"Paper V2: fresh={fresh}, positions={len(positions)}, trades={len(trades)}, cash={cash:.2f}, equity={equity:.2f}", flush=True)
+print(f"Paper V3: fresh={fresh}, positions={len(positions)}, trades={len(trades)}, cash={cash:.2f}, equity={equity:.2f}", flush=True)
