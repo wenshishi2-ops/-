@@ -133,9 +133,6 @@ else:
 old.update({
     "mode": "PAPER_ONLY",
     "live_trading_enabled": False,
-    "strategy": "DATA_COLLECTION_ONLY",
-    "cash": 1000,
-    "equity": 1000,
     "last_scan": now.isoformat(),
     "quotes_as_of": quote_time,
     "scan_status": status,
