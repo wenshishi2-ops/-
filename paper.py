@@ -8,6 +8,18 @@ d = json.loads(FILE.read_text())
 now = dt.datetime.now(dt.timezone.utc)
 stamp = now.isoformat()
 initial = 3000.0
+# One-time migration of the original $1000 paper account to $3000.
+# Treat the difference as a virtual deposit, never as trading P&L.
+if float(d.get("initial_capital", 1000.0)) < initial:
+    previous_capital = float(d.get("initial_capital", 1000.0))
+    deposit = initial - previous_capital
+    d["cash"] = float(d.get("cash", previous_capital)) + deposit
+    d["equity"] = float(d.get("equity", previous_capital)) + deposit
+    d["peak_equity"] = float(d.get("peak_equity", previous_capital)) + deposit
+    d["initial_capital"] = initial
+    d["virtual_deposits"] = float(d.get("virtual_deposits", 0)) + deposit
+    d.setdefault("capital_events", []).append({"time": stamp, "type": "VIRTUAL_DEPOSIT", "amount": deposit})
+    print(f"Applied one-time virtual deposit: ${deposit:.2f}", flush=True)
 cash = float(d.get("cash", initial))
 positions = d.get("positions", [])
 trades = d.get("trades", [])
