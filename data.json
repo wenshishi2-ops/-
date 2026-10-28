@@ -4,7 +4,17 @@
   "strategy": "DATA_COLLECTION_ONLY",
   "cash": 1000,
   "equity": 1000,
-  "last_scan": null,
+  "last_scan": "2026-10-28T14:03:08.932605+00:00",
   "markets": [],
-  "trades": []
+  "trades": [],
+  "scan_status": "no_valid_quotes",
+  "diagnostics": {
+    "returned_markets": 100,
+    "slugs_checked": 60,
+    "valid_quotes": 0,
+    "sample_errors": [
+      "aec-nba-chi-den-2025-11-17: RateLimitError: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endi",
+      "aec-nba-por-mil-2025-11-24: RateLimitError: <!doctype html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endi"
+    ]
+  }
 }
