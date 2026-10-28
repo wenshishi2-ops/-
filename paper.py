@@ -9,7 +9,10 @@ d = json.loads(FILE.read_text())
 now = dt.datetime.now(dt.timezone.utc)
 stamp = now.isoformat()
 initial = 3000.0
-fee_rate = max(0, float(os.getenv("PAPER_FEE_RATE", "0.01")))
+fee_theta = max(0, float(os.getenv("PAPER_FEE_THETA", "0.0695")))
+# Polymarket US taker fee model; exceptions and rounding require verification.
+def taker_fee(shares, price):
+    return shares * fee_theta * price * (1-price)
 slip_rate = max(0, float(os.getenv("PAPER_SLIPPAGE_RATE", "0.005")))
 decisions = []
 # One-time migration of the original $1000 paper account to $3000.
@@ -54,15 +57,15 @@ for p in positions:
     bid = float(q["bid"])
     entry = float(p["entry"])
     age_hours = (now - dt.datetime.fromisoformat(p["opened_at"])).total_seconds() / 3600
-    if bid >= entry * (1.06 + 2*(fee_rate+slip_rate)) or bid <= entry * 0.92 or age_hours >= 48:
+    if bid >= entry * (1.06 + 2*(fee_theta+slip_rate)) or bid <= entry * 0.92 or age_hours >= 48:
         proceeds_gross = p["shares"] * bid * (1-slip_rate)
-        sell_fee = proceeds_gross * fee_rate
+        sell_fee = taker_fee(p["shares"], bid)
         proceeds = proceeds_gross - sell_fee
         cost = float(p.get("total_entry_cost", p["shares"] * entry))
         cash += proceeds
         pnl = proceeds - cost
         realized += pnl
-        trades.append({"time": stamp, "slug": p["slug"], "side": "SELL", "price": bid, "shares": p["shares"], "cash_change": money(proceeds), "realized_pnl": money(pnl), "fee": money(sell_fee), "reason": "target" if bid >= entry*(1.06+2*(fee_rate+slip_rate)) else "stop" if bid <= entry*0.92 else "time"})
+        trades.append({"time": stamp, "slug": p["slug"], "side": "SELL", "price": bid, "shares": p["shares"], "cash_change": money(proceeds), "realized_pnl": money(pnl), "fee": money(sell_fee), "reason": "target" if bid >= entry*(1.06+2*(fee_theta+slip_rate)) else "stop" if bid <= entry*0.92 else "time"})
     else:
         remaining.append(p)
 positions = remaining
@@ -91,15 +94,15 @@ if fresh and not halted:
         mid = (bid + ask) / 2
         spread = ask - bid
         momentum = mid / prev_mid - 1 if prev_mid > 0 else 0
-        estimated_edge = momentum - spread/mid - 2*(fee_rate+slip_rate) if mid else -1
+        estimated_edge = momentum - spread/mid - 2*(fee_theta+slip_rate) if mid else -1
         allowed = 300 <= age <= 24*3600 and 0.10 <= ask <= 0.85 and spread <= 0.01 and 0.02 <= momentum <= 0.08 and estimated_edge >= 0.01
         decisions.append({"time": stamp, "slug": slug, "decision": "BUY" if allowed else "WAIT", "momentum_pct": round(momentum*100, 3), "estimated_edge_pct": round(estimated_edge*100, 3), "explanation": "Two public quotes only; cause of price movement unknown"})
         if not allowed:
             continue
         spend = 300.0
         effective_ask = ask*(1+slip_rate)
-        shares = spend/(effective_ask*(1+fee_rate))
-        entry_fee = shares*effective_ask*fee_rate
+        shares = spend/(effective_ask + fee_theta*effective_ask*(1-effective_ask))
+        entry_fee = taker_fee(shares, effective_ask)
         cost = spend
         cash -= cost
         exposure += cost
@@ -110,13 +113,16 @@ if fresh:
     for slug, q in quotes.items():
         history[slug] = {"mid": (float(q["bid"]) + float(q["ask"])) / 2, "time": stamp}
 history = dict(list(history.items())[-300:])
-market_value = sum(p["shares"] * float(p.get("last_bid", 0))*(1-slip_rate)*(1-fee_rate) for p in positions)
+market_value = sum(p["shares"] * float(p.get("last_bid", 0))*(1-slip_rate) for p in positions)
 equity = cash + market_value
 peak = max(peak, equity)
 d.update({
     "strategy": "COST_ADJUSTED_MOMENTUM",
     "paper_engine": "v3",
-    "assumed_fee_rate": fee_rate,
+    "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
+    "fee_theta": fee_theta,
+    "fee_verified": False,
+    "fee_source": "https://polymarketexchange.com/notices.html",
     "assumed_slippage_rate": slip_rate,
     "decision_log": (d.get("decision_log", []) + decisions)[-250:],
     "model_note": "No AI probability model or news attribution. Costs are assumptions, not verified fees.",
@@ -135,7 +141,7 @@ d.update({
     "max_drawdown_pct": round(max(float(d.get("max_drawdown_pct", 0)), (peak-equity)/peak*100 if peak else 0), 3),
     "paper_status": "HALTED_LOSS_LIMIT" if halted else "ACTIVE" if fresh else "WAITING_FOR_FRESH_QUOTES",
     "paper_updated_at": stamp,
-    "pricing_note": "V3 assumes 1% fee and 0.5% adverse slippage per side by default; NOT verified actual rates. No depth, latency, news attribution or settlement. Stale marks are not executable.",
+    "pricing_note": "V3 assumes fee theta=0.0695 (subject to current schedule and market exceptions) and 0.5% adverse slippage per side; NOT verified actual rates. No depth, latency, news attribution or settlement. Stale marks are not executable.",
 })
 FILE.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
 print(f"Paper V3: fresh={fresh}, positions={len(positions)}, trades={len(trades)}, cash={cash:.2f}, equity={equity:.2f}", flush=True)
