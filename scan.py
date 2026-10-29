@@ -16,10 +16,10 @@ from polymarket_us import PolymarketUS, RateLimitError
 FILE = Path("data.json")
 PAGE_SIZE = 30
 PAGES = 10
-MAX_NEW_CANDIDATES = 6      # new markets quoted per run
-MAX_WATCH = 24              # previously seen markets re-quoted per run
+MAX_NEW_CANDIDATES = 4      # new markets quoted per run
+MAX_WATCH = 8               # previously seen markets re-quoted per run (plus all open positions)
 WATCH_TTL_HOURS = 24        # forget a watched market after this long without a valid quote
-REQUEST_PAUSE = 1.0         # seconds between BBO requests
+REQUEST_PAUSE = 2.5         # seconds between BBO requests (API rate-limits faster bursts)
 DATE_RE = re.compile(r"20\d{2}-\d{2}-\d{2}")
 
 old = json.loads(FILE.read_text()) if FILE.exists() else {}
