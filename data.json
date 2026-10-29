@@ -4,7 +4,7 @@
   "strategy": "COST_ADJUSTED_MOMENTUM",
   "cash": 3000.0,
   "equity": 3000.0,
-  "last_scan": "2026-10-29T01:34:45.239378+00:00",
+  "last_scan": "2026-10-29T02:05:36.442097+00:00",
   "markets": [
     {
       "slug": "tec-mlb-nl-2026-11-27-roy-carben",
@@ -26,19 +26,19 @@
     "eligible_markets": 30,
     "market_samples": [
       {
-        "slug": "tec-mlb-al-2026-11-27-cy-gavwil",
+        "slug": "tec-mlb-al-2026-11-27-cy-trerog",
         "closed": false,
         "endDate": "2026-12-12T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "tec-mlb-al-2026-11-27-mvp-corsea",
+        "slug": "tec-mlb-al-2026-11-27-roy-brimat",
         "closed": false,
         "endDate": "2026-12-12T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "tec-mlb-al-2026-11-27-cy-loggil",
+        "slug": "tec-mlb-al-2026-11-27-cy-noacam",
         "closed": false,
         "endDate": "2026-12-12T04:00:00Z",
         "rejected": null
@@ -48,16 +48,17 @@
       "missing_slug": 0,
       "historical_slug": 0,
       "closed_flag": 0,
-      "past_end": 0
+      "past_end": 0,
+      "higher_fee_category": 0
     },
     "watched_markets": 0,
     "slugs_checked": 4,
     "valid_quotes": 0,
     "sample_errors": [
-      "tec-mlb-al-2026-11-27-cy-gavwil: no valid two-sided BBO",
-      "tec-mlb-al-2026-11-27-mvp-corsea: no valid two-sided BBO",
-      "tec-mlb-al-2026-11-27-cy-loggil: no valid two-sided BBO",
-      "tec-mlb-al-2026-11-27-mvp-calral: no valid two-sided BBO"
+      "tec-mlb-al-2026-11-27-cy-trerog: no valid two-sided BBO",
+      "tec-mlb-al-2026-11-27-roy-brimat: no valid two-sided BBO",
+      "tec-mlb-al-2026-11-27-cy-noacam: no valid two-sided BBO",
+      "tec-mlb-al-2026-11-27-roy-dylbea: no valid two-sided BBO"
     ],
     "rate_limited": false
   },
@@ -106,22 +107,28 @@
   },
   "max_drawdown_pct": 0.0,
   "paper_status": "WAITING_FOR_FRESH_QUOTES",
-  "paper_updated_at": "2026-10-29T01:34:55.986263+00:00",
-  "pricing_note": "Assumes fee theta=0.0695 (subject to current schedule and market exceptions) and 0.5% adverse slippage per side; NOT verified actual rates. No depth, latency, news attribution or settlement. Stale marks are not executable.",
+  "paper_updated_at": "2026-10-29T02:05:46.692922+00:00",
+  "pricing_note": "Taker fee theta=0.0695 per official schedule (verified 2026-10-28); 0.5% adverse slippage per side is an assumption. No depth, latency, news attribution or settlement. Stale marks are not executable.",
   "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
   "fee_theta": 0.0695,
-  "fee_verified": false,
-  "fee_source": "https://polymarketexchange.com/notices.html",
+  "fee_verified": true,
+  "fee_source": "https://docs.polymarket.us/fees",
   "assumed_slippage_rate": 0.005,
   "decision_log": [],
-  "model_note": "No AI probability model; RSS news associations are not causal explanations. Fee formula based on reported US taker schedule, with unverified exceptions.",
+  "model_note": "No AI probability model; RSS news associations are not causal explanations. Taker fee per the official Polymarket US schedule (theta 0.0695, cent rounding); no maker or volume rebates assumed.",
   "news_context": [],
-  "news_updated_at": "2026-10-29T01:34:56.067942+00:00",
+  "news_updated_at": "2026-10-29T02:05:46.814481+00:00",
   "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal.",
   "watchlist": {},
   "momentum_lookback_minutes": [
     20,
     60,
     180
-  ]
+  ],
+  "fee_verified_at": "2026-10-28",
+  "account_link": {
+    "status": "connected_read_only",
+    "checked_at": "2026-10-29T02:05:46.939813+00:00",
+    "live_trading_enabled": false
+  }
 }
