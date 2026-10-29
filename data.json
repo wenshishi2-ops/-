@@ -4,7 +4,7 @@
   "strategy": "COST_ADJUSTED_MOMENTUM",
   "cash": 3000.0,
   "equity": 3000.0,
-  "last_scan": "2026-10-28T23:38:44.566549+00:00",
+  "last_scan": "2026-10-29T01:33:41.517806+00:00",
   "markets": [
     {
       "slug": "tec-mlb-nl-2026-11-27-roy-carben",
@@ -20,115 +20,46 @@
     }
   ],
   "trades": [],
-  "scan_status": "no_valid_quotes_stale",
+  "scan_status": "rate_limited_stale",
   "diagnostics": {
     "returned_markets": 30,
     "eligible_markets": 30,
     "market_samples": [
       {
-        "slug": "tec-mlb-al-2026-11-27-cy-trerog",
-        "keys": [
-          "id",
-          "question",
-          "slug",
-          "endDate",
-          "category",
-          "startDate",
-          "image",
-          "description",
-          "active",
-          "marketType",
-          "closed",
-          "createdAt",
-          "updatedAt",
-          "archived",
-          "orderPriceMinTickSize",
-          "gameStartTime",
-          "manualActivation",
-          "sportsMarketType",
-          "marketSides",
-          "outcomes"
-        ],
+        "slug": "tec-mlb-al-2026-11-27-cy-gavwil",
         "closed": false,
-        "settled": null,
-        "resolved": null,
-        "endDate": "2026-12-12T04:00:00Z"
+        "endDate": "2026-12-12T04:00:00Z",
+        "rejected": null
       },
       {
-        "slug": "tec-mlb-al-2026-11-27-roy-brimat",
-        "keys": [
-          "id",
-          "question",
-          "slug",
-          "endDate",
-          "category",
-          "startDate",
-          "image",
-          "description",
-          "active",
-          "marketType",
-          "closed",
-          "createdAt",
-          "updatedAt",
-          "archived",
-          "orderPriceMinTickSize",
-          "gameStartTime",
-          "manualActivation",
-          "sportsMarketType",
-          "marketSides",
-          "outcomes"
-        ],
+        "slug": "tec-mlb-al-2026-11-27-mvp-corsea",
         "closed": false,
-        "settled": null,
-        "resolved": null,
-        "endDate": "2026-12-12T04:00:00Z"
+        "endDate": "2026-12-12T04:00:00Z",
+        "rejected": null
       },
       {
-        "slug": "tec-mlb-al-2026-11-27-cy-noacam",
-        "keys": [
-          "id",
-          "question",
-          "slug",
-          "endDate",
-          "category",
-          "startDate",
-          "image",
-          "description",
-          "active",
-          "marketType",
-          "closed",
-          "createdAt",
-          "updatedAt",
-          "archived",
-          "orderPriceMinTickSize",
-          "gameStartTime",
-          "manualActivation",
-          "sportsMarketType",
-          "marketSides",
-          "outcomes"
-        ],
+        "slug": "tec-mlb-al-2026-11-27-cy-loggil",
         "closed": false,
-        "settled": null,
-        "resolved": null,
-        "endDate": "2026-12-12T04:00:00Z"
+        "endDate": "2026-12-12T04:00:00Z",
+        "rejected": null
       }
     ],
     "rejected_reasons": {
       "missing_slug": 0,
       "historical_slug": 0,
       "closed_flag": 0,
-      "past_end": 0,
-      "other": 0
+      "past_end": 0
     },
-    "slugs_checked": 4,
+    "watched_markets": 0,
+    "slugs_checked": 6,
     "valid_quotes": 0,
     "sample_errors": [
-      "tec-mlb-al-2026-11-27-cy-trerog: no valid two-sided BBO; keys=['marketSlug', 'currentPx', 'lastTradePx', 'settlementPx', 'sharesTraded', 'openInterest', 'bestAsk', 'bestBid']",
-      "tec-mlb-al-2026-11-27-roy-brimat: no valid two-sided BBO; keys=['marketSlug', 'currentPx', 'lastTradePx', 'settlementPx', 'sharesTraded', 'openInterest', 'bestAsk', 'bestBid']",
-      "tec-mlb-al-2026-11-27-cy-noacam: no valid two-sided BBO; keys=['marketSlug', 'currentPx', 'lastTradePx', 'settlementPx', 'sharesTraded', 'openInterest', 'bestAsk', 'bestBid']",
-      "tec-mlb-al-2026-11-27-roy-dylbea: no valid two-sided BBO; keys=['marketSlug', 'currentPx', 'lastTradePx', 'settlementPx', 'sharesTraded', 'openInterest', 'bestAsk', 'bestBid']"
+      "tec-mlb-al-2026-11-27-cy-gavwil: no valid two-sided BBO",
+      "tec-mlb-al-2026-11-27-mvp-corsea: no valid two-sided BBO",
+      "tec-mlb-al-2026-11-27-cy-loggil: no valid two-sided BBO",
+      "tec-mlb-al-2026-11-27-mvp-calral: no valid two-sided BBO"
     ],
-    "rate_limited": false
+    "rate_limited": true
   },
   "quotes_as_of": "2026-10-28T19:50:38.225925+00:00",
   "peak_equity": 3000.0,
@@ -141,34 +72,42 @@
       "amount": 2000.0
     }
   ],
-  "paper_engine": "v3",
-  "fixed_paper_buy_usd": 300,
+  "paper_engine": "v3.1",
+  "fixed_paper_buy_usd": 300.0,
   "market_value": 0.0,
   "unrealized_pnl": 0.0,
   "realized_pnl": 0.0,
   "positions": [],
   "quote_history": {
-    "tec-mlb-nl-2026-11-27-roy-nolmcl": {
-      "mid": 0.0085,
-      "time": "2026-10-28T14:34:11.917128+00:00"
-    },
-    "tec-mlb-nl-2026-11-27-roy-salste": {
-      "mid": 0.7865,
-      "time": "2026-10-28T14:34:11.917128+00:00"
-    },
-    "tec-mlb-nl-2026-11-27-roy-carben": {
-      "mid": 0.1985,
-      "time": "2026-10-28T19:50:44.886756+00:00"
-    },
-    "tec-mlb-nl-2026-11-27-roy-alefre": {
-      "mid": 0.0015,
-      "time": "2026-10-28T19:50:44.886756+00:00"
-    }
+    "tec-mlb-nl-2026-11-27-roy-nolmcl": [
+      {
+        "mid": 0.0085,
+        "time": "2026-10-28T14:34:11.917128+00:00"
+      }
+    ],
+    "tec-mlb-nl-2026-11-27-roy-salste": [
+      {
+        "mid": 0.7865,
+        "time": "2026-10-28T14:34:11.917128+00:00"
+      }
+    ],
+    "tec-mlb-nl-2026-11-27-roy-carben": [
+      {
+        "mid": 0.1985,
+        "time": "2026-10-28T19:50:44.886756+00:00"
+      }
+    ],
+    "tec-mlb-nl-2026-11-27-roy-alefre": [
+      {
+        "mid": 0.0015,
+        "time": "2026-10-28T19:50:44.886756+00:00"
+      }
+    ]
   },
   "max_drawdown_pct": 0.0,
   "paper_status": "WAITING_FOR_FRESH_QUOTES",
-  "paper_updated_at": "2026-10-28T23:38:50.786415+00:00",
-  "pricing_note": "V3 assumes fee theta=0.0695 (subject to current schedule and market exceptions) and 0.5% adverse slippage per side; NOT verified actual rates. No depth, latency, news attribution or settlement. Stale marks are not executable.",
+  "paper_updated_at": "2026-10-29T01:33:47.009233+00:00",
+  "pricing_note": "Assumes fee theta=0.0695 (subject to current schedule and market exceptions) and 0.5% adverse slippage per side; NOT verified actual rates. No depth, latency, news attribution or settlement. Stale marks are not executable.",
   "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
   "fee_theta": 0.0695,
   "fee_verified": false,
@@ -177,6 +116,12 @@
   "decision_log": [],
   "model_note": "No AI probability model; RSS news associations are not causal explanations. Fee formula based on reported US taker schedule, with unverified exceptions.",
   "news_context": [],
-  "news_updated_at": "2026-10-28T23:38:50.853330+00:00",
-  "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal."
+  "news_updated_at": "2026-10-29T01:33:47.121006+00:00",
+  "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal.",
+  "watchlist": {},
+  "momentum_lookback_minutes": [
+    20,
+    60,
+    180
+  ]
 }
