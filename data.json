@@ -4,7 +4,7 @@
   "strategy": "COST_ADJUSTED_MOMENTUM",
   "cash": 3000.0,
   "equity": 3000.0,
-  "last_scan": "2026-10-29T01:33:41.517806+00:00",
+  "last_scan": "2026-10-29T01:34:45.239378+00:00",
   "markets": [
     {
       "slug": "tec-mlb-nl-2026-11-27-roy-carben",
@@ -20,7 +20,7 @@
     }
   ],
   "trades": [],
-  "scan_status": "rate_limited_stale",
+  "scan_status": "no_valid_quotes_stale",
   "diagnostics": {
     "returned_markets": 30,
     "eligible_markets": 30,
@@ -51,7 +51,7 @@
       "past_end": 0
     },
     "watched_markets": 0,
-    "slugs_checked": 6,
+    "slugs_checked": 4,
     "valid_quotes": 0,
     "sample_errors": [
       "tec-mlb-al-2026-11-27-cy-gavwil: no valid two-sided BBO",
@@ -59,7 +59,7 @@
       "tec-mlb-al-2026-11-27-cy-loggil: no valid two-sided BBO",
       "tec-mlb-al-2026-11-27-mvp-calral: no valid two-sided BBO"
     ],
-    "rate_limited": true
+    "rate_limited": false
   },
   "quotes_as_of": "2026-10-28T19:50:38.225925+00:00",
   "peak_equity": 3000.0,
@@ -106,7 +106,7 @@
   },
   "max_drawdown_pct": 0.0,
   "paper_status": "WAITING_FOR_FRESH_QUOTES",
-  "paper_updated_at": "2026-10-29T01:33:47.009233+00:00",
+  "paper_updated_at": "2026-10-29T01:34:55.986263+00:00",
   "pricing_note": "Assumes fee theta=0.0695 (subject to current schedule and market exceptions) and 0.5% adverse slippage per side; NOT verified actual rates. No depth, latency, news attribution or settlement. Stale marks are not executable.",
   "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
   "fee_theta": 0.0695,
@@ -116,7 +116,7 @@
   "decision_log": [],
   "model_note": "No AI probability model; RSS news associations are not causal explanations. Fee formula based on reported US taker schedule, with unverified exceptions.",
   "news_context": [],
-  "news_updated_at": "2026-10-29T01:33:47.121006+00:00",
+  "news_updated_at": "2026-10-29T01:34:56.067942+00:00",
   "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal.",
   "watchlist": {},
   "momentum_lookback_minutes": [
