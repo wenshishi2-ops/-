@@ -59,6 +59,10 @@ def reject_reason(item):
             pass
     if any(item.get(k) is True for k in ("closed", "settled", "resolved", "archived")):
         return "closed_flag"
+    # Table Tennis carries a higher taker fee (theta 0.10) than the 0.0695 the paper engine models.
+    text = " ".join(str(item.get(k, "")) for k in ("category", "sportsMarketType", "question", "slug")).lower()
+    if "table tennis" in text or "table-tennis" in text or "ping pong" in text:
+        return "higher_fee_category"
     for key in ("endDate", "endTime", "closeTime", "expirationTime"):
         end = parse_time(item.get(key))
         if end is not None and end < now:
@@ -85,7 +89,7 @@ watch = {
 quotes, errors = [], []
 listed = eligible = attempted = 0
 sample = []
-rejected = {"missing_slug": 0, "historical_slug": 0, "closed_flag": 0, "past_end": 0}
+rejected = {"missing_slug": 0, "historical_slug": 0, "closed_flag": 0, "past_end": 0, "higher_fee_category": 0}
 status = "unknown"
 rate_limited = False
 

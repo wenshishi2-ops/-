@@ -2,6 +2,7 @@
 import os
 import datetime as dt
 import json
+from decimal import Decimal, ROUND_HALF_EVEN
 from pathlib import Path
 
 FILE = Path("data.json")
@@ -25,9 +26,12 @@ DAILY_LOSS_LIMIT, TOTAL_LOSS_LIMIT = 30.0, 100.0
 MIN_MOMENTUM, MAX_MOMENTUM, MIN_EDGE = 0.02, 0.20, 0.01
 
 
-# Polymarket US taker fee model; exceptions and rounding require verification.
+# Polymarket US taker fee (docs.polymarket.us/fees, effective 2026-10-19):
+# theta * contracts * p * (1 - p), rounded to the cent with banker's rounding.
+# Table Tennis (theta 0.10) is filtered out in scan.py; combos are not traded.
 def taker_fee(shares, price):
-    return shares * fee_theta * price * (1 - price)
+    exact = Decimal(repr(round(shares * fee_theta * price * (1 - price), 10)))
+    return float(exact.quantize(Decimal("0.01"), rounding=ROUND_HALF_EVEN))
 
 
 def money(v):
@@ -193,11 +197,12 @@ d.update({
     "paper_engine": "v3.1",
     "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
     "fee_theta": fee_theta,
-    "fee_verified": False,
-    "fee_source": "https://polymarketexchange.com/notices.html",
+    "fee_verified": True,
+    "fee_verified_at": "2026-10-28",
+    "fee_source": "https://docs.polymarket.us/fees",
     "assumed_slippage_rate": slip_rate,
     "decision_log": (d.get("decision_log", []) + decisions)[-250:],
-    "model_note": "No AI probability model; RSS news associations are not causal explanations. Fee formula based on reported US taker schedule, with unverified exceptions.",
+    "model_note": "No AI probability model; RSS news associations are not causal explanations. Taker fee per the official Polymarket US schedule (theta 0.0695, cent rounding); no maker or volume rebates assumed.",
     "fixed_paper_buy_usd": BUY_USD,
     "momentum_lookback_minutes": [LOOKBACK_MIN, LOOKBACK_TARGET, LOOKBACK_MAX],
     "initial_capital": initial,
@@ -214,7 +219,7 @@ d.update({
     "max_drawdown_pct": round(max(float(d.get("max_drawdown_pct", 0)), (peak - equity) / peak * 100 if peak else 0), 3),
     "paper_status": "HALTED_LOSS_LIMIT" if halted else "ACTIVE" if fresh else "WAITING_FOR_FRESH_QUOTES",
     "paper_updated_at": stamp,
-    "pricing_note": "Assumes fee theta=0.0695 (subject to current schedule and market exceptions) and 0.5% adverse slippage per side; NOT verified actual rates. No depth, latency, news attribution or settlement. Stale marks are not executable.",
+    "pricing_note": "Taker fee theta=0.0695 per official schedule (verified 2026-10-28); 0.5% adverse slippage per side is an assumption. No depth, latency, news attribution or settlement. Stale marks are not executable.",
 })
 FILE.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
 print(f"Paper v3.1: fresh={fresh}, positions={len(positions)}, trades={len(trades)}, decisions={len(decisions)}, cash={cash:.2f}, equity={equity:.2f}", flush=True)
