@@ -21,6 +21,11 @@ jobs:
       - run: python scan.py
       - run: python paper.py
       - run: python news.py
+      - name: Read-only account check (no orders)
+        run: python account_check.py
+        env:
+          POLYMARKET_KEY_ID: ${{ secrets.POLYMARKET_KEY_ID }}
+          POLYMARKET_SECRET_KEY: ${{ secrets.POLYMARKET_SECRET_KEY }}
       - name: Save public snapshot
         run: |
           git config user.name "github-actions[bot]"

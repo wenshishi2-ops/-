@@ -7,7 +7,7 @@ fetch('./data.json?t='+Date.now()).then(r=>{if(!r.ok)throw Error(r.status);retur
 $('equity').textContent=fmt(d.equity??3000);$('cash').textContent=fmt(d.cash??3000);
 const gain=(d.equity??3000)-(d.initial_capital??3000);$('pnl').textContent='相对初始本金 '+(gain>=0?'+':'')+fmt(gain);$('pnl').className=gain>=0?'good':'bad';
 $('exposure').textContent='持仓市值 '+fmt(d.market_value);$('count').textContent=(d.trades||[]).length;
-$('status').textContent='模拟引擎：'+(d.paper_status||'未启动');$('drawdown').textContent=Number(d.max_drawdown_pct||0).toFixed(2)+'%';
+const link={not_configured:'未接入',connected_read_only:'已接入（只读）',auth_failed:'密钥无效'}[d.account_link?.status]||d.account_link?.status||'未接入';$('status').textContent='模拟引擎：'+(d.paper_status||'未启动')+' · 账户：'+link;$('drawdown').textContent=Number(d.max_drawdown_pct||0).toFixed(2)+'%';
 $('scan').textContent='扫描 '+date(d.last_scan)+' · 状态 '+(d.scan_status||'未知')+' · 新报价 '+(d.diagnostics?.valid_quotes??0)+' · 跟踪市场 '+(d.diagnostics?.watched_markets??0)+' · 报价时间 '+date(d.quotes_as_of);
 if(d.markets?.length)$('markets').innerHTML=d.markets.map(m=>'<tr><td>'+esc(m.title)+'<br><small>'+esc(m.slug)+'</small></td><td>'+Number(m.bid).toFixed(3)+'</td><td>'+Number(m.ask).toFixed(3)+'</td></tr>').join('');
 if(d.positions?.length)$('positions').innerHTML=d.positions.map(p=>'<tr><td>'+esc(p.title||p.slug)+(p.mark_stale?' <small>过期估值</small>':'')+(p.exit_pending?' <small class="bad">待平仓（无报价）</small>':'')+'</td><td>'+Number(p.shares).toFixed(2)+'</td><td>'+Number(p.entry).toFixed(3)+'</td><td>'+Number(p.last_bid||0).toFixed(3)+'</td><td>'+fmt(p.unrealized_pnl??p.shares*((p.last_bid||0)-p.entry))+'</td></tr>').join('');
