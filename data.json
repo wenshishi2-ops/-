@@ -4,12 +4,12 @@
   "strategy": "COST_ADJUSTED_MOMENTUM",
   "cash": 3000.0,
   "equity": 3000.0,
-  "last_scan": "2026-10-30T00:20:48.682378+00:00",
+  "last_scan": "2026-10-30T06:00:43.123336+00:00",
   "markets": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
       "title": "Major League Soccer Champion",
-      "bid": 0.003,
+      "bid": 0.005,
       "ask": 0.01
     },
     {
@@ -34,7 +34,7 @@
       "slug": "tec-mlb-nl-2026-11-27-roy-jjwet",
       "title": "National League Rookie of the Year",
       "bid": 0.001,
-      "ask": 0.014
+      "ask": 0.009
     },
     {
       "slug": "tec-mlb-nl-2026-11-27-roy-kongri",
@@ -47,6 +47,30 @@
       "title": "National League Cy Young Award",
       "bid": 0.001,
       "ask": 0.002
+    },
+    {
+      "slug": "tec-mls-winner-2026-11-07-vwh",
+      "title": "Major League Soccer Champion",
+      "bid": 0.15,
+      "ask": 0.151
+    },
+    {
+      "slug": "tec-mls-winner-2026-11-07-clb",
+      "title": "Major League Soccer Champion",
+      "bid": 0.005,
+      "ask": 0.006
+    },
+    {
+      "slug": "tec-mls-winner-2026-11-07-orl",
+      "title": "Major League Soccer Champion",
+      "bid": 0.006,
+      "ask": 0.014
+    },
+    {
+      "slug": "tec-mls-winner-2026-11-07-nas",
+      "title": "Major League Soccer Champion",
+      "bid": 0.199,
+      "ask": 0.2
     }
   ],
   "trades": [],
@@ -56,21 +80,21 @@
     "eligible_markets": 30,
     "market_samples": [
       {
-        "slug": "tec-mlb-nl-2026-11-27-cy-loghen",
+        "slug": "tec-mls-winner-2026-11-07-vwh",
         "closed": false,
-        "endDate": "2026-12-12T04:00:00Z",
+        "endDate": "2027-01-01T21:20:09Z",
         "rejected": null
       },
       {
-        "slug": "tec-mlb-al-2026-11-27-roy-chadel",
+        "slug": "tec-mls-winner-2026-11-07-clb",
         "closed": false,
-        "endDate": "2026-12-12T04:00:00Z",
+        "endDate": "2027-01-01T21:20:09Z",
         "rejected": null
       },
       {
-        "slug": "tec-mlb-al-2026-11-27-cy-setlug",
+        "slug": "tec-mls-winner-2026-11-07-orl",
         "closed": false,
-        "endDate": "2026-12-12T04:00:00Z",
+        "endDate": "2027-01-01T21:20:09Z",
         "rejected": null
       }
     ],
@@ -81,18 +105,13 @@
       "past_end": 0,
       "higher_fee_category": 0
     },
-    "watched_markets": 7,
+    "watched_markets": 11,
     "slugs_checked": 11,
-    "valid_quotes": 7,
-    "sample_errors": [
-      "tec-mlb-nl-2026-11-27-cy-loghen: no valid two-sided BBO",
-      "tec-mlb-al-2026-11-27-roy-chadel: no valid two-sided BBO",
-      "tec-mlb-al-2026-11-27-cy-setlug: no valid two-sided BBO",
-      "tec-mlb-al-2026-11-27-roy-kazoka: no valid two-sided BBO"
-    ],
+    "valid_quotes": 11,
+    "sample_errors": [],
     "rate_limited": false
   },
-  "quotes_as_of": "2026-10-30T00:20:48.682378+00:00",
+  "quotes_as_of": "2026-10-30T06:00:43.123336+00:00",
   "peak_equity": 3000.0,
   "initial_capital": 3000.0,
   "virtual_deposits": 2000.0,
@@ -154,6 +173,10 @@
       {
         "mid": 0.006500000000000001,
         "time": "2026-10-30T00:21:17.854661+00:00"
+      },
+      {
+        "mid": 0.0075,
+        "time": "2026-10-30T06:01:11.296469+00:00"
       }
     ],
     "paccc-usho-midterms-2026-11-03-dem": [
@@ -176,6 +199,10 @@
       {
         "mid": 0.9255,
         "time": "2026-10-30T00:21:17.854661+00:00"
+      },
+      {
+        "mid": 0.9255,
+        "time": "2026-10-30T06:01:11.296469+00:00"
       }
     ],
     "paccc-usho-midterms-2026-11-03-rep": [
@@ -198,6 +225,10 @@
       {
         "mid": 0.0795,
         "time": "2026-10-30T00:21:17.854661+00:00"
+      },
+      {
+        "mid": 0.0795,
+        "time": "2026-10-30T06:01:11.296469+00:00"
       }
     ],
     "paccc-usse-midterms-2026-11-03-rep": [
@@ -220,6 +251,10 @@
       {
         "mid": 0.3205,
         "time": "2026-10-30T00:21:17.854661+00:00"
+      },
+      {
+        "mid": 0.3205,
+        "time": "2026-10-30T06:01:11.296469+00:00"
       }
     ],
     "tec-mlb-nl-2026-11-27-roy-jjwet": [
@@ -230,6 +265,10 @@
       {
         "mid": 0.0075,
         "time": "2026-10-30T00:21:17.854661+00:00"
+      },
+      {
+        "mid": 0.004999999999999999,
+        "time": "2026-10-30T06:01:11.296469+00:00"
       }
     ],
     "tec-mlb-nl-2026-11-27-roy-kongri": [
@@ -240,6 +279,10 @@
       {
         "mid": 0.0015,
         "time": "2026-10-30T00:21:17.854661+00:00"
+      },
+      {
+        "mid": 0.0015,
+        "time": "2026-10-30T06:01:11.296469+00:00"
       }
     ],
     "tec-mlb-nl-2026-11-27-cy-crisan": [
@@ -250,12 +293,40 @@
       {
         "mid": 0.0015,
         "time": "2026-10-30T00:21:17.854661+00:00"
+      },
+      {
+        "mid": 0.0015,
+        "time": "2026-10-30T06:01:11.296469+00:00"
+      }
+    ],
+    "tec-mls-winner-2026-11-07-vwh": [
+      {
+        "mid": 0.1505,
+        "time": "2026-10-30T06:01:11.296469+00:00"
+      }
+    ],
+    "tec-mls-winner-2026-11-07-clb": [
+      {
+        "mid": 0.0055,
+        "time": "2026-10-30T06:01:11.296469+00:00"
+      }
+    ],
+    "tec-mls-winner-2026-11-07-orl": [
+      {
+        "mid": 0.01,
+        "time": "2026-10-30T06:01:11.296469+00:00"
+      }
+    ],
+    "tec-mls-winner-2026-11-07-nas": [
+      {
+        "mid": 0.1995,
+        "time": "2026-10-30T06:01:11.296469+00:00"
       }
     ]
   },
   "max_drawdown_pct": 0.0,
   "paper_status": "ACTIVE",
-  "paper_updated_at": "2026-10-30T00:21:17.854661+00:00",
+  "paper_updated_at": "2026-10-30T06:01:11.296469+00:00",
   "pricing_note": "Taker fee theta=0.0695 per official schedule (verified 2026-10-28); 0.5% adverse slippage per side is an assumption. No depth, latency, news attribution or settlement. Stale marks are not executable.",
   "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
   "fee_theta": 0.0695,
@@ -267,7 +338,7 @@
   "news_context": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
-      "query": "soccer major champion",
+      "query": "major soccer champion",
       "articles": [
         {
           "headline": "Major League Soccer Announces 2027 Sprint Season Schedule - MLSsoccer.com",
@@ -281,21 +352,10 @@
           "causation_verified": false
         },
         {
-          "headline": "St. Louis City vs Portland Timbers: Major League Soccer stats & head-to-head - BBC",
-          "source": "BBC",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBDWElpOFpCdUJoNExCNXJKNDIzNVFfNGpaMTE2Sm1LVjNPeWdfMXhGOVJTa0x6OHBxa1R6dFZjaUdMYzNNeXI3QzE2RVNndG1KU0Z6akkwa0kySUhqdDRfcS1ITQ?oc=5",
-          "published_at": "2026-10-29T23:59:14+00:00",
-          "matching_terms": [
-            "major",
-            "soccer"
-          ],
-          "causation_verified": false
-        },
-        {
-          "headline": "Minnesota United vs Sporting KC: Major League Soccer stats & head-to-head - BBC",
-          "source": "BBC",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1scXpMT01qQm9aU1plMk9rRmVJYk9aQ2pVUUlrdWdMb0VLY3VfSGtnbjJSX3BwUXdWTlljWjZsWXhnS2VUREtvOVFYaEFIZ3dYQ3N6eWkzQlpHSl9UVlBqQmhRWQ?oc=5",
-          "published_at": "2026-10-29T23:56:55+00:00",
+          "headline": "Major League Soccer and D.C. United Announce 2027 Sprint Season Schedule - D.C. United",
+          "source": "D.C. United",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaGhLcEozQjh3NDBWWEFOalhhc0hIMVhRV1ZiRkMzSEZldnF1Q0NGdTd5QmlCeFdubEtPb205TjFNa01sdFZUQW9ORzRIdGxicllYMzAtSmVGUWxYdDhwS0FXblFpdFVyeUZQd24tb2gxbm9SeTR3c0pKbGNZU3NQbjV5Y3VDRzNwRmU0R2I4dWZWYlFzVXhxbFE5TDByamdzam0w?oc=5",
+          "published_at": "2026-10-29T18:05:15+00:00",
           "matching_terms": [
             "major",
             "soccer"
@@ -307,7 +367,7 @@
     },
     {
       "slug": "paccc-usho-midterms-2026-11-03-dem",
-      "query": "house midterm",
+      "query": "midterm house",
       "articles": [
         {
           "headline": "These are the House races to watch in the 2026 midterm election on Nov. 3 - NPR",
@@ -347,13 +407,24 @@
     },
     {
       "slug": "paccc-usse-midterms-2026-11-03-rep",
-      "query": "senate midterm",
+      "query": "midterm senate",
       "articles": [
         {
           "headline": "2026 Senate Battleground Polls: Midterm Primary Trends - NBC News",
           "source": "NBC News",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5JVUJocWhHTDlYQ1pMMkt0bWZ2VnNsWXZiOFdsVERnQVRERDFvV0FyanpkRWpKWVlNU3kzT18wcURiWjRWcm8xV01SS3FqV3hWYXcyUFlSZ1lsRzdWcnVDenBWUTY2MGpiWEZZbnpiQS1reDVBZ0ZpclBzWExSZw?oc=5",
-          "published_at": "2026-10-29T23:24:02+00:00",
+          "published_at": "2026-10-30T04:19:06+00:00",
+          "matching_terms": [
+            "midterm",
+            "senate"
+          ],
+          "causation_verified": false
+        },
+        {
+          "headline": "Latest Senate Polls: Midterm Elections 2026 - The New York Times",
+          "source": "The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5Kem1zNEtLLXJhQndGWG1LTlI2UWtfWGlqdzJwTGFhV2c1ZUpYYTlNQnNaMW9HUGlHN281RzZpTktsSXVEVXhnS1diRndPbzQwYmtnM2NQSkY5VUstWFAta2ZuVlpRYkhMZk5hNEZrN0Vpdw?oc=5",
+          "published_at": "2026-10-30T00:27:06+00:00",
           "matching_terms": [
             "midterm",
             "senate"
@@ -364,36 +435,52 @@
       "status": "matched"
     }
   ],
-  "news_updated_at": "2026-10-30T00:21:17.912920+00:00",
+  "news_updated_at": "2026-10-30T06:01:11.399082+00:00",
   "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal.",
   "watchlist": {
     "tec-mls-winner-2026-11-07-por": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-10-30T00:20:48.682378+00:00"
+      "last_valid": "2026-10-30T06:00:43.123336+00:00"
     },
     "paccc-usho-midterms-2026-11-03-dem": {
       "title": "U.S House Midterm Winner",
-      "last_valid": "2026-10-30T00:20:48.682378+00:00"
+      "last_valid": "2026-10-30T06:00:43.123336+00:00"
     },
     "paccc-usho-midterms-2026-11-03-rep": {
       "title": "U.S House Midterm Winner",
-      "last_valid": "2026-10-30T00:20:48.682378+00:00"
+      "last_valid": "2026-10-30T06:00:43.123336+00:00"
     },
     "paccc-usse-midterms-2026-11-03-rep": {
       "title": "U.S Senate Midterm Winner",
-      "last_valid": "2026-10-30T00:20:48.682378+00:00"
+      "last_valid": "2026-10-30T06:00:43.123336+00:00"
     },
     "tec-mlb-nl-2026-11-27-roy-jjwet": {
       "title": "National League Rookie of the Year",
-      "last_valid": "2026-10-30T00:20:48.682378+00:00"
+      "last_valid": "2026-10-30T06:00:43.123336+00:00"
     },
     "tec-mlb-nl-2026-11-27-roy-kongri": {
       "title": "National League Rookie of the Year",
-      "last_valid": "2026-10-30T00:20:48.682378+00:00"
+      "last_valid": "2026-10-30T06:00:43.123336+00:00"
     },
     "tec-mlb-nl-2026-11-27-cy-crisan": {
       "title": "National League Cy Young Award",
-      "last_valid": "2026-10-30T00:20:48.682378+00:00"
+      "last_valid": "2026-10-30T06:00:43.123336+00:00"
+    },
+    "tec-mls-winner-2026-11-07-vwh": {
+      "title": "Major League Soccer Champion",
+      "last_valid": "2026-10-30T06:00:43.123336+00:00"
+    },
+    "tec-mls-winner-2026-11-07-clb": {
+      "title": "Major League Soccer Champion",
+      "last_valid": "2026-10-30T06:00:43.123336+00:00"
+    },
+    "tec-mls-winner-2026-11-07-orl": {
+      "title": "Major League Soccer Champion",
+      "last_valid": "2026-10-30T06:00:43.123336+00:00"
+    },
+    "tec-mls-winner-2026-11-07-nas": {
+      "title": "Major League Soccer Champion",
+      "last_valid": "2026-10-30T06:00:43.123336+00:00"
     }
   },
   "momentum_lookback_minutes": [
@@ -404,7 +491,7 @@
   "fee_verified_at": "2026-10-28",
   "account_link": {
     "status": "connected_read_only",
-    "checked_at": "2026-10-30T00:21:19.355325+00:00",
+    "checked_at": "2026-10-30T06:01:12.892627+00:00",
     "live_trading_enabled": false
   }
 }
