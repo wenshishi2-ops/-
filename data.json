@@ -4,49 +4,31 @@
   "strategy": "COST_ADJUSTED_MOMENTUM",
   "cash": 3000.0,
   "equity": 3000.0,
-  "last_scan": "2026-11-04T02:27:01.513938+00:00",
+  "last_scan": "2026-11-04T17:28:16.430604+00:00",
   "markets": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
       "title": "Major League Soccer Champion",
-      "bid": 0.005,
-      "ask": 0.006
-    },
-    {
-      "slug": "paccc-usho-midterms-2026-11-03-dem",
-      "title": "U.S House Midterm Winner",
-      "bid": 0.997,
-      "ask": 0.999
-    },
-    {
-      "slug": "paccc-usho-midterms-2026-11-03-rep",
-      "title": "U.S House Midterm Winner",
-      "bid": 0.003,
-      "ask": 0.005
-    },
-    {
-      "slug": "paccc-usse-midterms-2026-11-03-rep",
-      "title": "U.S Senate Midterm Winner",
-      "bid": 0.003,
-      "ask": 0.005
+      "bid": 0.004,
+      "ask": 0.035
     },
     {
       "slug": "tec-mlb-nl-2026-11-27-roy-jjwet",
       "title": "National League Rookie of the Year",
-      "bid": 0.005,
-      "ask": 0.006
+      "bid": 0.003,
+      "ask": 0.004
     },
     {
       "slug": "tec-mlb-nl-2026-11-27-cy-crisan",
       "title": "National League Cy Young Award",
-      "bid": 0.002,
-      "ask": 0.005
+      "bid": 0.003,
+      "ask": 0.009
     },
     {
       "slug": "tec-mls-winner-2026-11-07-vwh",
       "title": "Major League Soccer Champion",
-      "bid": 0.19,
-      "ask": 0.2
+      "bid": 0.16,
+      "ask": 0.183
     },
     {
       "slug": "tec-nfl-champ-2027-02-14-w-houtex",
@@ -55,28 +37,22 @@
       "ask": 0.02
     },
     {
-      "slug": "aachc-ufc-featherw-2026-12-31-champ-briort",
-      "title": "UFC Featherweight Champion on Dec 31, 2026",
-      "bid": 0.01,
-      "ask": 0.02
+      "slug": "tec-nfl-nfcnorth-2027-01-10-w-gb",
+      "title": "NFC North Division Winner",
+      "bid": 0.08,
+      "ask": 0.09
     },
     {
-      "slug": "aachc-ufc-bantamw-2026-12-31-champ-umanur",
-      "title": "UFC Bantamweight Champion on Dec 31, 2026",
-      "bid": 0.01,
-      "ask": 0.02
+      "slug": "tec-nfl-nfcwest-2027-01-10-w-sea",
+      "title": "NFC West Division Winner",
+      "bid": 0.13,
+      "ask": 0.14
     },
     {
-      "slug": "aachc-ufc-bantamw-2026-12-31-champ-seaoma",
-      "title": "UFC Bantamweight Champion on Dec 31, 2026",
-      "bid": 0.01,
-      "ask": 0.12
-    },
-    {
-      "slug": "aachc-ufc-featherw-2026-12-31-champ-aljste",
-      "title": "UFC Featherweight Champion on Dec 31, 2026",
-      "bid": 0.01,
-      "ask": 0.02
+      "slug": "tec-nfl-nfcnorth-2027-01-10-w-chi",
+      "title": "NFC North Division Winner",
+      "bid": 0.39,
+      "ask": 0.4
     }
   ],
   "trades": [],
@@ -86,21 +62,21 @@
     "eligible_markets": 30,
     "market_samples": [
       {
-        "slug": "aachc-ufc-featherw-2026-12-31-champ-briort",
+        "slug": "tec-nfl-nfcnorth-2027-01-10-w-gb",
         "closed": false,
-        "endDate": "2027-01-15T04:00:00Z",
+        "endDate": "2027-01-25T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "aachc-ufc-bantamw-2026-12-31-champ-umanur",
+        "slug": "tec-nfl-nfcwest-2027-01-10-w-sea",
         "closed": false,
-        "endDate": "2027-01-15T04:00:00Z",
+        "endDate": "2027-01-25T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "aachc-ufc-bantamw-2026-12-31-champ-seaoma",
+        "slug": "tec-nfl-nfcnorth-2027-01-10-w-chi",
         "closed": false,
-        "endDate": "2027-01-15T04:00:00Z",
+        "endDate": "2027-01-25T04:00:00Z",
         "rejected": null
       }
     ],
@@ -111,13 +87,18 @@
       "past_end": 0,
       "higher_fee_category": 0
     },
-    "watched_markets": 21,
+    "watched_markets": 16,
     "slugs_checked": 12,
-    "valid_quotes": 12,
-    "sample_errors": [],
+    "valid_quotes": 8,
+    "sample_errors": [
+      "paccc-usho-midterms-2026-11-03-dem: no valid two-sided BBO",
+      "paccc-usho-midterms-2026-11-03-rep: no valid two-sided BBO",
+      "paccc-usse-midterms-2026-11-03-rep: no valid two-sided BBO",
+      "tec-nfl-nfcwest-2027-01-10-w-ari: no valid two-sided BBO"
+    ],
     "rate_limited": false
   },
-  "quotes_as_of": "2026-11-04T02:27:01.513938+00:00",
+  "quotes_as_of": "2026-11-04T17:28:16.430604+00:00",
   "peak_equity": 3000.0,
   "initial_capital": 3000.0,
   "virtual_deposits": 2000.0,
@@ -451,120 +432,6 @@
       {
         "mid": 0.07500000000000001,
         "time": "2026-11-03T22:21:18.954316+00:00"
-      }
-    ],
-    "tec-mls-winner-2026-11-07-por": [
-      {
-        "mid": 0.006,
-        "time": "2026-10-29T02:49:53.441256+00:00"
-      },
-      {
-        "mid": 0.0085,
-        "time": "2026-10-29T08:58:21.746415+00:00"
-      },
-      {
-        "mid": 0.018000000000000002,
-        "time": "2026-10-29T15:49:58.218438+00:00"
-      },
-      {
-        "mid": 0.006500000000000001,
-        "time": "2026-10-29T20:41:14.617728+00:00"
-      },
-      {
-        "mid": 0.006500000000000001,
-        "time": "2026-10-30T00:21:17.854661+00:00"
-      },
-      {
-        "mid": 0.0075,
-        "time": "2026-10-30T06:01:11.296469+00:00"
-      },
-      {
-        "mid": 0.0075,
-        "time": "2026-10-30T12:25:20.906058+00:00"
-      },
-      {
-        "mid": 0.0075,
-        "time": "2026-10-30T18:07:33.821711+00:00"
-      },
-      {
-        "mid": 0.0075,
-        "time": "2026-10-30T22:13:49.451040+00:00"
-      },
-      {
-        "mid": 0.006999999999999999,
-        "time": "2026-10-31T01:36:10.299286+00:00"
-      },
-      {
-        "mid": 0.007,
-        "time": "2026-10-31T07:28:09.009342+00:00"
-      },
-      {
-        "mid": 0.0075,
-        "time": "2026-10-31T13:46:36.779450+00:00"
-      },
-      {
-        "mid": 0.007,
-        "time": "2026-10-31T17:57:04.946035+00:00"
-      },
-      {
-        "mid": 0.006500000000000001,
-        "time": "2026-10-31T20:50:33.190127+00:00"
-      },
-      {
-        "mid": 0.007,
-        "time": "2026-10-31T23:49:09.181272+00:00"
-      },
-      {
-        "mid": 0.006500000000000001,
-        "time": "2026-11-01T02:40:04.332270+00:00"
-      },
-      {
-        "mid": 0.006,
-        "time": "2026-11-01T09:42:36.676810+00:00"
-      },
-      {
-        "mid": 0.006,
-        "time": "2026-11-01T16:23:36.115247+00:00"
-      },
-      {
-        "mid": 0.006,
-        "time": "2026-11-01T20:38:06.633570+00:00"
-      },
-      {
-        "mid": 0.006,
-        "time": "2026-11-01T23:52:22.547957+00:00"
-      },
-      {
-        "mid": 0.006,
-        "time": "2026-11-02T02:48:42.959577+00:00"
-      },
-      {
-        "mid": 0.006,
-        "time": "2026-11-02T10:02:54.856824+00:00"
-      },
-      {
-        "mid": 0.006500000000000001,
-        "time": "2026-11-02T20:13:16.465002+00:00"
-      },
-      {
-        "mid": 0.0105,
-        "time": "2026-11-03T02:17:22.940625+00:00"
-      },
-      {
-        "mid": 0.01,
-        "time": "2026-11-03T09:37:35.549925+00:00"
-      },
-      {
-        "mid": 0.008,
-        "time": "2026-11-03T17:18:40.378920+00:00"
-      },
-      {
-        "mid": 0.006500000000000001,
-        "time": "2026-11-03T22:21:18.954316+00:00"
-      },
-      {
-        "mid": 0.0055,
-        "time": "2026-11-04T02:27:31.906112+00:00"
       }
     ],
     "paccc-usho-midterms-2026-11-03-dem": [
@@ -909,6 +776,148 @@
         "time": "2026-11-04T02:27:31.906112+00:00"
       }
     ],
+    "aachc-ufc-featherw-2026-12-31-champ-briort": [
+      {
+        "mid": 0.015,
+        "time": "2026-11-04T02:27:31.906112+00:00"
+      }
+    ],
+    "aachc-ufc-bantamw-2026-12-31-champ-umanur": [
+      {
+        "mid": 0.015,
+        "time": "2026-11-04T02:27:31.906112+00:00"
+      }
+    ],
+    "aachc-ufc-bantamw-2026-12-31-champ-seaoma": [
+      {
+        "mid": 0.065,
+        "time": "2026-11-04T02:27:31.906112+00:00"
+      }
+    ],
+    "aachc-ufc-featherw-2026-12-31-champ-aljste": [
+      {
+        "mid": 0.015,
+        "time": "2026-11-04T02:27:31.906112+00:00"
+      }
+    ],
+    "tec-mls-winner-2026-11-07-por": [
+      {
+        "mid": 0.006,
+        "time": "2026-10-29T02:49:53.441256+00:00"
+      },
+      {
+        "mid": 0.0085,
+        "time": "2026-10-29T08:58:21.746415+00:00"
+      },
+      {
+        "mid": 0.018000000000000002,
+        "time": "2026-10-29T15:49:58.218438+00:00"
+      },
+      {
+        "mid": 0.006500000000000001,
+        "time": "2026-10-29T20:41:14.617728+00:00"
+      },
+      {
+        "mid": 0.006500000000000001,
+        "time": "2026-10-30T00:21:17.854661+00:00"
+      },
+      {
+        "mid": 0.0075,
+        "time": "2026-10-30T06:01:11.296469+00:00"
+      },
+      {
+        "mid": 0.0075,
+        "time": "2026-10-30T12:25:20.906058+00:00"
+      },
+      {
+        "mid": 0.0075,
+        "time": "2026-10-30T18:07:33.821711+00:00"
+      },
+      {
+        "mid": 0.0075,
+        "time": "2026-10-30T22:13:49.451040+00:00"
+      },
+      {
+        "mid": 0.006999999999999999,
+        "time": "2026-10-31T01:36:10.299286+00:00"
+      },
+      {
+        "mid": 0.007,
+        "time": "2026-10-31T07:28:09.009342+00:00"
+      },
+      {
+        "mid": 0.0075,
+        "time": "2026-10-31T13:46:36.779450+00:00"
+      },
+      {
+        "mid": 0.007,
+        "time": "2026-10-31T17:57:04.946035+00:00"
+      },
+      {
+        "mid": 0.006500000000000001,
+        "time": "2026-10-31T20:50:33.190127+00:00"
+      },
+      {
+        "mid": 0.007,
+        "time": "2026-10-31T23:49:09.181272+00:00"
+      },
+      {
+        "mid": 0.006500000000000001,
+        "time": "2026-11-01T02:40:04.332270+00:00"
+      },
+      {
+        "mid": 0.006,
+        "time": "2026-11-01T09:42:36.676810+00:00"
+      },
+      {
+        "mid": 0.006,
+        "time": "2026-11-01T16:23:36.115247+00:00"
+      },
+      {
+        "mid": 0.006,
+        "time": "2026-11-01T20:38:06.633570+00:00"
+      },
+      {
+        "mid": 0.006,
+        "time": "2026-11-01T23:52:22.547957+00:00"
+      },
+      {
+        "mid": 0.006,
+        "time": "2026-11-02T02:48:42.959577+00:00"
+      },
+      {
+        "mid": 0.006,
+        "time": "2026-11-02T10:02:54.856824+00:00"
+      },
+      {
+        "mid": 0.006500000000000001,
+        "time": "2026-11-02T20:13:16.465002+00:00"
+      },
+      {
+        "mid": 0.0105,
+        "time": "2026-11-03T02:17:22.940625+00:00"
+      },
+      {
+        "mid": 0.01,
+        "time": "2026-11-03T09:37:35.549925+00:00"
+      },
+      {
+        "mid": 0.008,
+        "time": "2026-11-03T17:18:40.378920+00:00"
+      },
+      {
+        "mid": 0.006500000000000001,
+        "time": "2026-11-03T22:21:18.954316+00:00"
+      },
+      {
+        "mid": 0.0055,
+        "time": "2026-11-04T02:27:31.906112+00:00"
+      },
+      {
+        "mid": 0.019500000000000003,
+        "time": "2026-11-04T17:28:48.114608+00:00"
+      }
+    ],
     "tec-mlb-nl-2026-11-27-roy-jjwet": [
       {
         "mid": 0.006500000000000001,
@@ -1009,6 +1018,10 @@
       {
         "mid": 0.0055,
         "time": "2026-11-04T02:27:31.906112+00:00"
+      },
+      {
+        "mid": 0.0035,
+        "time": "2026-11-04T17:28:48.114608+00:00"
       }
     ],
     "tec-mlb-nl-2026-11-27-cy-crisan": [
@@ -1111,6 +1124,10 @@
       {
         "mid": 0.0035,
         "time": "2026-11-04T02:27:31.906112+00:00"
+      },
+      {
+        "mid": 0.006,
+        "time": "2026-11-04T17:28:48.114608+00:00"
       }
     ],
     "tec-mls-winner-2026-11-07-vwh": [
@@ -1205,6 +1222,10 @@
       {
         "mid": 0.195,
         "time": "2026-11-04T02:27:31.906112+00:00"
+      },
+      {
+        "mid": 0.17149999999999999,
+        "time": "2026-11-04T17:28:48.114608+00:00"
       }
     ],
     "tec-nfl-champ-2027-02-14-w-houtex": [
@@ -1215,36 +1236,34 @@
       {
         "mid": 0.015,
         "time": "2026-11-04T02:27:31.906112+00:00"
-      }
-    ],
-    "aachc-ufc-featherw-2026-12-31-champ-briort": [
+      },
       {
         "mid": 0.015,
-        "time": "2026-11-04T02:27:31.906112+00:00"
+        "time": "2026-11-04T17:28:48.114608+00:00"
       }
     ],
-    "aachc-ufc-bantamw-2026-12-31-champ-umanur": [
+    "tec-nfl-nfcnorth-2027-01-10-w-gb": [
       {
-        "mid": 0.015,
-        "time": "2026-11-04T02:27:31.906112+00:00"
+        "mid": 0.08499999999999999,
+        "time": "2026-11-04T17:28:48.114608+00:00"
       }
     ],
-    "aachc-ufc-bantamw-2026-12-31-champ-seaoma": [
+    "tec-nfl-nfcwest-2027-01-10-w-sea": [
       {
-        "mid": 0.065,
-        "time": "2026-11-04T02:27:31.906112+00:00"
+        "mid": 0.135,
+        "time": "2026-11-04T17:28:48.114608+00:00"
       }
     ],
-    "aachc-ufc-featherw-2026-12-31-champ-aljste": [
+    "tec-nfl-nfcnorth-2027-01-10-w-chi": [
       {
-        "mid": 0.015,
-        "time": "2026-11-04T02:27:31.906112+00:00"
+        "mid": 0.395,
+        "time": "2026-11-04T17:28:48.114608+00:00"
       }
     ]
   },
   "max_drawdown_pct": 0.0,
   "paper_status": "ACTIVE",
-  "paper_updated_at": "2026-11-04T02:27:31.906112+00:00",
+  "paper_updated_at": "2026-11-04T17:28:48.114608+00:00",
   "pricing_note": "Taker fee theta=0.0695 per official schedule (verified 2026-10-28); 0.5% adverse slippage per side is an assumption. No depth, latency, news attribution or settlement. Stale marks are not executable.",
   "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
   "fee_theta": 0.0695,
@@ -1545,15 +1564,37 @@
   "news_context": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
-      "query": "major soccer champion",
+      "query": "soccer major champion",
       "articles": [
         {
-          "headline": "Major League Soccer (MLS) TV Schedule: Upcoming games, dates and kick-off times - Goal.com",
-          "source": "Goal.com",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1PY0ttLUFfSDV0TFgya0hib2Q4dUdzTHlmdmlaWWJfYTMxN196QnhWUVlvRHVUSno4Y1VxN1kyTlR6RUN4UXJrUDBuZEJEVTVGWFE0d2N4ajVmZS1UVWZfbGJ1Szc5S01OVE54RGRaeGVGaEJwM2c?oc=5",
-          "published_at": "2026-11-04T00:45:39+00:00",
+          "headline": "Women's Soccer Collects Six Major Awards, 10 Individual Honorees in Big South Postseason Recognition - USC Upstate Athletics",
+          "source": "USC Upstate Athletics",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNaHdXMDVkbTZUTFhEaW10ZkZIQm1HbDh3ckI2MFFnbVRvR191d2tkaXctQmdTby04ZFJrY2V1Y1Q0ZHZFMDdRekw4bkJIb0V2YmdTMm5pUjFRQXZLTmo2cm15REgwS3Q1NnFvam9rUUYwOVZmTGRxdllGY1J4UDFjbHdHQXQ3bG9UQTdBLVdscE96dHAyZjR6VW1ZZnFaNHUxdWNOdHdFanl6STdDcmc2UjJhaU1XcFJFWV9OYXd5YWQzU2h6cWNWNEIxTk5XVHRrVi1iV2dRR00?oc=5",
+          "published_at": "2026-11-04T17:06:37+00:00",
           "matching_terms": [
             "major",
+            "soccer"
+          ],
+          "causation_verified": false
+        },
+        {
+          "headline": "Raphinha hits major Barcelona milestone to overtake Neymar and match Robert Lewandowski, but Lionel Messi’s... - World Soccer Talk",
+          "source": "World Soccer Talk",
+          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPcUtIU2tqZURPdVNCTDlrbFBXVXJvTi1WZ2ZBYUZUNk5Gckt5MDVFRUxWZ2lic2RpcC0tWWJaNVlQak5laURWbmZTd0JHdXlvVHlyalJmWEdWanJaXzFhNHMtSDRTQUJ4UVVXRjlyM0pOLU1HeFBJd2JKQUpkcldWUWFJdTZ5N19HSXZxcndCbnRvbnRyQTNnRnMyR1libmhTUU16bEk0emppQnJqcV9vbnMyUFJpVl8ySGRtWml3d3g5WTJwa29wZXRpSWdEVHBrLVhMLWhfSldQV1MweVozUkZrZ1d0SWcwTDdqV0lsVktUZndXa0lxaUZjSHZiOHc3bHQ1VzlxWktncHJKaTdFODdxc9IBkwJBVV95cUxPcUtIU2tqZURPdVNCTDlrbFBXVXJvTi1WZ2ZBYUZUNk5Gckt5MDVFRUxWZ2lic2RpcC0tWWJaNVl",
+          "published_at": "2026-11-04T15:32:22+00:00",
+          "matching_terms": [
+            "major",
+            "soccer"
+          ],
+          "causation_verified": false
+        },
+        {
+          "headline": "Champion Female Soccer Players Make Far Less Money Than Male Players - ABC News - Breaking News, Latest News and Videos",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNFgxczJqVVZmaEpMQU1OS3RXM2k1OTdlWXZXaUxJNF9LamdBYkY5QlpKdXBnX2RFbVZ3MktRR1MxMW11MnBpQnBKUDhDY3JVVXlNeEFPV2hfV3lnYWtIaGRRdWt6WG42anozVGJYLVVXRTAtT0NZSWkxYlhrZmJDSEk5aFN1VzhlT1ZVSlFRX1VtMkxnWWlaVzB30gGvAUFVX3lxTE82Mmx1c01pbEhMbDNhNjBnNTBSQU9ZYWpyOXVQT1A5T0NVQ1VKSmVWbE9XaGozSk1WN2JyU3RYaEVZYnR6OW1WZDlXdWRBODdmWXhwOVBDNUZEY1RMMlpRVi1sZGpaUTQxRXl0cXgtT0ZvMU5lUFh6SndXMU1rSnZCLVNUS0RVQkR5M2txOFlWbFZrV21DS1lQOXQyc2J6cjVaZWpDZ3V0THllLUlnMU0?oc=5",
+          "published_at": "2026-11-04T05:09:43+00:00",
+          "matching_terms": [
+            "champion",
             "soccer"
           ],
           "causation_verified": false
@@ -1562,79 +1603,39 @@
       "status": "matched"
     },
     {
-      "slug": "paccc-usho-midterms-2026-11-03-dem",
-      "query": "house midterm",
+      "slug": "tec-mlb-nl-2026-11-27-cy-crisan",
+      "query": "award young",
       "articles": [
         {
-          "headline": "Democrats look poised to win House control in midterm elections after two turbulent years of Trump - The Guardian",
-          "source": "The Guardian",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWm5mUzVjVHB6QnhvdXJKdDNDRWhTdnBkZU14dGloZXFQTnRMN2dadlVDQzY0eFdVNXVzemEzZmVmaTJlYVFDb28zRGMwa2xIQ3hrWEVGdGFqLUFxQVZZUlo4UkJKQ0t1WnJZWS1UMWRZNXVGTU1zaGFpRHJlT0V3SDFLVVRwUDlGVkhBZnVsdEJ2eVE?oc=5",
-          "published_at": "2026-11-04T01:18:00+00:00",
+          "headline": "Outstanding Georgia Young Peanut Farmer Award and Canada Talks with Trump - AG INFORMATION NETWORK OF THE WEST",
+          "source": "AG INFORMATION NETWORK OF THE WEST",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNVN6cmNveG9VY3V4OGN2S1NBaDA2ZV9uVzhSTjBrZTlqQk1RNmRXS2x2X3pyUFY0emJnZ095M1pzeWhMSG5TcnpqUGU3X3RkVGZFZU1IMTdabHZXUmpLTDl2Y0pGcFlUVlEwVExfSmZqUEpZcVNodzlBakpvd3RfZmNKeDJONmtuRVRPZlVIcFFXVzJjYVJtMmx6a3hIZGJ2TlRQUG90Q2VURU84ZExNbW1iR0VzOWR4U1hvMU9QNzBIbkU0MzhjVlM2b29yQQ?oc=5",
+          "published_at": "2026-11-04T08:01:31+00:00",
           "matching_terms": [
-            "house",
-            "midterm"
+            "award",
+            "young"
           ],
           "causation_verified": false
         },
         {
-          "headline": "Florida U.S. House Midterm Election 2026: Live Results - NBC News",
-          "source": "NBC News",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5aVDhIQ1EzVTljTGttTUtZaXRVOGhGQzZmcnZNb0dPTUN3a3BuREJlRVJNMENJbmEwenRHdHNQTlBjcEFVYzdlMXhZLWFiTHJKSzZPZEZBUGduRnZKYnVELTdxdzUyd0NhdE5FV2VGNzNzLVVlemc5cA?oc=5",
-          "published_at": "2026-11-04T02:22:54+00:00",
+          "headline": "Jeon Do-yeon Graces 46th Young Pyung Award Ceremony - 조선일보",
+          "source": "조선일보",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNamZIS0dDQTBmTy0zZzRNTk5Ta0hpMjVUZW1XLXBVLUdDbkM4ZWdKb3EzTW1BNkdKRGQ5TlNoSWRIdHNDU3lvTENPRXd6NTlRWDFadGFNRnNKUDZ3aDNBT2NWWEo5ZE1heGZVQzhUUTJIelFUSHExWkpnWWJFcUNUekhXWHRTWHNVSlZmTGFB?oc=5",
+          "published_at": "2026-11-04T09:44:52+00:00",
           "matching_terms": [
-            "house",
-            "midterm"
+            "award",
+            "young"
           ],
           "causation_verified": false
         },
         {
-          "headline": "Ohio U.S. House Midterm Election 2026: Live Results - NBC News",
-          "source": "NBC News",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wQkVJNVBKdTJuSk5YcGNTMlloZWd1WnczSnA3RFdZZnFuMHp6d2hFTHNBX05KS1VyYXh1b0h4aXZPa0hQazB1bzJBaHF1RkdWQlNtRnc0LUhpajZiLTAxd2ZEWHVvM2dCRy1iRGt0NWdzSkFE?oc=5",
-          "published_at": "2026-11-04T02:23:14+00:00",
+          "headline": "Yankees’ Cam Schlittler expectedly named Cy Young finalist, spurned for bigger award - Troy Record",
+          "source": "Troy Record",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYmdEVjFBTlRTaUNzeUlodENWSU5qbmxoaS1meHB3dkF3NnZaazZrRlZkd0VacmpYQzhvV0FHcTB2R25MWVNlcFhLNVpxNzJLcFNZSWFCTS0ySjBDenY2Mnk0Rk1XcWVveWRsS09laUdhZ1ptOUVVUzN1cTltallLajBPcEdOcnk1WlJkSnUzSFg5cUpNY1VWaQ?oc=5",
+          "published_at": "2026-11-03T23:46:14+00:00",
           "matching_terms": [
-            "house",
-            "midterm"
-          ],
-          "causation_verified": false
-        }
-      ],
-      "status": "matched"
-    },
-    {
-      "slug": "paccc-usse-midterms-2026-11-03-rep",
-      "query": "senate midterm",
-      "articles": [
-        {
-          "headline": "2026 midterm election results: All U.S. Senate, House and governor races - WBAL-TV",
-          "source": "WBAL-TV",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVGY3VUpXaEhudXcxT19pM3JYcklIZGNfZUJIbU9UX2lielo1TXVMSWx3T0lWN1NwQlZsemV3VmlEblFvQjBRMlRBWmdtR1gybll5ZzJYWFAwWktIUEtrcUNmVzhTY0FBdEdOa0dsS1I2bmNUVTBqemVDVEVUaUV0NEw5X3VYM1ptVE9n?oc=5",
-          "published_at": "2026-11-03T23:58:00+00:00",
-          "matching_terms": [
-            "midterm",
-            "senate"
-          ],
-          "causation_verified": false
-        },
-        {
-          "headline": "Control of US Senate may depend on a handful of toss-up races in midterm elections - News From The States",
-          "source": "News From The States",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNnMxZll3NEgzTml6R09Qb21DT0RMemU2WnJXUk9taXBfQUk3Ym1WVVZHNVE2MFpkZWlOdmloejE5V1Rua2N4bndaekFYbzRmLTduUG10cWNCRVlBSnc2NTFpMU1xallnN2x5elZNNzEwSmZDTzB4YkFodldJaXNacmZMZW9EMGhzZ0JDZldyVHFQWFZEbXFHc1JGNG1tMDlLQ0RkMVAyM2hKcjQ?oc=5",
-          "published_at": "2026-11-04T00:13:00+00:00",
-          "matching_terms": [
-            "midterm",
-            "senate"
-          ],
-          "causation_verified": false
-        },
-        {
-          "headline": "2026 midterm election: Live results for U.S. House, Senate and control of Congress - STLPR",
-          "source": "STLPR",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQ0U5Mmota09ubmhaQWo5M1NvdndLeWIwaG8yVnpSeHlVRXZCQmx1cTZ0SUtXMkRLWFZMcVdDRjJaS3VLRE5CdFFhWjd4akp4UFBCMDZRT280Wk44UFlrQ0tOTDk3TUJBTkRjZ2hwVzZuZ0kySnFyc2pfOWdiWTRod0V4WDloNnVJU3d6ajN3aklUVnBmVUpaOEk2dXl2WkdQXzJ0QVdkNm5PTDhIcVE?oc=5",
-          "published_at": "2026-11-03T23:03:20+00:00",
-          "matching_terms": [
-            "midterm",
-            "senate"
+            "award",
+            "young"
           ],
           "causation_verified": false
         }
@@ -1642,12 +1643,12 @@
       "status": "matched"
     }
   ],
-  "news_updated_at": "2026-11-04T02:27:31.988979+00:00",
+  "news_updated_at": "2026-11-04T17:28:48.314127+00:00",
   "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal.",
   "watchlist": {
     "tec-mls-winner-2026-11-07-por": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-04T02:27:01.513938+00:00"
+      "last_valid": "2026-11-04T17:28:16.430604+00:00"
     },
     "paccc-usho-midterms-2026-11-03-dem": {
       "title": "U.S House Midterm Winner",
@@ -1663,51 +1664,19 @@
     },
     "tec-mlb-nl-2026-11-27-roy-jjwet": {
       "title": "National League Rookie of the Year",
-      "last_valid": "2026-11-04T02:27:01.513938+00:00"
-    },
-    "tec-mlb-nl-2026-11-27-roy-kongri": {
-      "title": "National League Rookie of the Year",
-      "last_valid": "2026-11-03T17:18:09.879508+00:00"
+      "last_valid": "2026-11-04T17:28:16.430604+00:00"
     },
     "tec-mlb-nl-2026-11-27-cy-crisan": {
       "title": "National League Cy Young Award",
-      "last_valid": "2026-11-04T02:27:01.513938+00:00"
+      "last_valid": "2026-11-04T17:28:16.430604+00:00"
     },
     "tec-mls-winner-2026-11-07-vwh": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-04T02:27:01.513938+00:00"
-    },
-    "ewc-usgub-ia-2026-11-03-dem": {
-      "title": "Iowa Governor Election Winner",
-      "last_valid": "2026-11-03T09:37:04.066787+00:00"
-    },
-    "ewc-usgub-ia-2026-11-03-rep": {
-      "title": "Iowa Governor Election Winner",
-      "last_valid": "2026-11-03T09:37:04.066787+00:00"
-    },
-    "ewc-usgub-ga-2026-11-03-rep": {
-      "title": "Georgia Governor Election Winner",
-      "last_valid": "2026-11-03T09:37:04.066787+00:00"
-    },
-    "ewc-usse-tx-2026-11-03-dem": {
-      "title": "Texas Senate Election Winner",
-      "last_valid": "2026-11-03T17:18:09.879508+00:00"
-    },
-    "ewc-usgub-nv-2026-11-03-rep": {
-      "title": "Nevada Governor Election Winner",
-      "last_valid": "2026-11-03T17:18:09.879508+00:00"
-    },
-    "ewc-usgub-nv-2026-11-03-dem": {
-      "title": "Nevada Governor Election Winner",
-      "last_valid": "2026-11-03T17:18:09.879508+00:00"
-    },
-    "aachc-ufc-lightw-2026-12-31-champ-jusgae": {
-      "title": "UFC Lightweight Champion on Dec 31, 2026",
-      "last_valid": "2026-11-03T17:18:09.879508+00:00"
+      "last_valid": "2026-11-04T17:28:16.430604+00:00"
     },
     "tec-nfl-champ-2027-02-14-w-houtex": {
       "title": "Pro Football Champion 2027",
-      "last_valid": "2026-11-04T02:27:01.513938+00:00"
+      "last_valid": "2026-11-04T17:28:16.430604+00:00"
     },
     "tec-nfl-champ-2027-02-14-w-kanchi": {
       "title": "Pro Football Champion 2027",
@@ -1728,6 +1697,18 @@
     "aachc-ufc-featherw-2026-12-31-champ-aljste": {
       "title": "UFC Featherweight Champion on Dec 31, 2026",
       "last_valid": "2026-11-04T02:27:01.513938+00:00"
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-gb": {
+      "title": "NFC North Division Winner",
+      "last_valid": "2026-11-04T17:28:16.430604+00:00"
+    },
+    "tec-nfl-nfcwest-2027-01-10-w-sea": {
+      "title": "NFC West Division Winner",
+      "last_valid": "2026-11-04T17:28:16.430604+00:00"
+    },
+    "tec-nfl-nfcnorth-2027-01-10-w-chi": {
+      "title": "NFC North Division Winner",
+      "last_valid": "2026-11-04T17:28:16.430604+00:00"
     }
   },
   "momentum_lookback_minutes": [
@@ -1738,7 +1719,7 @@
   "fee_verified_at": "2026-10-28",
   "account_link": {
     "status": "connected_read_only",
-    "checked_at": "2026-11-04T02:27:33.332839+00:00",
+    "checked_at": "2026-11-04T17:28:49.228635+00:00",
     "live_trading_enabled": false
   }
 }
