@@ -4,12 +4,12 @@
   "strategy": "COST_ADJUSTED_MOMENTUM",
   "cash": 3000.0,
   "equity": 3000.0,
-  "last_scan": "2026-11-04T17:28:16.430604+00:00",
+  "last_scan": "2026-11-04T22:45:17.120124+00:00",
   "markets": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
       "title": "Major League Soccer Champion",
-      "bid": 0.004,
+      "bid": 0.003,
       "ask": 0.035
     },
     {
@@ -21,14 +21,14 @@
     {
       "slug": "tec-mlb-nl-2026-11-27-cy-crisan",
       "title": "National League Cy Young Award",
-      "bid": 0.003,
-      "ask": 0.009
+      "bid": 0.01,
+      "ask": 0.011
     },
     {
       "slug": "tec-mls-winner-2026-11-07-vwh",
       "title": "Major League Soccer Champion",
-      "bid": 0.16,
-      "ask": 0.183
+      "bid": 0.161,
+      "ask": 0.23
     },
     {
       "slug": "tec-nfl-champ-2027-02-14-w-houtex",
@@ -51,8 +51,32 @@
     {
       "slug": "tec-nfl-nfcnorth-2027-01-10-w-chi",
       "title": "NFC North Division Winner",
-      "bid": 0.39,
-      "ask": 0.4
+      "bid": 0.38,
+      "ask": 0.39
+    },
+    {
+      "slug": "ipcc-2026ipos-discord",
+      "title": "Which Companies Will Confirm an IPO in 2026",
+      "bid": 0.07,
+      "ask": 0.08
+    },
+    {
+      "slug": "ipcc-anthropic-2026-12-31",
+      "title": "Anthropic IPO Officially Confirmed By",
+      "bid": 0.89,
+      "ask": 0.9
+    },
+    {
+      "slug": "ipcc-anthropic-2026-11-30",
+      "title": "Anthropic IPO Officially Confirmed By",
+      "bid": 0.78,
+      "ask": 0.79
+    },
+    {
+      "slug": "ipcc-anthropic-2027-06-30",
+      "title": "Anthropic IPO Officially Confirmed By",
+      "bid": 0.92,
+      "ask": 0.93
     }
   ],
   "trades": [],
@@ -62,21 +86,21 @@
     "eligible_markets": 30,
     "market_samples": [
       {
-        "slug": "tec-nfl-nfcnorth-2027-01-10-w-gb",
+        "slug": "ipcc-2026ipos-discord",
         "closed": false,
-        "endDate": "2027-01-25T04:00:00Z",
+        "endDate": "2027-01-15T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "tec-nfl-nfcwest-2027-01-10-w-sea",
+        "slug": "ipcc-anthropic-2026-12-31",
         "closed": false,
-        "endDate": "2027-01-25T04:00:00Z",
+        "endDate": "2027-07-15T03:00:00Z",
         "rejected": null
       },
       {
-        "slug": "tec-nfl-nfcnorth-2027-01-10-w-chi",
+        "slug": "ipcc-anthropic-2026-11-30",
         "closed": false,
-        "endDate": "2027-01-25T04:00:00Z",
+        "endDate": "2027-07-15T03:00:00Z",
         "rejected": null
       }
     ],
@@ -87,18 +111,13 @@
       "past_end": 0,
       "higher_fee_category": 0
     },
-    "watched_markets": 16,
+    "watched_markets": 19,
     "slugs_checked": 12,
-    "valid_quotes": 8,
-    "sample_errors": [
-      "paccc-usho-midterms-2026-11-03-dem: no valid two-sided BBO",
-      "paccc-usho-midterms-2026-11-03-rep: no valid two-sided BBO",
-      "paccc-usse-midterms-2026-11-03-rep: no valid two-sided BBO",
-      "tec-nfl-nfcwest-2027-01-10-w-ari: no valid two-sided BBO"
-    ],
+    "valid_quotes": 12,
+    "sample_errors": [],
     "rate_limited": false
   },
-  "quotes_as_of": "2026-11-04T17:28:16.430604+00:00",
+  "quotes_as_of": "2026-11-04T22:45:17.120124+00:00",
   "peak_equity": 3000.0,
   "initial_capital": 3000.0,
   "virtual_deposits": 2000.0,
@@ -916,6 +935,10 @@
       {
         "mid": 0.019500000000000003,
         "time": "2026-11-04T17:28:48.114608+00:00"
+      },
+      {
+        "mid": 0.019000000000000003,
+        "time": "2026-11-04T22:45:48.257341+00:00"
       }
     ],
     "tec-mlb-nl-2026-11-27-roy-jjwet": [
@@ -1022,6 +1045,10 @@
       {
         "mid": 0.0035,
         "time": "2026-11-04T17:28:48.114608+00:00"
+      },
+      {
+        "mid": 0.0035,
+        "time": "2026-11-04T22:45:48.257341+00:00"
       }
     ],
     "tec-mlb-nl-2026-11-27-cy-crisan": [
@@ -1128,6 +1155,10 @@
       {
         "mid": 0.006,
         "time": "2026-11-04T17:28:48.114608+00:00"
+      },
+      {
+        "mid": 0.010499999999999999,
+        "time": "2026-11-04T22:45:48.257341+00:00"
       }
     ],
     "tec-mls-winner-2026-11-07-vwh": [
@@ -1226,6 +1257,10 @@
       {
         "mid": 0.17149999999999999,
         "time": "2026-11-04T17:28:48.114608+00:00"
+      },
+      {
+        "mid": 0.1955,
+        "time": "2026-11-04T22:45:48.257341+00:00"
       }
     ],
     "tec-nfl-champ-2027-02-14-w-houtex": [
@@ -1240,30 +1275,70 @@
       {
         "mid": 0.015,
         "time": "2026-11-04T17:28:48.114608+00:00"
+      },
+      {
+        "mid": 0.015,
+        "time": "2026-11-04T22:45:48.257341+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-gb": [
       {
         "mid": 0.08499999999999999,
         "time": "2026-11-04T17:28:48.114608+00:00"
+      },
+      {
+        "mid": 0.08499999999999999,
+        "time": "2026-11-04T22:45:48.257341+00:00"
       }
     ],
     "tec-nfl-nfcwest-2027-01-10-w-sea": [
       {
         "mid": 0.135,
         "time": "2026-11-04T17:28:48.114608+00:00"
+      },
+      {
+        "mid": 0.135,
+        "time": "2026-11-04T22:45:48.257341+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-chi": [
       {
         "mid": 0.395,
         "time": "2026-11-04T17:28:48.114608+00:00"
+      },
+      {
+        "mid": 0.385,
+        "time": "2026-11-04T22:45:48.257341+00:00"
+      }
+    ],
+    "ipcc-2026ipos-discord": [
+      {
+        "mid": 0.07500000000000001,
+        "time": "2026-11-04T22:45:48.257341+00:00"
+      }
+    ],
+    "ipcc-anthropic-2026-12-31": [
+      {
+        "mid": 0.895,
+        "time": "2026-11-04T22:45:48.257341+00:00"
+      }
+    ],
+    "ipcc-anthropic-2026-11-30": [
+      {
+        "mid": 0.785,
+        "time": "2026-11-04T22:45:48.257341+00:00"
+      }
+    ],
+    "ipcc-anthropic-2027-06-30": [
+      {
+        "mid": 0.925,
+        "time": "2026-11-04T22:45:48.257341+00:00"
       }
     ]
   },
   "max_drawdown_pct": 0.0,
   "paper_status": "ACTIVE",
-  "paper_updated_at": "2026-11-04T17:28:48.114608+00:00",
+  "paper_updated_at": "2026-11-04T22:45:48.257341+00:00",
   "pricing_note": "Taker fee theta=0.0695 per official schedule (verified 2026-10-28); 0.5% adverse slippage per side is an assumption. No depth, latency, news attribution or settlement. Stale marks are not executable.",
   "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
   "fee_theta": 0.0695,
@@ -1564,7 +1639,7 @@
   "news_context": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
-      "query": "soccer major champion",
+      "query": "major champion soccer",
       "articles": [
         {
           "headline": "Women's Soccer Collects Six Major Awards, 10 Individual Honorees in Big South Postseason Recognition - USC Upstate Athletics",
@@ -1580,7 +1655,7 @@
         {
           "headline": "Raphinha hits major Barcelona milestone to overtake Neymar and match Robert Lewandowski, but Lionel Messi’s... - World Soccer Talk",
           "source": "World Soccer Talk",
-          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPcUtIU2tqZURPdVNCTDlrbFBXVXJvTi1WZ2ZBYUZUNk5Gckt5MDVFRUxWZ2lic2RpcC0tWWJaNVlQak5laURWbmZTd0JHdXlvVHlyalJmWEdWanJaXzFhNHMtSDRTQUJ4UVVXRjlyM0pOLU1HeFBJd2JKQUpkcldWUWFJdTZ5N19HSXZxcndCbnRvbnRyQTNnRnMyR1libmhTUU16bEk0emppQnJqcV9vbnMyUFJpVl8ySGRtWml3d3g5WTJwa29wZXRpSWdEVHBrLVhMLWhfSldQV1MweVozUkZrZ1d0SWcwTDdqV0lsVktUZndXa0lxaUZjSHZiOHc3bHQ1VzlxWktncHJKaTdFODdxc9IBkwJBVV95cUxPcUtIU2tqZURPdVNCTDlrbFBXVXJvTi1WZ2ZBYUZUNk5Gckt5MDVFRUxWZ2lic2RpcC0tWWJaNVl",
+          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxObTVMZWVtd2RjRGpyOU1VZUQzd05oRjVGRG5hOHVON1UtakEzd0llMUZpU2FJazJSRFVLRm1vdnlGQlhfR3NISmtEek1zZkFoa1EzYnNDOGtqTUpNRkdMd1lOYTFEcDNJWTFBcVFDWWFCQzBjaXJXR2F1T3A2R0xobnVXQnFPdWRodkpfaHZtamh6U0Mxd3g5eTh1Q2R4UC1MeTN5OUdjX1k3dzFBUFNzTG1FWFRIMUo0MnVNbmk5UWlHTnpVZVdXaEdLdXVtOUktSnhLdDZRRlVydzVkTWhJN3pSbC1LYXgzZDZ2UWpCV2Y2RmtmX0lEOG1ibXlmYm9odXZDdkYwN2R0R2NRRmVZQm1RY3LSAZQCQVVfeXFMTm01TGVlbXdkY0RqcjlNVWVEM3dOaEY1RkRuYTh1TjdVLWpBM3dJZTFGaVNhSWsyUkRVS0Ztb3Z",
           "published_at": "2026-11-04T15:32:22+00:00",
           "matching_terms": [
             "major",
@@ -1589,13 +1664,13 @@
           "causation_verified": false
         },
         {
-          "headline": "Champion Female Soccer Players Make Far Less Money Than Male Players - ABC News - Breaking News, Latest News and Videos",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNFgxczJqVVZmaEpMQU1OS3RXM2k1OTdlWXZXaUxJNF9LamdBYkY5QlpKdXBnX2RFbVZ3MktRR1MxMW11MnBpQnBKUDhDY3JVVXlNeEFPV2hfV3lnYWtIaGRRdWt6WG42anozVGJYLVVXRTAtT0NZSWkxYlhrZmJDSEk5aFN1VzhlT1ZVSlFRX1VtMkxnWWlaVzB30gGvAUFVX3lxTE82Mmx1c01pbEhMbDNhNjBnNTBSQU9ZYWpyOXVQT1A5T0NVQ1VKSmVWbE9XaGozSk1WN2JyU3RYaEVZYnR6OW1WZDlXdWRBODdmWXhwOVBDNUZEY1RMMlpRVi1sZGpaUTQxRXl0cXgtT0ZvMU5lUFh6SndXMU1rSnZCLVNUS0RVQkR5M2txOFlWbFZrV21DS1lQOXQyc2J6cjVaZWpDZ3V0THllLUlnMU0?oc=5",
-          "published_at": "2026-11-04T05:09:43+00:00",
+          "headline": "Super Bowl Champion Quarterback Interviews for Major College Football HC Job - Yahoo Sports",
+          "source": "Yahoo Sports",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUFp3UGhzYkszRlVGaHltNmZVZ1JORW0xM3pYWDdIUEw4SmF2SjdaQnUyWm1tVkJla1k3LXZneXhNemxwYzFUb3pDazFXUno1NXhmc1hWQjBHTDhMWExsQUJFTklCUURabmhHaDRwUFJDcGN0Tm1HOWVoZXlmWVRESU1tWF80Rno1NFBsT2x1QnlRdTZYWHc?oc=5",
+          "published_at": "2026-11-04T01:50:00+00:00",
           "matching_terms": [
             "champion",
-            "soccer"
+            "major"
           ],
           "causation_verified": false
         }
@@ -1629,10 +1704,10 @@
           "causation_verified": false
         },
         {
-          "headline": "Yankees’ Cam Schlittler expectedly named Cy Young finalist, spurned for bigger award - Troy Record",
-          "source": "Troy Record",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYmdEVjFBTlRTaUNzeUlodENWSU5qbmxoaS1meHB3dkF3NnZaazZrRlZkd0VacmpYQzhvV0FHcTB2R25MWVNlcFhLNVpxNzJLcFNZSWFCTS0ySjBDenY2Mnk0Rk1XcWVveWRsS09laUdhZ1ptOUVVUzN1cTltallLajBPcEdOcnk1WlJkSnUzSFg5cUpNY1VWaQ?oc=5",
-          "published_at": "2026-11-03T23:46:14+00:00",
+          "headline": "Barcelona teen Hamza Abdelkarim nominated for CAF Young Player of the Year award - Barca Blaugranes",
+          "source": "Barca Blaugranes",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVEVZSjJyRW9rX1EyUkEtcTRYRmI0T0VHOEwxelZfeVItMnJZSGQwbnJsc21rT3RCOHVZME12S3l0S0NlWVNYNnNJTWhaX0g5aHZNZnRSTElyYjhuZEt3aDZhVUJCWFhCVENCQ1pOX3Qxb05JTFBSX3BUd2MxWUt4bWx0ODhmbFlFb3BhX01vTlNZTmpVWU53LXVOV1Q4S0VobnpKdG5ONThEZ25UUjlfNTIzTG1rV21PQUJzcQ?oc=5",
+          "published_at": "2026-11-04T19:00:00+00:00",
           "matching_terms": [
             "award",
             "young"
@@ -1643,12 +1718,12 @@
       "status": "matched"
     }
   ],
-  "news_updated_at": "2026-11-04T17:28:48.314127+00:00",
+  "news_updated_at": "2026-11-04T22:45:48.439187+00:00",
   "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal.",
   "watchlist": {
     "tec-mls-winner-2026-11-07-por": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-04T17:28:16.430604+00:00"
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
     },
     "paccc-usho-midterms-2026-11-03-dem": {
       "title": "U.S House Midterm Winner",
@@ -1664,23 +1739,19 @@
     },
     "tec-mlb-nl-2026-11-27-roy-jjwet": {
       "title": "National League Rookie of the Year",
-      "last_valid": "2026-11-04T17:28:16.430604+00:00"
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
     },
     "tec-mlb-nl-2026-11-27-cy-crisan": {
       "title": "National League Cy Young Award",
-      "last_valid": "2026-11-04T17:28:16.430604+00:00"
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
     },
     "tec-mls-winner-2026-11-07-vwh": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-04T17:28:16.430604+00:00"
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
     },
     "tec-nfl-champ-2027-02-14-w-houtex": {
       "title": "Pro Football Champion 2027",
-      "last_valid": "2026-11-04T17:28:16.430604+00:00"
-    },
-    "tec-nfl-champ-2027-02-14-w-kanchi": {
-      "title": "Pro Football Champion 2027",
-      "last_valid": "2026-11-03T22:20:48.384429+00:00"
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
     },
     "aachc-ufc-featherw-2026-12-31-champ-briort": {
       "title": "UFC Featherweight Champion on Dec 31, 2026",
@@ -1700,15 +1771,31 @@
     },
     "tec-nfl-nfcnorth-2027-01-10-w-gb": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-04T17:28:16.430604+00:00"
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
     },
     "tec-nfl-nfcwest-2027-01-10-w-sea": {
       "title": "NFC West Division Winner",
-      "last_valid": "2026-11-04T17:28:16.430604+00:00"
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
     },
     "tec-nfl-nfcnorth-2027-01-10-w-chi": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-04T17:28:16.430604+00:00"
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
+    },
+    "ipcc-2026ipos-discord": {
+      "title": "Which Companies Will Confirm an IPO in 2026",
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
+    },
+    "ipcc-anthropic-2026-12-31": {
+      "title": "Anthropic IPO Officially Confirmed By",
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
+    },
+    "ipcc-anthropic-2026-11-30": {
+      "title": "Anthropic IPO Officially Confirmed By",
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
+    },
+    "ipcc-anthropic-2027-06-30": {
+      "title": "Anthropic IPO Officially Confirmed By",
+      "last_valid": "2026-11-04T22:45:17.120124+00:00"
     }
   },
   "momentum_lookback_minutes": [
@@ -1719,7 +1806,7 @@
   "fee_verified_at": "2026-10-28",
   "account_link": {
     "status": "connected_read_only",
-    "checked_at": "2026-11-04T17:28:49.228635+00:00",
+    "checked_at": "2026-11-04T22:45:49.354151+00:00",
     "live_trading_enabled": false
   }
 }
