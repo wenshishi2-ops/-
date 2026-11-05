@@ -4,19 +4,19 @@
   "strategy": "COST_ADJUSTED_MOMENTUM",
   "cash": 3000.0,
   "equity": 3000.0,
-  "last_scan": "2026-11-05T17:43:58.813768+00:00",
+  "last_scan": "2026-11-05T22:52:49.555423+00:00",
   "markets": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
       "title": "Major League Soccer Champion",
       "bid": 0.002,
-      "ask": 0.024
+      "ask": 0.003
     },
     {
       "slug": "tec-mlb-nl-2026-11-27-roy-jjwet",
       "title": "National League Rookie of the Year",
-      "bid": 0.001,
-      "ask": 0.009
+      "bid": 0.007,
+      "ask": 0.008
     },
     {
       "slug": "tec-mlb-nl-2026-11-27-cy-crisan",
@@ -27,8 +27,8 @@
     {
       "slug": "tec-mls-winner-2026-11-07-vwh",
       "title": "Major League Soccer Champion",
-      "bid": 0.161,
-      "ask": 0.166
+      "bid": 0.167,
+      "ask": 0.206
     },
     {
       "slug": "tec-nfl-champ-2027-02-14-w-houtex",
@@ -39,8 +39,8 @@
     {
       "slug": "tec-nfl-nfcnorth-2027-01-10-w-gb",
       "title": "NFC North Division Winner",
-      "bid": 0.07,
-      "ask": 0.08
+      "bid": 0.08,
+      "ask": 0.09
     },
     {
       "slug": "tec-nfl-nfcwest-2027-01-10-w-sea",
@@ -55,16 +55,16 @@
       "ask": 0.38
     },
     {
-      "slug": "aachc-ufc-heavyw-2026-12-31-champ-martyb",
-      "title": "UFC Heavyweight Champion on Dec 31, 2026",
-      "bid": 0.01,
-      "ask": 0.02
+      "slug": "aachc-ufc-welterw-2026-12-31-champ-islmak",
+      "title": "UFC Welterweight Champion on Dec 31, 2026",
+      "bid": 0.93,
+      "ask": 0.97
     },
     {
-      "slug": "aachc-ufc-lightheavyw-2026-12-31-champ-jamhil",
-      "title": "UFC Light Heavyweight Champion on Dec 31, 2026",
-      "bid": 0.01,
-      "ask": 0.04
+      "slug": "tec-nascar-cupseries-2026-11-08-w-chrbel",
+      "title": "NASCAR Cup Series Champion",
+      "bid": 0.02,
+      "ask": 0.03
     }
   ],
   "trades": [],
@@ -74,19 +74,19 @@
     "eligible_markets": 30,
     "market_samples": [
       {
-        "slug": "aachc-ufc-lightw-2026-12-31-champ-danhoo",
+        "slug": "aachc-ufc-welterw-2026-12-31-champ-sharak",
         "closed": false,
         "endDate": "2027-01-15T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "aachc-ufc-heavyw-2026-12-31-champ-martyb",
+        "slug": "aachc-ufc-middlew-2026-12-31-champ-seastr",
         "closed": false,
         "endDate": "2027-01-15T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "aachc-ufc-lightheavyw-2026-12-31-champ-jamhil",
+        "slug": "aachc-ufc-welterw-2026-12-31-champ-ilitop",
         "closed": false,
         "endDate": "2027-01-15T04:00:00Z",
         "rejected": null
@@ -99,16 +99,16 @@
       "past_end": 0,
       "higher_fee_category": 0
     },
-    "watched_markets": 20,
+    "watched_markets": 18,
     "slugs_checked": 12,
     "valid_quotes": 10,
     "sample_errors": [
-      "aachc-ufc-lightw-2026-12-31-champ-danhoo: no valid two-sided BBO",
-      "aachc-ufc-lightw-2026-12-31-champ-bensai: no valid two-sided BBO"
+      "aachc-ufc-welterw-2026-12-31-champ-sharak: no valid two-sided BBO",
+      "aachc-ufc-welterw-2026-12-31-champ-iangar: no valid two-sided BBO"
     ],
     "rate_limited": false
   },
-  "quotes_as_of": "2026-11-05T17:43:58.813768+00:00",
+  "quotes_as_of": "2026-11-05T22:52:49.555423+00:00",
   "peak_equity": 3000.0,
   "initial_capital": 3000.0,
   "virtual_deposits": 2000.0,
@@ -870,6 +870,18 @@
         "time": "2026-11-05T09:55:28.634485+00:00"
       }
     ],
+    "aachc-ufc-heavyw-2026-12-31-champ-martyb": [
+      {
+        "mid": 0.015,
+        "time": "2026-11-05T17:44:30.500940+00:00"
+      }
+    ],
+    "aachc-ufc-lightheavyw-2026-12-31-champ-jamhil": [
+      {
+        "mid": 0.025,
+        "time": "2026-11-05T17:44:30.500940+00:00"
+      }
+    ],
     "tec-mls-winner-2026-11-07-por": [
       {
         "mid": 0.006,
@@ -1002,6 +1014,10 @@
       {
         "mid": 0.013000000000000001,
         "time": "2026-11-05T17:44:30.500940+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-11-05T22:53:21.192116+00:00"
       }
     ],
     "tec-mlb-nl-2026-11-27-roy-jjwet": [
@@ -1124,6 +1140,10 @@
       {
         "mid": 0.004999999999999999,
         "time": "2026-11-05T17:44:30.500940+00:00"
+      },
+      {
+        "mid": 0.0075,
+        "time": "2026-11-05T22:53:21.192116+00:00"
       }
     ],
     "tec-mlb-nl-2026-11-27-cy-crisan": [
@@ -1246,6 +1266,10 @@
       {
         "mid": 0.0035,
         "time": "2026-11-05T17:44:30.500940+00:00"
+      },
+      {
+        "mid": 0.0035,
+        "time": "2026-11-05T22:53:21.192116+00:00"
       }
     ],
     "tec-mls-winner-2026-11-07-vwh": [
@@ -1360,6 +1384,10 @@
       {
         "mid": 0.1635,
         "time": "2026-11-05T17:44:30.500940+00:00"
+      },
+      {
+        "mid": 0.1865,
+        "time": "2026-11-05T22:53:21.192116+00:00"
       }
     ],
     "tec-nfl-champ-2027-02-14-w-houtex": [
@@ -1390,6 +1418,10 @@
       {
         "mid": 0.015,
         "time": "2026-11-05T17:44:30.500940+00:00"
+      },
+      {
+        "mid": 0.015,
+        "time": "2026-11-05T22:53:21.192116+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-gb": [
@@ -1412,6 +1444,10 @@
       {
         "mid": 0.07500000000000001,
         "time": "2026-11-05T17:44:30.500940+00:00"
+      },
+      {
+        "mid": 0.08499999999999999,
+        "time": "2026-11-05T22:53:21.192116+00:00"
       }
     ],
     "tec-nfl-nfcwest-2027-01-10-w-sea": [
@@ -1434,6 +1470,10 @@
       {
         "mid": 0.11499999999999999,
         "time": "2026-11-05T17:44:30.500940+00:00"
+      },
+      {
+        "mid": 0.11499999999999999,
+        "time": "2026-11-05T22:53:21.192116+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-chi": [
@@ -1456,24 +1496,28 @@
       {
         "mid": 0.375,
         "time": "2026-11-05T17:44:30.500940+00:00"
-      }
-    ],
-    "aachc-ufc-heavyw-2026-12-31-champ-martyb": [
+      },
       {
-        "mid": 0.015,
-        "time": "2026-11-05T17:44:30.500940+00:00"
+        "mid": 0.375,
+        "time": "2026-11-05T22:53:21.192116+00:00"
       }
     ],
-    "aachc-ufc-lightheavyw-2026-12-31-champ-jamhil": [
+    "aachc-ufc-welterw-2026-12-31-champ-islmak": [
+      {
+        "mid": 0.95,
+        "time": "2026-11-05T22:53:21.192116+00:00"
+      }
+    ],
+    "tec-nascar-cupseries-2026-11-08-w-chrbel": [
       {
         "mid": 0.025,
-        "time": "2026-11-05T17:44:30.500940+00:00"
+        "time": "2026-11-05T22:53:21.192116+00:00"
       }
     ]
   },
   "max_drawdown_pct": 0.0,
   "paper_status": "ACTIVE",
-  "paper_updated_at": "2026-11-05T17:44:30.500940+00:00",
+  "paper_updated_at": "2026-11-05T22:53:21.192116+00:00",
   "pricing_note": "Taker fee theta=0.0695 per official schedule (verified 2026-10-28); 0.5% adverse slippage per side is an assumption. No depth, latency, news attribution or settlement. Stale marks are not executable.",
   "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
   "fee_theta": 0.0695,
@@ -1774,13 +1818,13 @@
   "news_context": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
-      "query": "soccer champion major",
+      "query": "major champion soccer",
       "articles": [
         {
-          "headline": "CAA Announces 2026 Men's Soccer Major Award Winners - Coastal Athletic Association",
-          "source": "Coastal Athletic Association",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZElaM0VTNHM0QjRqSl9aWDF0cDdOblRVUHF0TlFGZU9VU1NEQkVEaTdjbWRaT3kwYTk1Vm1NaXJrVk80OGZVc1hnWmx4ckQyUWZlTXpxaFdZZDVva2lvbmJXaXVrTlg0QXp1ek1KR1BmTVZMSGpJZkoxYWlDRzRPYWFOclFNMlA0R09EaHhxOEpFUGRxZGZB?oc=5",
-          "published_at": "2026-11-05T15:01:51+00:00",
+          "headline": "Orlando City SC vs New England Revolution Prediction & Picks - Major League Soccer - SportyTrader",
+          "source": "SportyTrader",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbWxYWVM4aTZnV01TU0RqY1NZQjdFVjBkV21VejZlR2llanUyR2pWakpjWDdZVnd2X3ZZMVo4ckxvS2VZV1RSekZPajlhdi0yb2hlMmp6Rl90TjlkeVExbUxlaTJKckticTdPZVlEMzZaOUxMNWY1WnhVaU1lXy1TRUxreWhlZFVl?oc=5",
+          "published_at": "2026-11-05T21:00:00+00:00",
           "matching_terms": [
             "major",
             "soccer"
@@ -1806,10 +1850,10 @@
           "causation_verified": false
         },
         {
-          "headline": "Im Young-woong's fan club wins minister's award after donating W4.7b over six years - 헤럴드경제",
-          "source": "헤럴드경제",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1QdXk3UXlIQWs5Wm1NQWl3VEE2UE9FNWFySU91QzA4LXlzOEpPM2EyRHhnbGp1VEVubzlvWkdLWXlwOGJJaEU2ZFFESzFNZEo3NFRhRGtNTQ?oc=5",
-          "published_at": "2026-11-05T06:44:48+00:00",
+          "headline": "DSWD lauds ex-4Ps child who won int'l young ecofeminist award - The Manila Times",
+          "source": "The Manila Times",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPX2VVTWVxLXFCUEttR0JuZmR6OEVwR011NE93d0JEVVFIWTFSVTFJRDRzc0QtQ21QeGU5akJ3VHN6d2IyU0RGeVkwbGEyNXhaa21kTnU2VjFkaGNielRDMHBTWGFBa3JRMnAyaERDODRoWUFIVnlpY052NjZ4VHlvWDNJd0cxOXByd18xZjgzMFZRel85Z3p2V1Q3ZFBHcGNjTWMzRzlFVXJGTFZxMk5xS09lZC01bnF1aXRzZEVn0gHDAUFVX3lxTFA5UW84Qk04YWRXRnlGRWFyb0RUX0RiUmdTNjlIbWZ0bU1QVUhsdGZJbm0zTW5rd2hLNWNKajI1V0hOenY0NG55MEpkT3ZYekhqTW1rbGctZEsxNVBPSUJ2bDA5aFc3cHgyR1BzX2ZSUzk3aVNOQVgxT3pWTUtSdDBNbFYzRWVxS3pKTU5oRWRTdFZPRnh",
+          "published_at": "2026-11-05T18:41:00+00:00",
           "matching_terms": [
             "award",
             "young"
@@ -1817,10 +1861,10 @@
           "causation_verified": false
         },
         {
-          "headline": "Seven consecutive years of winning the Popularity Award: A historic record… Im Young-woong confirmed to win the Male Solo Popularity Award at 'AAA 2026' - 스타뉴스",
-          "source": "스타뉴스",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1FX1NtSUMzSXNfNlNtSGRFaldzdTJUZE9PRmE1Wm9OUUllTWlfeDBVR3NWNFJaNUYtUjJ3MXJadk1pN1VLTEdlcTlIVy1PbGFkTG9EckMxYThxZUpHMU5VSzhHb09WM3RNWnF2OTZxbWkzQ2FYLWZWeQ?oc=5",
-          "published_at": "2026-11-05T02:04:18+00:00",
+          "headline": "Im Young-woong's fan club wins minister's award after donating W4.7b over six years - 헤럴드경제",
+          "source": "헤럴드경제",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1QdXk3UXlIQWs5Wm1NQWl3VEE2UE9FNWFySU91QzA4LXlzOEpPM2EyRHhnbGp1VEVubzlvWkdLWXlwOGJJaEU2ZFFESzFNZEo3NFRhRGtNTQ?oc=5",
+          "published_at": "2026-11-05T06:44:48+00:00",
           "matching_terms": [
             "award",
             "young"
@@ -1831,56 +1875,40 @@
       "status": "matched"
     }
   ],
-  "news_updated_at": "2026-11-05T17:44:30.760696+00:00",
+  "news_updated_at": "2026-11-05T22:53:21.261354+00:00",
   "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal.",
   "watchlist": {
     "tec-mls-winner-2026-11-07-por": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-05T17:43:58.813768+00:00"
+      "last_valid": "2026-11-05T22:52:49.555423+00:00"
     },
     "tec-mlb-nl-2026-11-27-roy-jjwet": {
       "title": "National League Rookie of the Year",
-      "last_valid": "2026-11-05T17:43:58.813768+00:00"
+      "last_valid": "2026-11-05T22:52:49.555423+00:00"
     },
     "tec-mlb-nl-2026-11-27-cy-crisan": {
       "title": "National League Cy Young Award",
-      "last_valid": "2026-11-05T17:43:58.813768+00:00"
+      "last_valid": "2026-11-05T22:52:49.555423+00:00"
     },
     "tec-mls-winner-2026-11-07-vwh": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-05T17:43:58.813768+00:00"
+      "last_valid": "2026-11-05T22:52:49.555423+00:00"
     },
     "tec-nfl-champ-2027-02-14-w-houtex": {
       "title": "Pro Football Champion 2027",
-      "last_valid": "2026-11-05T17:43:58.813768+00:00"
+      "last_valid": "2026-11-05T22:52:49.555423+00:00"
     },
     "tec-nfl-nfcnorth-2027-01-10-w-gb": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-05T17:43:58.813768+00:00"
+      "last_valid": "2026-11-05T22:52:49.555423+00:00"
     },
     "tec-nfl-nfcwest-2027-01-10-w-sea": {
       "title": "NFC West Division Winner",
-      "last_valid": "2026-11-05T17:43:58.813768+00:00"
+      "last_valid": "2026-11-05T22:52:49.555423+00:00"
     },
     "tec-nfl-nfcnorth-2027-01-10-w-chi": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-05T17:43:58.813768+00:00"
-    },
-    "ipcc-2026ipos-discord": {
-      "title": "Which Companies Will Confirm an IPO in 2026",
-      "last_valid": "2026-11-04T22:45:17.120124+00:00"
-    },
-    "ipcc-anthropic-2026-12-31": {
-      "title": "Anthropic IPO Officially Confirmed By",
-      "last_valid": "2026-11-04T22:45:17.120124+00:00"
-    },
-    "ipcc-anthropic-2026-11-30": {
-      "title": "Anthropic IPO Officially Confirmed By",
-      "last_valid": "2026-11-04T22:45:17.120124+00:00"
-    },
-    "ipcc-anthropic-2027-06-30": {
-      "title": "Anthropic IPO Officially Confirmed By",
-      "last_valid": "2026-11-04T22:45:17.120124+00:00"
+      "last_valid": "2026-11-05T22:52:49.555423+00:00"
     },
     "aachc-ufc-middlew-2026-12-31-champ-seastr": {
       "title": "UFC Middleweight Champion on Dec 31, 2026",
@@ -1913,6 +1941,14 @@
     "aachc-ufc-lightheavyw-2026-12-31-champ-jamhil": {
       "title": "UFC Light Heavyweight Champion on Dec 31, 2026",
       "last_valid": "2026-11-05T17:43:58.813768+00:00"
+    },
+    "aachc-ufc-welterw-2026-12-31-champ-islmak": {
+      "title": "UFC Welterweight Champion on Dec 31, 2026",
+      "last_valid": "2026-11-05T22:52:49.555423+00:00"
+    },
+    "tec-nascar-cupseries-2026-11-08-w-chrbel": {
+      "title": "NASCAR Cup Series Champion",
+      "last_valid": "2026-11-05T22:52:49.555423+00:00"
     }
   },
   "momentum_lookback_minutes": [
@@ -1923,7 +1959,7 @@
   "fee_verified_at": "2026-10-28",
   "account_link": {
     "status": "connected_read_only",
-    "checked_at": "2026-11-05T17:44:31.502248+00:00",
+    "checked_at": "2026-11-05T22:53:22.231964+00:00",
     "live_trading_enabled": false
   }
 }
