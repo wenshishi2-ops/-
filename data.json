@@ -4,19 +4,13 @@
   "strategy": "COST_ADJUSTED_MOMENTUM",
   "cash": 3000.0,
   "equity": 3000.0,
-  "last_scan": "2026-11-06T17:10:22.124133+00:00",
+  "last_scan": "2026-11-06T22:04:05.649345+00:00",
   "markets": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
       "title": "Major League Soccer Champion",
       "bid": 0.002,
-      "ask": 0.014
-    },
-    {
-      "slug": "tec-mlb-nl-2026-11-27-roy-jjwet",
-      "title": "National League Rookie of the Year",
-      "bid": 0.001,
-      "ask": 0.002
+      "ask": 0.035
     },
     {
       "slug": "tec-mlb-nl-2026-11-27-cy-crisan",
@@ -55,28 +49,28 @@
       "ask": 0.38
     },
     {
-      "slug": "tec-nfl-nfcchamp-2027-01-31-w-min",
+      "slug": "tec-nfl-nfcchamp-2027-01-31-w-atl",
       "title": "NFC Champion",
-      "bid": 0.07,
-      "ask": 0.08
+      "bid": 0.01,
+      "ask": 0.02
     },
     {
-      "slug": "tec-nfl-nfcchamp-2027-01-31-w-dal",
+      "slug": "tec-nfl-nfcchamp-2027-01-31-w-car",
       "title": "NFC Champion",
-      "bid": 0.02,
-      "ask": 0.04
+      "bid": 0.01,
+      "ask": 0.02
     },
     {
-      "slug": "tec-nfl-nfcchamp-2027-01-31-w-lar",
-      "title": "NFC Champion",
-      "bid": 0.1,
-      "ask": 0.11
+      "slug": "tec-nfl-afcwest-2027-01-10-w-kc",
+      "title": "AFC West Division Winner",
+      "bid": 0.44,
+      "ask": 0.45
     },
     {
-      "slug": "tec-nfl-nfcchamp-2027-01-31-w-gb",
-      "title": "NFC Champion",
-      "bid": 0.04,
-      "ask": 0.05
+      "slug": "ipcc-2026ipos-revolut",
+      "title": "Which Companies Will Confirm an IPO in 2026",
+      "bid": 0.01,
+      "ask": 0.02
     }
   ],
   "trades": [],
@@ -111,13 +105,15 @@
       "past_end": 0,
       "higher_fee_category": 0
     },
-    "watched_markets": 24,
+    "watched_markets": 26,
     "slugs_checked": 12,
-    "valid_quotes": 12,
-    "sample_errors": [],
+    "valid_quotes": 11,
+    "sample_errors": [
+      "tec-mlb-nl-2026-11-27-roy-jjwet: no valid two-sided BBO"
+    ],
     "rate_limited": false
   },
-  "quotes_as_of": "2026-11-06T17:10:22.124133+00:00",
+  "quotes_as_of": "2026-11-06T22:04:05.649345+00:00",
   "peak_equity": 3000.0,
   "initial_capital": 3000.0,
   "virtual_deposits": 2000.0,
@@ -943,6 +939,168 @@
         "time": "2026-11-06T09:58:59.566245+00:00"
       }
     ],
+    "tec-mlb-nl-2026-11-27-roy-jjwet": [
+      {
+        "mid": 0.006500000000000001,
+        "time": "2026-10-29T20:41:14.617728+00:00"
+      },
+      {
+        "mid": 0.0075,
+        "time": "2026-10-30T00:21:17.854661+00:00"
+      },
+      {
+        "mid": 0.004999999999999999,
+        "time": "2026-10-30T06:01:11.296469+00:00"
+      },
+      {
+        "mid": 0.0015,
+        "time": "2026-10-30T12:25:20.906058+00:00"
+      },
+      {
+        "mid": 0.0055,
+        "time": "2026-10-30T18:07:33.821711+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-10-30T22:13:49.451040+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-10-31T01:36:10.299286+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-10-31T07:28:09.009342+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-10-31T13:46:36.779450+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-10-31T17:57:04.946035+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-10-31T20:50:33.190127+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-10-31T23:49:09.181272+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-11-01T02:40:04.332270+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-11-01T09:42:36.676810+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-11-01T16:23:36.115247+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-11-01T20:38:06.633570+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-11-01T23:52:22.547957+00:00"
+      },
+      {
+        "mid": 0.002,
+        "time": "2026-11-02T02:48:42.959577+00:00"
+      },
+      {
+        "mid": 0.002,
+        "time": "2026-11-02T10:02:54.856824+00:00"
+      },
+      {
+        "mid": 0.002,
+        "time": "2026-11-02T20:13:16.465002+00:00"
+      },
+      {
+        "mid": 0.0105,
+        "time": "2026-11-03T02:17:22.940625+00:00"
+      },
+      {
+        "mid": 0.0025,
+        "time": "2026-11-03T09:37:35.549925+00:00"
+      },
+      {
+        "mid": 0.008,
+        "time": "2026-11-03T17:18:40.378920+00:00"
+      },
+      {
+        "mid": 0.010499999999999999,
+        "time": "2026-11-03T22:21:18.954316+00:00"
+      },
+      {
+        "mid": 0.0055,
+        "time": "2026-11-04T02:27:31.906112+00:00"
+      },
+      {
+        "mid": 0.0035,
+        "time": "2026-11-04T17:28:48.114608+00:00"
+      },
+      {
+        "mid": 0.0035,
+        "time": "2026-11-04T22:45:48.257341+00:00"
+      },
+      {
+        "mid": 0.0035,
+        "time": "2026-11-05T02:50:55.410275+00:00"
+      },
+      {
+        "mid": 0.0035,
+        "time": "2026-11-05T09:55:28.634485+00:00"
+      },
+      {
+        "mid": 0.004999999999999999,
+        "time": "2026-11-05T17:44:30.500940+00:00"
+      },
+      {
+        "mid": 0.0075,
+        "time": "2026-11-05T22:53:21.192116+00:00"
+      },
+      {
+        "mid": 0.0015,
+        "time": "2026-11-06T02:54:51.825120+00:00"
+      },
+      {
+        "mid": 0.0045000000000000005,
+        "time": "2026-11-06T09:58:59.566245+00:00"
+      },
+      {
+        "mid": 0.0015,
+        "time": "2026-11-06T17:10:53.555513+00:00"
+      }
+    ],
+    "tec-nfl-nfcchamp-2027-01-31-w-min": [
+      {
+        "mid": 0.07500000000000001,
+        "time": "2026-11-06T17:10:53.555513+00:00"
+      }
+    ],
+    "tec-nfl-nfcchamp-2027-01-31-w-dal": [
+      {
+        "mid": 0.03,
+        "time": "2026-11-06T17:10:53.555513+00:00"
+      }
+    ],
+    "tec-nfl-nfcchamp-2027-01-31-w-lar": [
+      {
+        "mid": 0.10500000000000001,
+        "time": "2026-11-06T17:10:53.555513+00:00"
+      }
+    ],
+    "tec-nfl-nfcchamp-2027-01-31-w-gb": [
+      {
+        "mid": 0.045,
+        "time": "2026-11-06T17:10:53.555513+00:00"
+      }
+    ],
     "tec-mls-winner-2026-11-07-por": [
       {
         "mid": 0.006,
@@ -1091,144 +1249,10 @@
       {
         "mid": 0.008,
         "time": "2026-11-06T17:10:53.555513+00:00"
-      }
-    ],
-    "tec-mlb-nl-2026-11-27-roy-jjwet": [
-      {
-        "mid": 0.006500000000000001,
-        "time": "2026-10-29T20:41:14.617728+00:00"
       },
       {
-        "mid": 0.0075,
-        "time": "2026-10-30T00:21:17.854661+00:00"
-      },
-      {
-        "mid": 0.004999999999999999,
-        "time": "2026-10-30T06:01:11.296469+00:00"
-      },
-      {
-        "mid": 0.0015,
-        "time": "2026-10-30T12:25:20.906058+00:00"
-      },
-      {
-        "mid": 0.0055,
-        "time": "2026-10-30T18:07:33.821711+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-10-30T22:13:49.451040+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-10-31T01:36:10.299286+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-10-31T07:28:09.009342+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-10-31T13:46:36.779450+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-10-31T17:57:04.946035+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-10-31T20:50:33.190127+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-10-31T23:49:09.181272+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-11-01T02:40:04.332270+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-11-01T09:42:36.676810+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-11-01T16:23:36.115247+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-11-01T20:38:06.633570+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-11-01T23:52:22.547957+00:00"
-      },
-      {
-        "mid": 0.002,
-        "time": "2026-11-02T02:48:42.959577+00:00"
-      },
-      {
-        "mid": 0.002,
-        "time": "2026-11-02T10:02:54.856824+00:00"
-      },
-      {
-        "mid": 0.002,
-        "time": "2026-11-02T20:13:16.465002+00:00"
-      },
-      {
-        "mid": 0.0105,
-        "time": "2026-11-03T02:17:22.940625+00:00"
-      },
-      {
-        "mid": 0.0025,
-        "time": "2026-11-03T09:37:35.549925+00:00"
-      },
-      {
-        "mid": 0.008,
-        "time": "2026-11-03T17:18:40.378920+00:00"
-      },
-      {
-        "mid": 0.010499999999999999,
-        "time": "2026-11-03T22:21:18.954316+00:00"
-      },
-      {
-        "mid": 0.0055,
-        "time": "2026-11-04T02:27:31.906112+00:00"
-      },
-      {
-        "mid": 0.0035,
-        "time": "2026-11-04T17:28:48.114608+00:00"
-      },
-      {
-        "mid": 0.0035,
-        "time": "2026-11-04T22:45:48.257341+00:00"
-      },
-      {
-        "mid": 0.0035,
-        "time": "2026-11-05T02:50:55.410275+00:00"
-      },
-      {
-        "mid": 0.0035,
-        "time": "2026-11-05T09:55:28.634485+00:00"
-      },
-      {
-        "mid": 0.004999999999999999,
-        "time": "2026-11-05T17:44:30.500940+00:00"
-      },
-      {
-        "mid": 0.0075,
-        "time": "2026-11-05T22:53:21.192116+00:00"
-      },
-      {
-        "mid": 0.0015,
-        "time": "2026-11-06T02:54:51.825120+00:00"
-      },
-      {
-        "mid": 0.0045000000000000005,
-        "time": "2026-11-06T09:58:59.566245+00:00"
-      },
-      {
-        "mid": 0.0015,
-        "time": "2026-11-06T17:10:53.555513+00:00"
+        "mid": 0.018500000000000003,
+        "time": "2026-11-06T22:04:36.639141+00:00"
       }
     ],
     "tec-mlb-nl-2026-11-27-cy-crisan": [
@@ -1367,6 +1391,10 @@
       {
         "mid": 0.0035,
         "time": "2026-11-06T17:10:53.555513+00:00"
+      },
+      {
+        "mid": 0.0035,
+        "time": "2026-11-06T22:04:36.639141+00:00"
       }
     ],
     "tec-mls-winner-2026-11-07-vwh": [
@@ -1497,6 +1525,10 @@
       {
         "mid": 0.1595,
         "time": "2026-11-06T17:10:53.555513+00:00"
+      },
+      {
+        "mid": 0.1595,
+        "time": "2026-11-06T22:04:36.639141+00:00"
       }
     ],
     "tec-nfl-champ-2027-02-14-w-houtex": [
@@ -1543,6 +1575,10 @@
       {
         "mid": 0.015,
         "time": "2026-11-06T17:10:53.555513+00:00"
+      },
+      {
+        "mid": 0.015,
+        "time": "2026-11-06T22:04:36.639141+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-gb": [
@@ -1581,6 +1617,10 @@
       {
         "mid": 0.08499999999999999,
         "time": "2026-11-06T17:10:53.555513+00:00"
+      },
+      {
+        "mid": 0.08499999999999999,
+        "time": "2026-11-06T22:04:36.639141+00:00"
       }
     ],
     "tec-nfl-nfcwest-2027-01-10-w-sea": [
@@ -1619,6 +1659,10 @@
       {
         "mid": 0.11499999999999999,
         "time": "2026-11-06T17:10:53.555513+00:00"
+      },
+      {
+        "mid": 0.11499999999999999,
+        "time": "2026-11-06T22:04:36.639141+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-chi": [
@@ -1657,36 +1701,40 @@
       {
         "mid": 0.375,
         "time": "2026-11-06T17:10:53.555513+00:00"
+      },
+      {
+        "mid": 0.375,
+        "time": "2026-11-06T22:04:36.639141+00:00"
       }
     ],
-    "tec-nfl-nfcchamp-2027-01-31-w-min": [
+    "tec-nfl-nfcchamp-2027-01-31-w-atl": [
       {
-        "mid": 0.07500000000000001,
-        "time": "2026-11-06T17:10:53.555513+00:00"
+        "mid": 0.015,
+        "time": "2026-11-06T22:04:36.639141+00:00"
       }
     ],
-    "tec-nfl-nfcchamp-2027-01-31-w-dal": [
+    "tec-nfl-nfcchamp-2027-01-31-w-car": [
       {
-        "mid": 0.03,
-        "time": "2026-11-06T17:10:53.555513+00:00"
+        "mid": 0.015,
+        "time": "2026-11-06T22:04:36.639141+00:00"
       }
     ],
-    "tec-nfl-nfcchamp-2027-01-31-w-lar": [
+    "tec-nfl-afcwest-2027-01-10-w-kc": [
       {
-        "mid": 0.10500000000000001,
-        "time": "2026-11-06T17:10:53.555513+00:00"
+        "mid": 0.445,
+        "time": "2026-11-06T22:04:36.639141+00:00"
       }
     ],
-    "tec-nfl-nfcchamp-2027-01-31-w-gb": [
+    "ipcc-2026ipos-revolut": [
       {
-        "mid": 0.045,
-        "time": "2026-11-06T17:10:53.555513+00:00"
+        "mid": 0.015,
+        "time": "2026-11-06T22:04:36.639141+00:00"
       }
     ]
   },
   "max_drawdown_pct": 0.0,
   "paper_status": "ACTIVE",
-  "paper_updated_at": "2026-11-06T17:10:53.555513+00:00",
+  "paper_updated_at": "2026-11-06T22:04:36.639141+00:00",
   "pricing_note": "Taker fee theta=0.0695 per official schedule (verified 2026-10-28); 0.5% adverse slippage per side is an assumption. No depth, latency, news attribution or settlement. Stale marks are not executable.",
   "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
   "fee_theta": 0.0695,
@@ -1987,7 +2035,7 @@
   "news_context": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
-      "query": "soccer major champion",
+      "query": "champion soccer major",
       "articles": [
         {
           "headline": "Enos Family Commits Major Gift to Transform Soccer Locker Room and Team Spaces - University of Oklahoma - Soonersports.com",
@@ -2001,21 +2049,21 @@
           "causation_verified": false
         },
         {
-          "headline": "Why Soccer Is the Hardest Major Sport to Predict - FindArticles",
-          "source": "FindArticles",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcWhYNDhUN2JZN0J5emxXT2VtYWVxNDdMMk5FaFV2WDhQbnZkaWFEb01nWEZQU1NOSWJKM3pEbV9yeHBrbmpad2k3UWdoV2FKWHdwLVBnNHA2bmNaeXotRDdVb3pNQ29uMm0tVXFVeHd3VXN2WmczeG4tYjEwRmpMMXp6VWnSAYwBQVVfeXFMT0hJdlJGenJZTDFTcEc1djN6aXlkQUx2ZEUwdzlXQ19kSEx1bC1WM3RPYk40eERFTkk2SHI0VFRRT1ZDV2pTUjA5ZS1NUVRja09PYkpfZF81bklsVHAwMzFLSFRCWEVFakVjd29WZmxzdnp2b01WdHN2aHR1eXFKeFZ1WEZPN1pJSlhkbzY?oc=5",
-          "published_at": "2026-11-06T13:56:40+00:00",
+          "headline": "Jalen Brunson makes major career change as Knicks champion makes acting debut on Law and Order: SVU - The Sun",
+          "source": "The Sun",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORlpkUzFoUnJudHd5TjQ5QjNXT1VtNDVPdTFWTmdubjF4ZUtyb011WjhTdXZHa3BhOWFvcVNpN0huOVl3b09QYWxrMU1JUGs1OVhJaVF0Mk9yZ2tHRzJ1aXVEdkZtY3VjWFFfemFIMkdKMmJ0T0EzV1pQVjVYM1JROGlR?oc=5",
+          "published_at": "2026-11-06T13:19:07+00:00",
           "matching_terms": [
-            "major",
-            "soccer"
+            "champion",
+            "major"
           ],
           "causation_verified": false
         },
         {
-          "headline": "Major League Soccer (MLS) TV Schedule: Upcoming games, dates and kick-off times - Goal.com",
-          "source": "Goal.com",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1PY0ttLUFfSDV0TFgya0hib2Q4dUdzTHlmdmlaWWJfYTMxN196QnhWUVlvRHVUSno4Y1VxN1kyTlR6RUN4UXJrUDBuZEJEVTVGWFE0d2N4ajVmZS1UVWZfbGJ1Szc5S01OVE54RGRaeGVGaEJwM2c?oc=5",
-          "published_at": "2026-11-06T14:16:04+00:00",
+          "headline": "Major Mayo soccer official suspended for twelve months - The Mayo News",
+          "source": "The Mayo News",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOemF3OUE0T0I0X0gzLXl2RWFUVVFPMWJ0em1WeGxMU3RnRG1mcDQ0b1ZHMlpad0xWSU5OVDNaaEJYcW41Q1REbUVLbXRsazVXc0dOdzVpT1hJdURlcFo2SG13eFNRRGtQejlPbTBxVlhFd1o4TTF0V0oybk1nWURQRDZDWkRpOWVJcG0tVGIwanNPZTJOZ2JSQVV3RVNpNEx1?oc=5",
+          "published_at": "2026-11-06T17:01:00+00:00",
           "matching_terms": [
             "major",
             "soccer"
@@ -2027,7 +2075,7 @@
     },
     {
       "slug": "tec-mlb-nl-2026-11-27-cy-crisan",
-      "query": "young award",
+      "query": "award young",
       "articles": [
         {
           "headline": "Conversations with Young Scientist SDGs Award winners - China Daily",
@@ -2064,14 +2112,54 @@
         }
       ],
       "status": "matched"
+    },
+    {
+      "slug": "tec-nfl-champ-2027-02-14-w-houtex",
+      "query": "champion pro football",
+      "articles": [
+        {
+          "headline": "UNC's Bill Belichick nominated for Pro Football Hall of Fame - Tar Heel Times",
+          "source": "Tar Heel Times",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Bc2RsWjI5aDNqR3lpLVp1MXBpaVhBa1ZxdDNVNVAtaGttQVM2Rmg3VG40TU81aDNOb3pwVVVTNDQ5TEFGZmFZUE5GWnowWmliZEl6cmFBd2Vsb2M?oc=5",
+          "published_at": "2026-11-06T17:49:48+00:00",
+          "matching_terms": [
+            "football",
+            "pro"
+          ],
+          "causation_verified": false
+        },
+        {
+          "headline": "Bill Belichick again is among five coaching candidates for the Pro Football Hall of Fame - The Arkansas Democrat-Gazette",
+          "source": "The Arkansas Democrat-Gazette",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbEVsMDRlZThBbXpVOTROZkk1WE5MLWhJWUtzcmJUd0huOGhLd0tab1l3SUczOUNoNUtfeGJscVl0T05XX2ZEYWZSb0dfWUdYVGlRb1NQWUtBd3I4dnQzdnF5TGNRQXMxWVdhVFQ4VUYwQjQ0cEpFbktRcDl6N2xOcnY0MFV0cW44V19Db0tTbE8zUTN6T1U4?oc=5",
+          "published_at": "2026-11-06T08:14:00+00:00",
+          "matching_terms": [
+            "football",
+            "pro"
+          ],
+          "causation_verified": false
+        },
+        {
+          "headline": "It's Time the Pro Football Hall of Fame Recognized More Eagles Legends - 97.3 ESPN",
+          "source": "97.3 ESPN",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE90SmZsWHZnXzcyLTRjTFJFdm9VbzFRX1NQdUNZSnM4QWdNX2tfMmVXUC1RYlJtZE9pZGN3TXY3aXpVU2lxWF92eWdwSjJKc2hGOFJQNWg2QllkUXZjdjkzZzFR?oc=5",
+          "published_at": "2026-11-06T03:19:31+00:00",
+          "matching_terms": [
+            "football",
+            "pro"
+          ],
+          "causation_verified": false
+        }
+      ],
+      "status": "matched"
     }
   ],
-  "news_updated_at": "2026-11-06T17:10:53.646783+00:00",
+  "news_updated_at": "2026-11-06T22:04:36.733578+00:00",
   "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal.",
   "watchlist": {
     "tec-mls-winner-2026-11-07-por": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-06T17:10:22.124133+00:00"
+      "last_valid": "2026-11-06T22:04:05.649345+00:00"
     },
     "tec-mlb-nl-2026-11-27-roy-jjwet": {
       "title": "National League Rookie of the Year",
@@ -2079,35 +2167,27 @@
     },
     "tec-mlb-nl-2026-11-27-cy-crisan": {
       "title": "National League Cy Young Award",
-      "last_valid": "2026-11-06T17:10:22.124133+00:00"
+      "last_valid": "2026-11-06T22:04:05.649345+00:00"
     },
     "tec-mls-winner-2026-11-07-vwh": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-06T17:10:22.124133+00:00"
+      "last_valid": "2026-11-06T22:04:05.649345+00:00"
     },
     "tec-nfl-champ-2027-02-14-w-houtex": {
       "title": "Pro Football Champion 2027",
-      "last_valid": "2026-11-06T17:10:22.124133+00:00"
+      "last_valid": "2026-11-06T22:04:05.649345+00:00"
     },
     "tec-nfl-nfcnorth-2027-01-10-w-gb": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-06T17:10:22.124133+00:00"
+      "last_valid": "2026-11-06T22:04:05.649345+00:00"
     },
     "tec-nfl-nfcwest-2027-01-10-w-sea": {
       "title": "NFC West Division Winner",
-      "last_valid": "2026-11-06T17:10:22.124133+00:00"
+      "last_valid": "2026-11-06T22:04:05.649345+00:00"
     },
     "tec-nfl-nfcnorth-2027-01-10-w-chi": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-06T17:10:22.124133+00:00"
-    },
-    "aachc-ufc-heavyw-2026-12-31-champ-martyb": {
-      "title": "UFC Heavyweight Champion on Dec 31, 2026",
-      "last_valid": "2026-11-05T17:43:58.813768+00:00"
-    },
-    "aachc-ufc-lightheavyw-2026-12-31-champ-jamhil": {
-      "title": "UFC Light Heavyweight Champion on Dec 31, 2026",
-      "last_valid": "2026-11-05T17:43:58.813768+00:00"
+      "last_valid": "2026-11-06T22:04:05.649345+00:00"
     },
     "aachc-ufc-welterw-2026-12-31-champ-islmak": {
       "title": "UFC Welterweight Champion on Dec 31, 2026",
@@ -2164,6 +2244,22 @@
     "tec-nfl-nfcchamp-2027-01-31-w-gb": {
       "title": "NFC Champion",
       "last_valid": "2026-11-06T17:10:22.124133+00:00"
+    },
+    "tec-nfl-nfcchamp-2027-01-31-w-atl": {
+      "title": "NFC Champion",
+      "last_valid": "2026-11-06T22:04:05.649345+00:00"
+    },
+    "tec-nfl-nfcchamp-2027-01-31-w-car": {
+      "title": "NFC Champion",
+      "last_valid": "2026-11-06T22:04:05.649345+00:00"
+    },
+    "tec-nfl-afcwest-2027-01-10-w-kc": {
+      "title": "AFC West Division Winner",
+      "last_valid": "2026-11-06T22:04:05.649345+00:00"
+    },
+    "ipcc-2026ipos-revolut": {
+      "title": "Which Companies Will Confirm an IPO in 2026",
+      "last_valid": "2026-11-06T22:04:05.649345+00:00"
     }
   },
   "momentum_lookback_minutes": [
@@ -2174,7 +2270,7 @@
   "fee_verified_at": "2026-10-28",
   "account_link": {
     "status": "connected_read_only",
-    "checked_at": "2026-11-06T17:10:54.552340+00:00",
+    "checked_at": "2026-11-06T22:04:37.950530+00:00",
     "live_trading_enabled": false
   }
 }
