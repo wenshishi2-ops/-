@@ -4,13 +4,13 @@
   "strategy": "COST_ADJUSTED_MOMENTUM",
   "cash": 3000.0,
   "equity": 3000.0,
-  "last_scan": "2026-11-08T07:53:49.807978+00:00",
+  "last_scan": "2026-11-08T14:35:23.505955+00:00",
   "markets": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
       "title": "Major League Soccer Champion",
-      "bid": 0.005,
-      "ask": 0.019
+      "bid": 0.006,
+      "ask": 0.039
     },
     {
       "slug": "tec-mlb-nl-2026-11-27-cy-crisan",
@@ -21,7 +21,7 @@
     {
       "slug": "tec-mls-winner-2026-11-07-vwh",
       "title": "Major League Soccer Champion",
-      "bid": 0.112,
+      "bid": 0.144,
       "ask": 0.145
     },
     {
@@ -55,69 +55,60 @@
       "ask": 0.02
     },
     {
-      "slug": "tec-mlb-al-2026-11-27-cy-parmes",
-      "title": "American League Cy Young Award",
-      "bid": 0.001,
-      "ask": 0.002
+      "slug": "tec-nfl-afcchamp-2027-01-31-w-newpat",
+      "title": "AFC Champion",
+      "bid": 0.07,
+      "ask": 0.09
     },
     {
-      "slug": "tec-mlb-al-2026-11-27-roy-paytol",
-      "title": "American League Rookie of the Year",
-      "bid": 0.001,
-      "ask": 0.002
-    },
-    {
-      "slug": "tec-mlb-al-2026-11-27-mvp-bobwit",
-      "title": "American League MVP",
-      "bid": 0.002,
-      "ask": 0.003
-    },
-    {
-      "slug": "tec-mlb-al-2026-11-27-mvp-yoralv",
-      "title": "American League MVP",
-      "bid": 0.994,
-      "ask": 0.995
+      "slug": "tec-nfl-champ-2027-02-14-w-cinben",
+      "title": "Pro Football Champion 2027",
+      "bid": 0.04,
+      "ask": 0.05
     }
   ],
   "trades": [],
   "scan_status": "ok",
   "diagnostics": {
     "returned_markets": 30,
-    "eligible_markets": 26,
+    "eligible_markets": 30,
     "market_samples": [
       {
-        "slug": "tec-mlb-al-2026-11-27-cy-parmes",
+        "slug": "tec-nfl-afcchamp-2027-01-31-w-newjet",
         "closed": false,
-        "endDate": "2026-12-12T04:00:00Z",
+        "endDate": "2027-02-15T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "tec-mlb-al-2026-11-27-roy-paytol",
+        "slug": "tec-nfl-champ-2027-02-14-w-clebro",
         "closed": false,
-        "endDate": "2026-12-12T04:00:00Z",
+        "endDate": "2027-03-01T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "tec-mlb-al-2026-11-27-mvp-bobwit",
+        "slug": "tec-nfl-afcchamp-2027-01-31-w-newpat",
         "closed": false,
-        "endDate": "2026-12-12T04:00:00Z",
+        "endDate": "2027-02-15T04:00:00Z",
         "rejected": null
       }
     ],
     "rejected_reasons": {
       "missing_slug": 0,
-      "historical_slug": 4,
+      "historical_slug": 0,
       "closed_flag": 0,
       "past_end": 0,
       "higher_fee_category": 0
     },
-    "watched_markets": 26,
+    "watched_markets": 24,
     "slugs_checked": 12,
-    "valid_quotes": 12,
-    "sample_errors": [],
+    "valid_quotes": 10,
+    "sample_errors": [
+      "tec-nfl-afcchamp-2027-01-31-w-newjet: no valid two-sided BBO",
+      "tec-nfl-champ-2027-02-14-w-clebro: no valid two-sided BBO"
+    ],
     "rate_limited": false
   },
-  "quotes_as_of": "2026-11-08T07:53:49.807978+00:00",
+  "quotes_as_of": "2026-11-08T14:35:23.505955+00:00",
   "peak_equity": 3000.0,
   "initial_capital": 3000.0,
   "virtual_deposits": 2000.0,
@@ -1413,6 +1404,10 @@
       {
         "mid": 0.012,
         "time": "2026-11-08T07:54:21.096423+00:00"
+      },
+      {
+        "mid": 0.0225,
+        "time": "2026-11-08T14:35:53.970680+00:00"
       }
     ],
     "tec-mlb-nl-2026-11-27-cy-crisan": [
@@ -1583,6 +1578,10 @@
       {
         "mid": 0.0035,
         "time": "2026-11-08T07:54:21.096423+00:00"
+      },
+      {
+        "mid": 0.0035,
+        "time": "2026-11-08T14:35:53.970680+00:00"
       }
     ],
     "tec-mls-winner-2026-11-07-vwh": [
@@ -1745,6 +1744,10 @@
       {
         "mid": 0.1285,
         "time": "2026-11-08T07:54:21.096423+00:00"
+      },
+      {
+        "mid": 0.1445,
+        "time": "2026-11-08T14:35:53.970680+00:00"
       }
     ],
     "tec-nfl-champ-2027-02-14-w-houtex": [
@@ -1823,6 +1826,10 @@
       {
         "mid": 0.015,
         "time": "2026-11-08T07:54:21.096423+00:00"
+      },
+      {
+        "mid": 0.015,
+        "time": "2026-11-08T14:35:53.970680+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-gb": [
@@ -1893,6 +1900,10 @@
       {
         "mid": 0.08499999999999999,
         "time": "2026-11-08T07:54:21.096423+00:00"
+      },
+      {
+        "mid": 0.08499999999999999,
+        "time": "2026-11-08T14:35:53.970680+00:00"
       }
     ],
     "tec-nfl-nfcwest-2027-01-10-w-sea": [
@@ -1963,6 +1974,10 @@
       {
         "mid": 0.11499999999999999,
         "time": "2026-11-08T07:54:21.096423+00:00"
+      },
+      {
+        "mid": 0.11499999999999999,
+        "time": "2026-11-08T14:35:53.970680+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-chi": [
@@ -2033,6 +2048,10 @@
       {
         "mid": 0.375,
         "time": "2026-11-08T07:54:21.096423+00:00"
+      },
+      {
+        "mid": 0.375,
+        "time": "2026-11-08T14:35:53.970680+00:00"
       }
     ],
     "tec-nfl-nfcchamp-2027-01-31-w-atl": [
@@ -2067,12 +2086,28 @@
       {
         "mid": 0.015,
         "time": "2026-11-08T07:54:21.096423+00:00"
+      },
+      {
+        "mid": 0.015,
+        "time": "2026-11-08T14:35:53.970680+00:00"
+      }
+    ],
+    "tec-nfl-afcchamp-2027-01-31-w-newpat": [
+      {
+        "mid": 0.08,
+        "time": "2026-11-08T14:35:53.970680+00:00"
+      }
+    ],
+    "tec-nfl-champ-2027-02-14-w-cinben": [
+      {
+        "mid": 0.045,
+        "time": "2026-11-08T14:35:53.970680+00:00"
       }
     ]
   },
   "max_drawdown_pct": 0.0,
   "paper_status": "ACTIVE",
-  "paper_updated_at": "2026-11-08T07:54:21.096423+00:00",
+  "paper_updated_at": "2026-11-08T14:35:53.970680+00:00",
   "pricing_note": "Taker fee theta=0.0695 per official schedule (verified 2026-10-28); 0.5% adverse slippage per side is an assumption. No depth, latency, news attribution or settlement. Stale marks are not executable.",
   "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
   "fee_theta": 0.0695,
@@ -2379,7 +2414,7 @@
           "headline": "Major League Soccer (MLS) TV Schedule: Upcoming games, dates and kick-off times - Goal.com",
           "source": "Goal.com",
           "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1PY0ttLUFfSDV0TFgya0hib2Q4dUdzTHlmdmlaWWJfYTMxN196QnhWUVlvRHVUSno4Y1VxN1kyTlR6RUN4UXJrUDBuZEJEVTVGWFE0d2N4ajVmZS1UVWZfbGJ1Szc5S01OVE54RGRaeGVGaEJwM2c?oc=5",
-          "published_at": "2026-11-08T05:49:27+00:00",
+          "published_at": "2026-11-08T13:19:38+00:00",
           "matching_terms": [
             "major",
             "soccer"
@@ -2390,18 +2425,7 @@
           "headline": "MLS News: Major League Soccer Standings, Scores and Team Info - USA Today",
           "source": "USA Today",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5WMEdtaWNxRVF1RjZlLTV2MHh6cjVYWnlYZWx6aDJIWDhvZWMyOUNROFFCRVJHa1RDd3pzZEZFQXlXUENZOS1HZTJra0hyT01ucFg2a1pR?oc=5",
-          "published_at": "2026-11-07T22:49:12+00:00",
-          "matching_terms": [
-            "major",
-            "soccer"
-          ],
-          "causation_verified": false
-        },
-        {
-          "headline": "Cleveland State Men's Soccer Nets Two Major Awards & Four All-League Honors - csuvikings.com",
-          "source": "csuvikings.com",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaWEyUGZCMFBzZmU4cHRid3AtSXdIMXR3MVhnS1FKamhvaDB6TGZPdHkwd19RMXVFR01yVkFHRUlOQ2l2eVJLdlVvWnZTWTNuZXBjZmZob004NkpFejRCcE00RzlTeHJCTDlDa0dLQVVKVG9Zd21ORTdXOEhqX2txSUJPTkw1Wk5ybmFRUDhDcW81N21Wc2RXWHdGUVQ4MnV5UjNiMVNRS0ItZjNyUG9peWUxeHJ2dw?oc=5",
-          "published_at": "2026-11-07T07:55:11+00:00",
+          "published_at": "2026-11-08T00:28:07+00:00",
           "matching_terms": [
             "major",
             "soccer"
@@ -2416,17 +2440,6 @@
       "query": "award young",
       "articles": [
         {
-          "headline": "An Addition of One — with artist Jamie Wyeth and award-winning journalist, Robin Young, co-host of NPR's Here & Now - Maine Public",
-          "source": "Maine Public",
-          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOUzA5emNfUnlMS25ldDNTRDcya2JIS2h6NDBGRkdLZXg3ZEVPd3k1ZXdoYjg1Y0U0UlZuQ08yUXdRZUtOOFcxTGpvUXFoMWllSFdXMFVEVmNMRVRXOUxvTFBNTVg1SHl1U3JuZlp1ZFdsMEh0a25vV1F2UktHdGlxbmFSdkUxNTVtVDZrcUhrMnRic2pKcm5iTWQzRWlONXJIWDVtNWxVWDB2ZkV3S1BUZUJQUUdGazVaWUNEdEVOQmh1czVVTF9jdVJjaGVpdXFUUmhSc0pEMnFhZXdFOWY4SHNGbXpwcGJCTi1VWXlnR3Q0NnBKbTBGQzJUTDY1RkNCS01sV0pWUFJIRWZ3QUE?oc=5",
-          "published_at": "2026-11-08T00:35:13+00:00",
-          "matching_terms": [
-            "award",
-            "young"
-          ],
-          "causation_verified": false
-        },
-        {
           "headline": "Know a young leader in Avoyelles? John Lewis award nominations close Nov. 20 - Avoyelles Today",
           "source": "Avoyelles Today",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSkJhQm1Eakt0Y0tJUVJwSWJUeTZFVThSYXF1aXVnb2x1cTNoZFp2SmRJcVc3Y21YU2lVblJIMnhtc21HbEx5ZHVCZkV3NUVtbVl1enpHWm5CU1VhdmlLWlRvVm5ZeC1hMlB3Tk5odUpTTEtCMnRBVG1DNVRwMTUzQ2hjOE0tNHlKZDczYmdZY3pmSWZCWnlfOVAyOVFnMXNVOGg4TV9GOEpndw?oc=5",
@@ -2438,10 +2451,21 @@
           "causation_verified": false
         },
         {
-          "headline": "Today in Chicago History: Cubs reliever Bruce Sutter named National League’s Cy Young Award winner - Chicago Tribune",
-          "source": "Chicago Tribune",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBDWWNSM3QzRUVkbVd5V2NBUHFvTEYtODdQdUIxTUZjMFBYM2dsS3VBQVo5MWcwaTlmVXN0NEkxR25wNjhwa0ptekU2QVlhbjN0dFBWTmhjRVY4eUYwZmdUZHFzRG1tZXd2anR6N1RjWHduV0J6b092YQ?oc=5",
-          "published_at": "2026-11-07T10:00:10+00:00",
+          "headline": "Warwick woman dedicates major triple award win to the young people everyone else wrote off - Warwick Nub News",
+          "source": "Warwick Nub News",
+          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNWWpSN3NoSTg5QWVrcHBJNEZuZFF0TEdPaG1yRkN2VzY1bjdVZEQ5LXBPNkpQTUtZMndXNko1OXl0OFR0bndWTGpUeWVUSzVoSGtsRWYta0htZXNOZU56QjdhRWxuY1V3WTkwVTBsRzJYelE4eFpsMDc3WGtyYzJ4enJINnFnbHl0ejJZQlVKamVmY0JwdVZDaDFGMUZjN2VXVWxWNnM1UUl2bFhuTmdSTHVOZTBKTlZoVm9HMHFSenVaMnFLLWYtckp5RVhWSDNwRnpIN0FqbDhpaHlacjlVZ3pSMlRveXVGWjFNSVBQcXp6eERRR2c4S0hfSmswOVVxZ0E?oc=5",
+          "published_at": "2026-11-08T10:14:54+00:00",
+          "matching_terms": [
+            "award",
+            "young"
+          ],
+          "causation_verified": false
+        },
+        {
+          "headline": "Honoring outstanding young officials and presenting the National Youth Innovation Award 2026. - Vietnam.vn",
+          "source": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQXZtbWd3N29qUFozSGlmY2sxSTdOVk8tYlIyTlNDN2JMa3h0S2VWR0lfMk9iVTA2cmcwSXl1ZW9NY2JKVGZtYk4yM0tYZVJobHQweHViaHM4UHRtZ1dYcGkxTk93VUMzaDRsZGQ0UlhZZFA4S05FS3UxMUVtUHNqRHRjOVY1RkdfZWZfSmxNa0RNWjdJd3ZKRXloMDdaZlRhRUpnTTc2Vzdwdw?oc=5",
+          "published_at": "2026-11-08T08:06:02+00:00",
           "matching_terms": [
             "award",
             "young"
@@ -2453,61 +2477,68 @@
     },
     {
       "slug": "tec-nfl-champ-2027-02-14-w-houtex",
-      "query": "football pro champion",
-      "articles": [],
-      "status": "no_matching_recent_articles"
+      "query": "pro champion football",
+      "articles": [
+        {
+          "headline": "Tom Coughlin among 5 head coach nominees for Pro Football Hall of Fame Class of 2027 - Giants.com",
+          "source": "Giants.com",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNENSTnBaYTAyS1lGcEtaYXJfUnRkay1mNC0xTWlMaW9mVnhaYmhZWnpUZ3hRNWk3dURxYXNRM2NXQWdQdVNZQThSTXQ1YnFtMEd4ZHJLbkItbDBGMS00cWlWWVljLWF1TXpNQ1J6NDBsY2Z1dHdLYnZPR2U3ZUoxWnZzazlSN0dJQmI5NWhRSlk2cGdlY3dSaVQzbHRnbkY2U250bEtsY2Uwa09BMzJDdGln?oc=5",
+          "published_at": "2026-11-08T13:55:50+00:00",
+          "matching_terms": [
+            "football",
+            "pro"
+          ],
+          "causation_verified": false
+        },
+        {
+          "headline": "Community College football: MPC succumbs to conference champion Modesto - Monterey Herald",
+          "source": "Monterey Herald",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2x1Y0VqTFZpRU9jWkZQNWZhQWlqRk5xWlNTSEtUUDJSWGFzdlRkcWxLMkdRdEpESFNMUWp2ZUxWb2RERUlUUFZnU1FTb3VfNEVtdHEtd0Z3U0Z2U19EaUI4MXBHYzRWTVNuNllFTGVwRGFSbVBsSHlJa3RyRE1PNUxncS1BYkZMM0pDakZpeWJxWENhcUpYRnQ5OE1zeVJZaDdrWE1n?oc=5",
+          "published_at": "2026-11-08T05:41:22+00:00",
+          "matching_terms": [
+            "champion",
+            "football"
+          ],
+          "causation_verified": false
+        }
+      ],
+      "status": "matched"
     }
   ],
-  "news_updated_at": "2026-11-08T07:54:21.165315+00:00",
+  "news_updated_at": "2026-11-08T14:35:54.080961+00:00",
   "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal.",
   "watchlist": {
     "tec-mls-winner-2026-11-07-por": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-08T07:53:49.807978+00:00"
+      "last_valid": "2026-11-08T14:35:23.505955+00:00"
     },
     "tec-mlb-nl-2026-11-27-cy-crisan": {
       "title": "National League Cy Young Award",
-      "last_valid": "2026-11-08T07:53:49.807978+00:00"
+      "last_valid": "2026-11-08T14:35:23.505955+00:00"
     },
     "tec-mls-winner-2026-11-07-vwh": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-08T07:53:49.807978+00:00"
+      "last_valid": "2026-11-08T14:35:23.505955+00:00"
     },
     "tec-nfl-champ-2027-02-14-w-houtex": {
       "title": "Pro Football Champion 2027",
-      "last_valid": "2026-11-08T07:53:49.807978+00:00"
+      "last_valid": "2026-11-08T14:35:23.505955+00:00"
     },
     "tec-nfl-nfcnorth-2027-01-10-w-gb": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-08T07:53:49.807978+00:00"
+      "last_valid": "2026-11-08T14:35:23.505955+00:00"
     },
     "tec-nfl-nfcwest-2027-01-10-w-sea": {
       "title": "NFC West Division Winner",
-      "last_valid": "2026-11-08T07:53:49.807978+00:00"
+      "last_valid": "2026-11-08T14:35:23.505955+00:00"
     },
     "tec-nfl-nfcnorth-2027-01-10-w-chi": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-08T07:53:49.807978+00:00"
+      "last_valid": "2026-11-08T14:35:23.505955+00:00"
     },
     "tec-nfl-nfcchamp-2027-01-31-w-atl": {
       "title": "NFC Champion",
-      "last_valid": "2026-11-08T07:53:49.807978+00:00"
-    },
-    "tec-mlb-al-2026-11-27-mvp-juncam": {
-      "title": "American League MVP",
-      "last_valid": "2026-11-07T14:24:26.223499+00:00"
-    },
-    "tec-mlb-al-2026-11-27-cy-camsch": {
-      "title": "American League Cy Young Award",
-      "last_valid": "2026-11-07T14:24:26.223499+00:00"
-    },
-    "tec-mlb-al-2026-11-27-cy-dylcea": {
-      "title": "American League Cy Young Award",
-      "last_valid": "2026-11-07T14:24:26.223499+00:00"
-    },
-    "tec-mlb-al-2026-11-27-roy-kevmcg": {
-      "title": "American League Rookie of the Year",
-      "last_valid": "2026-11-07T14:24:26.223499+00:00"
+      "last_valid": "2026-11-08T14:35:23.505955+00:00"
     },
     "tec-nfl-dpoy-2027-02-11-w-tjwatt": {
       "title": "Pro Football Defensive Player of the Year",
@@ -2564,6 +2595,14 @@
     "tec-mlb-al-2026-11-27-mvp-yoralv": {
       "title": "American League MVP",
       "last_valid": "2026-11-08T07:53:49.807978+00:00"
+    },
+    "tec-nfl-afcchamp-2027-01-31-w-newpat": {
+      "title": "AFC Champion",
+      "last_valid": "2026-11-08T14:35:23.505955+00:00"
+    },
+    "tec-nfl-champ-2027-02-14-w-cinben": {
+      "title": "Pro Football Champion 2027",
+      "last_valid": "2026-11-08T14:35:23.505955+00:00"
     }
   },
   "momentum_lookback_minutes": [
@@ -2574,7 +2613,7 @@
   "fee_verified_at": "2026-10-28",
   "account_link": {
     "status": "connected_read_only",
-    "checked_at": "2026-11-08T07:54:22.204959+00:00",
+    "checked_at": "2026-11-08T14:35:55.173369+00:00",
     "live_trading_enabled": false
   }
 }
