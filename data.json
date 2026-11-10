@@ -4,13 +4,13 @@
   "strategy": "COST_ADJUSTED_MOMENTUM",
   "cash": 3000.0,
   "equity": 3000.0,
-  "last_scan": "2026-11-10T10:14:39.572598+00:00",
+  "last_scan": "2026-11-10T17:50:52.581941+00:00",
   "markets": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
       "title": "Major League Soccer Champion",
-      "bid": 0.007,
-      "ask": 0.021
+      "bid": 0.021,
+      "ask": 0.022
     },
     {
       "slug": "tec-mlb-nl-2026-11-27-cy-crisan",
@@ -27,14 +27,14 @@
     {
       "slug": "tec-nfl-champ-2027-02-14-w-houtex",
       "title": "Pro Football Champion 2027",
-      "bid": 0.02,
-      "ask": 0.03
+      "bid": 0.01,
+      "ask": 0.02
     },
     {
       "slug": "tec-nfl-nfcnorth-2027-01-10-w-gb",
       "title": "NFC North Division Winner",
-      "bid": 0.14,
-      "ask": 0.15
+      "bid": 0.17,
+      "ask": 0.2
     },
     {
       "slug": "tec-nfl-nfcwest-2027-01-10-w-sea",
@@ -55,14 +55,26 @@
       "ask": 0.42
     },
     {
-      "slug": "aachc-ufc-lightw-2026-12-31-champ-padpim",
-      "title": "UFC Lightweight Champion on Dec 31, 2026",
+      "slug": "aachc-ufc-bantamw-2026-12-31-champ-petyan",
+      "title": "UFC Bantamweight Champion on Dec 31, 2026",
+      "bid": 0.95,
+      "ask": 0.96
+    },
+    {
+      "slug": "aachc-ufc-bantamw-2026-12-31-champ-deifig",
+      "title": "UFC Bantamweight Champion on Dec 31, 2026",
       "bid": 0.01,
       "ask": 0.02
     },
     {
-      "slug": "aachc-ufc-heavyw-2026-12-31-champ-jaialm",
-      "title": "UFC Heavyweight Champion on Dec 31, 2026",
+      "slug": "aachc-ufc-bantamw-2026-12-31-champ-merdva",
+      "title": "UFC Bantamweight Champion on Dec 31, 2026",
+      "bid": 0.01,
+      "ask": 0.02
+    },
+    {
+      "slug": "aachc-ufc-bantamw-2026-12-31-champ-corsan",
+      "title": "UFC Bantamweight Champion on Dec 31, 2026",
       "bid": 0.01,
       "ask": 0.02
     }
@@ -74,19 +86,19 @@
     "eligible_markets": 30,
     "market_samples": [
       {
-        "slug": "aachc-ufc-heavyw-2026-12-31-champ-walaco",
+        "slug": "aachc-ufc-bantamw-2026-12-31-champ-petyan",
         "closed": false,
         "endDate": "2027-01-15T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "aachc-ufc-lightw-2026-12-31-champ-padpim",
+        "slug": "aachc-ufc-bantamw-2026-12-31-champ-deifig",
         "closed": false,
         "endDate": "2027-01-15T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "aachc-ufc-heavyw-2026-12-31-champ-jaialm",
+        "slug": "aachc-ufc-bantamw-2026-12-31-champ-merdva",
         "closed": false,
         "endDate": "2027-01-15T04:00:00Z",
         "rejected": null
@@ -99,16 +111,13 @@
       "past_end": 0,
       "higher_fee_category": 0
     },
-    "watched_markets": 17,
+    "watched_markets": 21,
     "slugs_checked": 12,
-    "valid_quotes": 10,
-    "sample_errors": [
-      "aachc-ufc-heavyw-2026-12-31-champ-walaco: no valid two-sided BBO",
-      "aachc-ufc-lightw-2026-12-31-champ-alevol: no valid two-sided BBO"
-    ],
+    "valid_quotes": 12,
+    "sample_errors": [],
     "rate_limited": false
   },
-  "quotes_as_of": "2026-11-10T10:14:39.572598+00:00",
+  "quotes_as_of": "2026-11-10T17:50:52.581941+00:00",
   "peak_equity": 3000.0,
   "initial_capital": 3000.0,
   "virtual_deposits": 2000.0,
@@ -1356,6 +1365,18 @@
         "time": "2026-11-10T02:30:28.800388+00:00"
       }
     ],
+    "aachc-ufc-lightw-2026-12-31-champ-padpim": [
+      {
+        "mid": 0.015,
+        "time": "2026-11-10T10:15:10.157072+00:00"
+      }
+    ],
+    "aachc-ufc-heavyw-2026-12-31-champ-jaialm": [
+      {
+        "mid": 0.015,
+        "time": "2026-11-10T10:15:10.157072+00:00"
+      }
+    ],
     "tec-nfl-afcwest-2027-01-10-w-kc": [
       {
         "mid": 0.445,
@@ -1388,13 +1409,13 @@
       {
         "mid": 0.415,
         "time": "2026-11-10T10:15:10.157072+00:00"
+      },
+      {
+        "mid": 0.415,
+        "time": "2026-11-10T17:51:22.981466+00:00"
       }
     ],
     "tec-mls-winner-2026-11-07-por": [
-      {
-        "mid": 0.0075,
-        "time": "2026-10-30T06:01:11.296469+00:00"
-      },
       {
         "mid": 0.0075,
         "time": "2026-10-30T12:25:20.906058+00:00"
@@ -1582,13 +1603,13 @@
       {
         "mid": 0.014,
         "time": "2026-11-10T10:15:10.157072+00:00"
+      },
+      {
+        "mid": 0.0215,
+        "time": "2026-11-10T17:51:22.981466+00:00"
       }
     ],
     "tec-mlb-nl-2026-11-27-cy-crisan": [
-      {
-        "mid": 0.0015,
-        "time": "2026-10-30T06:01:11.296469+00:00"
-      },
       {
         "mid": 0.0015,
         "time": "2026-10-30T12:25:20.906058+00:00"
@@ -1776,13 +1797,13 @@
       {
         "mid": 0.0035,
         "time": "2026-11-10T10:15:10.157072+00:00"
+      },
+      {
+        "mid": 0.0035,
+        "time": "2026-11-10T17:51:22.981466+00:00"
       }
     ],
     "tec-mls-winner-2026-11-07-vwh": [
-      {
-        "mid": 0.1505,
-        "time": "2026-10-30T06:01:11.296469+00:00"
-      },
       {
         "mid": 0.1505,
         "time": "2026-10-30T12:25:20.906058+00:00"
@@ -1970,6 +1991,10 @@
       {
         "mid": 0.1545,
         "time": "2026-11-10T10:15:10.157072+00:00"
+      },
+      {
+        "mid": 0.1545,
+        "time": "2026-11-10T17:51:22.981466+00:00"
       }
     ],
     "tec-nfl-champ-2027-02-14-w-houtex": [
@@ -2080,6 +2105,10 @@
       {
         "mid": 0.025,
         "time": "2026-11-10T10:15:10.157072+00:00"
+      },
+      {
+        "mid": 0.015,
+        "time": "2026-11-10T17:51:22.981466+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-gb": [
@@ -2182,6 +2211,10 @@
       {
         "mid": 0.14500000000000002,
         "time": "2026-11-10T10:15:10.157072+00:00"
+      },
+      {
+        "mid": 0.185,
+        "time": "2026-11-10T17:51:22.981466+00:00"
       }
     ],
     "tec-nfl-nfcwest-2027-01-10-w-sea": [
@@ -2284,6 +2317,10 @@
       {
         "mid": 0.08499999999999999,
         "time": "2026-11-10T10:15:10.157072+00:00"
+      },
+      {
+        "mid": 0.08499999999999999,
+        "time": "2026-11-10T17:51:22.981466+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-chi": [
@@ -2386,24 +2423,40 @@
       {
         "mid": 0.375,
         "time": "2026-11-10T10:15:10.157072+00:00"
+      },
+      {
+        "mid": 0.375,
+        "time": "2026-11-10T17:51:22.981466+00:00"
       }
     ],
-    "aachc-ufc-lightw-2026-12-31-champ-padpim": [
+    "aachc-ufc-bantamw-2026-12-31-champ-petyan": [
       {
-        "mid": 0.015,
-        "time": "2026-11-10T10:15:10.157072+00:00"
+        "mid": 0.955,
+        "time": "2026-11-10T17:51:22.981466+00:00"
       }
     ],
-    "aachc-ufc-heavyw-2026-12-31-champ-jaialm": [
+    "aachc-ufc-bantamw-2026-12-31-champ-deifig": [
       {
         "mid": 0.015,
-        "time": "2026-11-10T10:15:10.157072+00:00"
+        "time": "2026-11-10T17:51:22.981466+00:00"
+      }
+    ],
+    "aachc-ufc-bantamw-2026-12-31-champ-merdva": [
+      {
+        "mid": 0.015,
+        "time": "2026-11-10T17:51:22.981466+00:00"
+      }
+    ],
+    "aachc-ufc-bantamw-2026-12-31-champ-corsan": [
+      {
+        "mid": 0.015,
+        "time": "2026-11-10T17:51:22.981466+00:00"
       }
     ]
   },
   "max_drawdown_pct": 0.0,
   "paper_status": "ACTIVE",
-  "paper_updated_at": "2026-11-10T10:15:10.157072+00:00",
+  "paper_updated_at": "2026-11-10T17:51:22.981466+00:00",
   "pricing_note": "Taker fee theta=0.0695 per official schedule (verified 2026-10-28); 0.5% adverse slippage per side is an assumption. No depth, latency, news attribution or settlement. Stale marks are not executable.",
   "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
   "fee_theta": 0.0695,
@@ -2704,31 +2757,30 @@
   "news_context": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
-      "query": "champion major soccer",
-      "articles": [
-        {
-          "headline": "Major League Soccer (MLS) TV Schedule: Upcoming games, dates and kick-off times - Goal.com",
-          "source": "Goal.com",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1PY0ttLUFfSDV0TFgya0hib2Q4dUdzTHlmdmlaWWJfYTMxN196QnhWUVlvRHVUSno4Y1VxN1kyTlR6RUN4UXJrUDBuZEJEVTVGWFE0d2N4ajVmZS1UVWZfbGJ1Szc5S01OVE54RGRaeGVGaEJwM2c?oc=5",
-          "published_at": "2026-11-10T07:22:57+00:00",
-          "matching_terms": [
-            "major",
-            "soccer"
-          ],
-          "causation_verified": false
-        }
-      ],
-      "status": "matched"
+      "query": "major champion soccer",
+      "articles": [],
+      "status": "no_matching_recent_articles"
     },
     {
       "slug": "tec-mlb-nl-2026-11-27-cy-crisan",
       "query": "award young",
       "articles": [
         {
+          "headline": "Han earns Air Force Young Investigator award for ferroelectrics research - Rice University",
+          "source": "Rice University",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTFdrbGFNUDlKVXhrSkdGODRzMHpLZm1BOWRSTHpUN2ZoOWRiVVdWZm1NUk5VRVVXa19aRlFweEJJSXFBcWtoQkljVUVSZkNTMEU2RVFsaUR3alJpa0NvOXd4YXlEeDlWRk5XcmtadVA4NU9jRjNBbTMtQlcxaTdLdHlBSkxHVEMyNU9Ycm1lam1nUDN0aWplQy1uaURORHphRnc?oc=5",
+          "published_at": "2026-11-10T16:05:47+00:00",
+          "matching_terms": [
+            "award",
+            "young"
+          ],
+          "causation_verified": false
+        },
+        {
           "headline": "Coweta Fire Chief presents Youth Hero Award to young resident - KOKI FOX 23",
           "source": "KOKI FOX 23",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZDgzQXRwd3dlUnA3Nks1bndaSUpSbnNDZ3lHTVkweUNDUFlab3NPSDRCT0JGbzcyS01sOVQtNkhERXRwNml0UDVHSXUyTE9aQXJOVnR0WVl2ZzZDTWRqcndHYmh0dXJqRW50RGpobjdQTzhoMU9BRmEwcnJJajk4V2NqSTl1RlMtbUctWThZUFNiUlhI?oc=5",
-          "published_at": "2026-11-10T05:08:48+00:00",
+          "published_at": "2026-11-10T07:59:27+00:00",
           "matching_terms": [
             "award",
             "young"
@@ -2736,21 +2788,10 @@
           "causation_verified": false
         },
         {
-          "headline": "Montana State faculty member wins competitive Young Faculty Award to advance research into mimicking biological processes - Montana State University",
-          "source": "Montana State University",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQTWVkbVoyVzlFMHZnYzV2eTllX1ZRd2hwbUtvY0luU1RiOWRWaGRSYmp2Uk9ubDhmNjY2SUZWTnFoMHlNSDBjMFJaSjl5T3d3SHh2YTIxSkZvcXZDekhPSDhreEwxaTBXTVpsbGMwVmZ3a2g1dFVVaHJGczdhY3I3MEpfSGlJb2ZsdmpyWWg3aVlxLWRmZXNFdkhLYmFBWV9NTldyTEU5NHlYR0FpbEplMjVBdTBOdFgxR1F6aThOS3M3eWRvY1dPOW5TUzZjczVXOGFmTS1jMmFNZFNHVVo0R1hxMzJNOURKUHNONw?oc=5",
-          "published_at": "2026-11-09T15:02:30+00:00",
-          "matching_terms": [
-            "award",
-            "young"
-          ],
-          "causation_verified": false
-        },
-        {
-          "headline": "Bettendorf Library will host award-winning young-adult author A.S. King - OurQuadCities",
-          "source": "OurQuadCities",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQMmNKbUtXT19GcGYwbWVhWnRmU1habFlWT3hxeDdVRTd6TEc5YXpBSlVraGNOSndFLXNmaTB4ZlNjZUM0RkdCSzB1akNBMURnQTZTa0dUaXFVU2hsV1ZUNkxOOVBHZC04cGdROV9WN0lJRnZSZjNQUW5JNThaTEdyUDQwRzJOaEsycTI3QnE0S1RCWDNIQWVGUFdBSWZhdHhkVkhFV1U2LVFLYkxNMWZ1ODY1aXg3UDZD0gG-AUFVX3lxTE5JTGJTeWhvcUJNNS1yWFdNZ1RNTEwzdUE5TFhkWVRwNEtiZGRqMjBWYnVKQldMSlJHbEdJMFREV3lnUkxGdW1ma3N6dWEyQjBUeVBRN2sxQ29mN1UyTlFZbV8xdzhUaDRfUDdtWWI1cHlYTjNOcWxvSHcyNjBtODR6SUZnSkx6VDB1bklYZHZTNmRhM0FtZVliUS1",
-          "published_at": "2026-11-09T15:30:00+00:00",
+          "headline": "Mets predicted to sign ex-Dodgers 2-time Cy Young award winner to form filthy duo with Nolan McLean - Yahoo Sports",
+          "source": "Yahoo Sports",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNaTJ2MUN6aG1Cal93bFFJaXUweHdmdWNRRGJOUktkdUlDZnBmX0hKY0VyUWhfaTRiU1hZNlVrd3BxVGFHLU01M0s2em1ybDBUU1Q4WkVYRTBKdjNZU0ZaZWhaNTZfUVR2N0pPbkpPbUN5SmRLQVJLZ2NOWWRfN3ZLQVpKYXVTZw?oc=5",
+          "published_at": "2026-11-10T15:50:50+00:00",
           "matching_terms": [
             "award",
             "young"
@@ -2767,40 +2808,40 @@
       "status": "no_matching_recent_articles"
     }
   ],
-  "news_updated_at": "2026-11-10T10:15:10.256682+00:00",
+  "news_updated_at": "2026-11-10T17:51:23.066823+00:00",
   "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal.",
   "watchlist": {
     "tec-mls-winner-2026-11-07-por": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-10T10:14:39.572598+00:00"
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
     },
     "tec-mlb-nl-2026-11-27-cy-crisan": {
       "title": "National League Cy Young Award",
-      "last_valid": "2026-11-10T10:14:39.572598+00:00"
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
     },
     "tec-mls-winner-2026-11-07-vwh": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-10T10:14:39.572598+00:00"
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
     },
     "tec-nfl-champ-2027-02-14-w-houtex": {
       "title": "Pro Football Champion 2027",
-      "last_valid": "2026-11-10T10:14:39.572598+00:00"
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
     },
     "tec-nfl-nfcnorth-2027-01-10-w-gb": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-10T10:14:39.572598+00:00"
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
     },
     "tec-nfl-nfcwest-2027-01-10-w-sea": {
       "title": "NFC West Division Winner",
-      "last_valid": "2026-11-10T10:14:39.572598+00:00"
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
     },
     "tec-nfl-nfcnorth-2027-01-10-w-chi": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-10T10:14:39.572598+00:00"
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
     },
     "tec-nfl-afcwest-2027-01-10-w-kc": {
       "title": "AFC West Division Winner",
-      "last_valid": "2026-11-10T10:14:39.572598+00:00"
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
     },
     "tec-nfl-afceast-2027-01-10-w-ne": {
       "title": "AFC East Division Winner",
@@ -2837,6 +2878,22 @@
     "aachc-ufc-heavyw-2026-12-31-champ-jaialm": {
       "title": "UFC Heavyweight Champion on Dec 31, 2026",
       "last_valid": "2026-11-10T10:14:39.572598+00:00"
+    },
+    "aachc-ufc-bantamw-2026-12-31-champ-petyan": {
+      "title": "UFC Bantamweight Champion on Dec 31, 2026",
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
+    },
+    "aachc-ufc-bantamw-2026-12-31-champ-deifig": {
+      "title": "UFC Bantamweight Champion on Dec 31, 2026",
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
+    },
+    "aachc-ufc-bantamw-2026-12-31-champ-merdva": {
+      "title": "UFC Bantamweight Champion on Dec 31, 2026",
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
+    },
+    "aachc-ufc-bantamw-2026-12-31-champ-corsan": {
+      "title": "UFC Bantamweight Champion on Dec 31, 2026",
+      "last_valid": "2026-11-10T17:50:52.581941+00:00"
     }
   },
   "momentum_lookback_minutes": [
@@ -2847,7 +2904,7 @@
   "fee_verified_at": "2026-10-28",
   "account_link": {
     "status": "connected_read_only",
-    "checked_at": "2026-11-10T10:15:11.204800+00:00",
+    "checked_at": "2026-11-10T17:51:24.637515+00:00",
     "live_trading_enabled": false
   }
 }
