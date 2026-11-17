@@ -4,19 +4,19 @@
   "strategy": "COST_ADJUSTED_MOMENTUM",
   "cash": 3000.0,
   "equity": 3000.0,
-  "last_scan": "2026-11-17T00:59:21.813804+00:00",
+  "last_scan": "2026-11-17T08:50:39.247621+00:00",
   "markets": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
       "title": "Major League Soccer Champion",
       "bid": 0.01,
-      "ask": 0.017
+      "ask": 0.018
     },
     {
       "slug": "tec-mls-winner-2026-11-07-vwh",
       "title": "Major League Soccer Champion",
       "bid": 0.16,
-      "ask": 0.169
+      "ask": 0.17
     },
     {
       "slug": "tec-nfl-nfcnorth-2027-01-10-w-gb",
@@ -27,14 +27,14 @@
     {
       "slug": "tec-nfl-nfcwest-2027-01-10-w-sea",
       "title": "NFC West Division Winner",
-      "bid": 0.09,
-      "ask": 0.1
+      "bid": 0.07,
+      "ask": 0.08
     },
     {
       "slug": "tec-nfl-nfcnorth-2027-01-10-w-chi",
       "title": "NFC North Division Winner",
-      "bid": 0.3,
-      "ask": 0.31
+      "bid": 0.29,
+      "ask": 0.3
     },
     {
       "slug": "tec-nfl-afcwest-2027-01-10-w-kc",
@@ -62,21 +62,21 @@
     "eligible_markets": 30,
     "market_samples": [
       {
-        "slug": "tec-nfl-afcchamp-2027-01-31-w-tentit",
+        "slug": "tec-nfl-dpoy-2027-02-11-w-devwit",
         "closed": false,
-        "endDate": "2027-02-15T04:00:00Z",
+        "endDate": "2027-02-26T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "tec-nfl-champ-2027-02-14-w-carpan",
+        "slug": "tec-nfl-dpoy-2027-02-11-w-devllo",
         "closed": false,
-        "endDate": "2027-03-01T04:00:00Z",
+        "endDate": "2027-02-26T04:00:00Z",
         "rejected": null
       },
       {
-        "slug": "tec-nfl-afcchamp-2027-01-31-w-newjet",
+        "slug": "tec-nfl-dpoy-2027-02-11-w-dersti",
         "closed": false,
-        "endDate": "2027-02-15T04:00:00Z",
+        "endDate": "2027-02-26T04:00:00Z",
         "rejected": null
       }
     ],
@@ -87,18 +87,18 @@
       "past_end": 0,
       "higher_fee_category": 0
     },
-    "watched_markets": 13,
+    "watched_markets": 12,
     "slugs_checked": 12,
     "valid_quotes": 8,
     "sample_errors": [
-      "tec-nfl-afcchamp-2027-01-31-w-tentit: no valid two-sided BBO",
-      "tec-nfl-champ-2027-02-14-w-carpan: no valid two-sided BBO",
-      "tec-nfl-afcchamp-2027-01-31-w-newjet: no valid two-sided BBO",
-      "tec-nfl-champ-2027-02-14-w-clebro: no valid two-sided BBO"
+      "tec-nfl-dpoy-2027-02-11-w-devwit: no valid two-sided BBO",
+      "tec-nfl-dpoy-2027-02-11-w-devllo: no valid two-sided BBO",
+      "tec-nfl-dpoy-2027-02-11-w-dersti: no valid two-sided BBO",
+      "tec-nfl-dpoy-2027-02-11-w-danhun: no valid two-sided BBO"
     ],
     "rate_limited": false
   },
-  "quotes_as_of": "2026-11-17T00:59:21.813804+00:00",
+  "quotes_as_of": "2026-11-17T08:50:39.247621+00:00",
   "peak_equity": 3000.0,
   "initial_capital": 3000.0,
   "virtual_deposits": 2000.0,
@@ -2060,6 +2060,10 @@
       {
         "mid": 0.015,
         "time": "2026-11-17T00:59:53.208979+00:00"
+      },
+      {
+        "mid": 0.015,
+        "time": "2026-11-17T08:51:10.735082+00:00"
       }
     ],
     "tec-nfl-afcwest-2027-01-10-w-kc": [
@@ -2198,13 +2202,13 @@
       {
         "mid": 0.46499999999999997,
         "time": "2026-11-17T00:59:53.208979+00:00"
+      },
+      {
+        "mid": 0.46499999999999997,
+        "time": "2026-11-17T08:51:10.735082+00:00"
       }
     ],
     "tec-mls-winner-2026-11-07-por": [
-      {
-        "mid": 0.006,
-        "time": "2026-11-05T09:55:28.634485+00:00"
-      },
       {
         "mid": 0.013000000000000001,
         "time": "2026-11-05T17:44:30.500940+00:00"
@@ -2392,13 +2396,13 @@
       {
         "mid": 0.013500000000000002,
         "time": "2026-11-17T00:59:53.208979+00:00"
+      },
+      {
+        "mid": 0.013999999999999999,
+        "time": "2026-11-17T08:51:10.735082+00:00"
       }
     ],
     "tec-mls-winner-2026-11-07-vwh": [
-      {
-        "mid": 0.1495,
-        "time": "2026-11-05T09:55:28.634485+00:00"
-      },
       {
         "mid": 0.1635,
         "time": "2026-11-05T17:44:30.500940+00:00"
@@ -2586,13 +2590,13 @@
       {
         "mid": 0.1645,
         "time": "2026-11-17T00:59:53.208979+00:00"
+      },
+      {
+        "mid": 0.165,
+        "time": "2026-11-17T08:51:10.735082+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-gb": [
-      {
-        "mid": 0.055,
-        "time": "2026-11-05T09:55:28.634485+00:00"
-      },
       {
         "mid": 0.07500000000000001,
         "time": "2026-11-05T17:44:30.500940+00:00"
@@ -2780,13 +2784,13 @@
       {
         "mid": 0.025,
         "time": "2026-11-17T00:59:53.208979+00:00"
+      },
+      {
+        "mid": 0.025,
+        "time": "2026-11-17T08:51:10.735082+00:00"
       }
     ],
     "tec-nfl-nfcwest-2027-01-10-w-sea": [
-      {
-        "mid": 0.135,
-        "time": "2026-11-05T09:55:28.634485+00:00"
-      },
       {
         "mid": 0.11499999999999999,
         "time": "2026-11-05T17:44:30.500940+00:00"
@@ -2974,13 +2978,13 @@
       {
         "mid": 0.095,
         "time": "2026-11-17T00:59:53.208979+00:00"
+      },
+      {
+        "mid": 0.07500000000000001,
+        "time": "2026-11-17T08:51:10.735082+00:00"
       }
     ],
     "tec-nfl-nfcnorth-2027-01-10-w-chi": [
-      {
-        "mid": 0.385,
-        "time": "2026-11-05T09:55:28.634485+00:00"
-      },
       {
         "mid": 0.375,
         "time": "2026-11-05T17:44:30.500940+00:00"
@@ -3168,6 +3172,10 @@
       {
         "mid": 0.305,
         "time": "2026-11-17T00:59:53.208979+00:00"
+      },
+      {
+        "mid": 0.295,
+        "time": "2026-11-17T08:51:10.735082+00:00"
       }
     ],
     "tec-nfl-dpoy-2027-02-11-w-kylham": [
@@ -3250,12 +3258,16 @@
       {
         "mid": 0.015,
         "time": "2026-11-17T00:59:53.208979+00:00"
+      },
+      {
+        "mid": 0.015,
+        "time": "2026-11-17T08:51:10.735082+00:00"
       }
     ]
   },
   "max_drawdown_pct": 0.0,
   "paper_status": "ACTIVE",
-  "paper_updated_at": "2026-11-17T00:59:53.208979+00:00",
+  "paper_updated_at": "2026-11-17T08:51:10.735082+00:00",
   "pricing_note": "Taker fee theta=0.0695 per official schedule (verified 2026-10-28); 0.5% adverse slippage per side is an assumption. No depth, latency, news attribution or settlement. Stale marks are not executable.",
   "fee_model": "POLYMARKET_US_TAKER_P_TIMES_ONE_MINUS_P",
   "fee_theta": 0.0695,
@@ -3556,8 +3568,30 @@
   "news_context": [
     {
       "slug": "tec-mls-winner-2026-11-07-por",
-      "query": "soccer major champion",
+      "query": "major soccer champion",
       "articles": [
+        {
+          "headline": "Big West Champion Utah Valley Set to Face No. 9 seed Utah State in First Round of 2026 NCAA Women’s Soccer Championship - The Big West",
+          "source": "The Big West",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNRWJ2V2NObldFT2k5NzRjN05ydmk2ZktZdWN1bzVnVnpTMk1IZlhrVkRTcEVDdGVpX25PRTBQaVdjM2tVUm1OdHBrRl9IYk50RTM5NzhPQlV5b2M0cE5ZN3FWZklBMmhySlcwZG1rMm83ZEEydjRzSTFCTklQQkI2SEtBMkR0RWVmQ3BqOXZqNW9Tb3ozRlN6a1NhZkVMTzdjYWlIQXplYnFKRHFtY0lXYnpEZ0FvVXdPM0Z0Nmw3SnlwVDhpdEFRMHhWa2ZDOEZBOXhqcnpnRXkwWk9MaGdXTUJJV2x3TjRLR0J1WDJvUQ?oc=5",
+          "published_at": "2026-11-17T00:06:09+00:00",
+          "matching_terms": [
+            "champion",
+            "soccer"
+          ],
+          "causation_verified": false
+        },
+        {
+          "headline": "Men’s soccer wraps 2026 campaign with loss to Ivy champion Cornell - Columbia Daily Spectator",
+          "source": "Columbia Daily Spectator",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUXRURktPTmV4N2lpdU9SM0FwYjFzRlB1SWdSWFlJU0NTNFFUc1JSYVFVdlM5T1BldlBsVUZ6QVBHNWtZb3ZVZUdLYVVhSzM1bTVGVldGYUFZVmNtWUY2TkxNeTBjbzVyTURZTkZSdEZpS1NCRVkza1QzQ2V5YWloLWRKenRHZEo3WlRQMzFkeXUySGs5RFRjal95UWZoTk1haHh5UXluMHppdkJ2NnMxcTU5dExfSjVBcFE?oc=5",
+          "published_at": "2026-11-17T00:39:45+00:00",
+          "matching_terms": [
+            "champion",
+            "soccer"
+          ],
+          "causation_verified": false
+        },
         {
           "headline": "From opening loss to region champs, NDSCS women's soccer takes major step forward - Wahpeton Daily News",
           "source": "Wahpeton Daily News",
@@ -3574,25 +3608,24 @@
     },
     {
       "slug": "tec-nfl-nfcnorth-2027-01-10-w-gb",
-      "query": "division north nfc",
+      "query": "north division nfc",
       "articles": [
         {
-          "headline": "Bears NFC North Roundup: Aidan Hutchinson Injury, Kirk Cousins’ Return Shake Up Division - Yahoo Sports",
+          "headline": "Playoff Picture, Week 10: Detroit Lions Climb to Top of NFC North - Sports Illustrated",
+          "source": "Sports Illustrated",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMFJtaFNZX3gxbHo0a0xfdmt1Ql9XUkxfamU4NGJiWnBnVFM2Qnlqak44RzZQczQ0T29TMm9FeWdYajN3MlpBb3RNMnh3cGpHOVR4YUI3MS1tQ1FQSjlQanc1eEg5RjNuTHZTSjlPS1lCYkExQ2FERVJya1NGOGVuWWpTd19ET1dLS2dpZnM0NzN3LVJBVnFSb1lYdFVMQQ?oc=5",
+          "published_at": "2026-11-17T01:00:00+00:00",
+          "matching_terms": [
+            "nfc",
+            "north"
+          ],
+          "causation_verified": false
+        },
+        {
+          "headline": "Packers Super Bowl Champion Gives LaFleur Brutal NFC North Judgment - Yahoo Sports",
           "source": "Yahoo Sports",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSmJSYlBoOExEcG5IUDlyaWRsZVRpcFpVdU00aEJ0dGJBdlpCYk1KNUpsYU9Od191b0Z3LTViM3FSQmdoT0xtczk4b05BM2RRRDd0V3g4MHA5VjdFdEFMSEJDOG1MZFY5VlgzVW5OdUJ4T2pYTF9taGRMbmNPelNDVi1URjM?oc=5",
-          "published_at": "2026-11-16T21:00:00+00:00",
-          "matching_terms": [
-            "division",
-            "nfc",
-            "north"
-          ],
-          "causation_verified": false
-        },
-        {
-          "headline": "How NFC North rivals did during Bears’ Week 10 bye - Bears Wire",
-          "source": "Bears Wire",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVzRWa0RNMk5nZW9NZjN2ME9FdnBrMzJaNlQ1N0R3Tl9lcVc3ak1MUExleTdLUHExMUFFbjFJWTRkbmh5LS1DMGdhd0s0U0NUZEdJeUxjZlhJYTFTWWJMMFJzUUZVdWIyVWpGeUU1alhUanhsajZhaTY4amtnNWFPSlFOazQwelk2N1liS29WakhpN1ZHVDhnbDBUc0JlM3hPQTRoaUxxUW0zUW45MmxvcGZyd0V5VTVJU1VOYzQ4NE54dlNTXzVlOA?oc=5",
-          "published_at": "2026-11-16T14:50:00+00:00",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdUM4OE1Salo2UVZRWmtBVE5TbkRzUXc1NDgxMzcyYVBWRkN0cUNxYlJ4aXlXZmhSei1Ba0hRSmwyRm5FRnptQWdZUUhnRVBwUi1NVEhlNGJyUFVENWdHM2RXSkZWTEphVUVhOE9fSVVhdVlWbGxFWEFOdVNybEJxZmpEbmlYTzFxU3c?oc=5",
+          "published_at": "2026-11-17T04:46:00+00:00",
           "matching_terms": [
             "nfc",
             "north"
@@ -3600,12 +3633,11 @@
           "causation_verified": false
         },
         {
-          "headline": "Why the NFC North has become the NFL's most fascinating division race - Sporting News",
-          "source": "Sporting News",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdWtJQWotU05ONl9GSVhaUXFidXU2V19NekpyNWFDRF9tV3lJMFB2b0xzb2ZYWTVtblBlRldXVWlKYXhKRWh2RTJYOFNrYjc4Y2dhQ3U1RDlyX1pHbjZVcVVEZnlUdE5SeUFOYmFYZWtCWW04YUdoS0pmRVhSZElYX2xUZG55X0FqZzE5X2tjTUcwcHdSVlp1THZSTUh1RXlVdTNtQlhDclNFbHd1Z21MQ3FnVW95NmRmRmlBV20waU9ReG96bzltZG5fa0NYWXN6ZHRXQ2pLdw?oc=5",
-          "published_at": "2026-11-16T12:01:19+00:00",
+          "headline": "Chicago Bears Are In GREAT Position In TOUGH NFC North As Injuries Hit Lions, Vikings And Packers - weareiowa.com",
+          "source": "weareiowa.com",
+          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNbEtGdWFIeS04d3BTYklpRldQaXkzamVSdWdKa0ZRbnozMzZNR01WQ2NYS0M0M3FVZHRoeXZUQWFYZE9GdHlfYUxuazMtSDRyRm00ODh0ejFqREtPWjRsME5HcWxsMmM4TUZzdmxWTHZjQnpwLTcwUzUwVUpxMXZlS3lvcGhDWTRsekVMZWFORE9TcmdqbUNYaXhyWVJ1VGhfRktrVzhZNEMxUzhGczYzRVd0VzcwRU9ubFl5Sl9pX21VQzhoWWxPLUFuWjZzLXpaV0Y4cGU0QjUzbkJkdEZwR25BYklCSzV1VTd0UThUQzRjWVNhTzgtY05QZ24xRzIwTlJlWkcxeGd1eG5MR1NvaHQyay1JdTNwY1JScUFyaC1lM2tjclR4YUx2RG9iTXpJbmc?oc=5",
+          "published_at": "2026-11-17T04:48:00+00:00",
           "matching_terms": [
-            "division",
             "nfc",
             "north"
           ],
@@ -3641,13 +3673,13 @@
           "causation_verified": false
         },
         {
-          "headline": "NFC West Predictions: 49ers Lead as Seahawks and Rams Fight for Playoffs - Yahoo Sports",
-          "source": "Yahoo Sports",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYmcwMkJjSThmOWxSRkFnQnBGdVFCZUYxTTBIZncwVnFCRFdtbVZzaWkzc0JMczM4aHR0Ym9DcWJ1cXZDOHotSjdYZ2VQamxYdjZoX0E3ZEhUN2dqYk51WG85NXFST1dqMno2V3I1aG5nQWtSMnFsTTlBdERLXzkyUmZCRjg?oc=5",
-          "published_at": "2026-11-16T04:33:00+00:00",
+          "headline": "Why the NFC North has become the NFL's most fascinating division race - Sporting News",
+          "source": "Sporting News",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPdWtJQWotU05ONl9GSVhaUXFidXU2V19NekpyNWFDRF9tV3lJMFB2b0xzb2ZYWTVtblBlRldXVWlKYXhKRWh2RTJYOFNrYjc4Y2dhQ3U1RDlyX1pHbjZVcVVEZnlUdE5SeUFOYmFYZWtCWW04YUdoS0pmRVhSZElYX2xUZG55X0FqZzE5X2tjTUcwcHdSVlp1THZSTUh1RXlVdTNtQlhDclNFbHd1Z21MQ3FnVW95NmRmRmlBV20waU9ReG96bzltZG5fa0NYWXN6ZHRXQ2pLdw?oc=5",
+          "published_at": "2026-11-16T12:01:19+00:00",
           "matching_terms": [
-            "nfc",
-            "west"
+            "division",
+            "nfc"
           ],
           "causation_verified": false
         }
@@ -3655,44 +3687,40 @@
       "status": "matched"
     }
   ],
-  "news_updated_at": "2026-11-17T00:59:53.293270+00:00",
+  "news_updated_at": "2026-11-17T08:51:10.873547+00:00",
   "news_note": "Public RSS headlines, time-window and keyword matches only; NOT proof of causation and NOT a trading signal.",
   "watchlist": {
     "tec-mls-winner-2026-11-07-por": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-17T00:59:21.813804+00:00"
+      "last_valid": "2026-11-17T08:50:39.247621+00:00"
     },
     "tec-mls-winner-2026-11-07-vwh": {
       "title": "Major League Soccer Champion",
-      "last_valid": "2026-11-17T00:59:21.813804+00:00"
+      "last_valid": "2026-11-17T08:50:39.247621+00:00"
     },
     "tec-nfl-nfcnorth-2027-01-10-w-gb": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-17T00:59:21.813804+00:00"
+      "last_valid": "2026-11-17T08:50:39.247621+00:00"
     },
     "tec-nfl-nfcwest-2027-01-10-w-sea": {
       "title": "NFC West Division Winner",
-      "last_valid": "2026-11-17T00:59:21.813804+00:00"
+      "last_valid": "2026-11-17T08:50:39.247621+00:00"
     },
     "tec-nfl-nfcnorth-2027-01-10-w-chi": {
       "title": "NFC North Division Winner",
-      "last_valid": "2026-11-17T00:59:21.813804+00:00"
+      "last_valid": "2026-11-17T08:50:39.247621+00:00"
     },
     "tec-nfl-afcwest-2027-01-10-w-kc": {
       "title": "AFC West Division Winner",
-      "last_valid": "2026-11-17T00:59:21.813804+00:00"
+      "last_valid": "2026-11-17T08:50:39.247621+00:00"
     },
     "tec-nfl-dpoy-2027-02-11-w-kylham": {
       "title": "Pro Football Defensive Player of the Year",
-      "last_valid": "2026-11-17T00:59:21.813804+00:00"
+      "last_valid": "2026-11-17T08:50:39.247621+00:00"
     },
     "aachc-ufc-middlew-2026-12-31-champ-reirid": {
       "title": "UFC Middleweight Champion on Dec 31, 2026",
-      "last_valid": "2026-11-17T00:59:21.813804+00:00"
-    },
-    "aachc-ufc-middlew-2026-12-31-champ-seastr": {
-      "title": "UFC Middleweight Champion on Dec 31, 2026",
-      "last_valid": "2026-11-16T01:06:13.159922+00:00"
+      "last_valid": "2026-11-17T08:50:39.247621+00:00"
     },
     "tec-nfl-dpoy-2027-02-11-w-tremcd": {
       "title": "Pro Football Defensive Player of the Year",
@@ -3719,7 +3747,7 @@
   "fee_verified_at": "2026-10-28",
   "account_link": {
     "status": "connected_read_only",
-    "checked_at": "2026-11-17T00:59:54.610151+00:00",
+    "checked_at": "2026-11-17T08:51:11.891414+00:00",
     "live_trading_enabled": false
   }
 }
